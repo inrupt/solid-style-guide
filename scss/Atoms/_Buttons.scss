@@ -1,0 +1,44 @@
+/* scss/Atoms/_Buttons.scss */
+
+
+button {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	font-family: $primary-font-stack;
+	color: $primary-text-color;
+	border: 1px solid $tertiary-color-1;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: .8em;
+	padding: 0.5em 1em;
+	transition: 0.25s all ease-in-out;
+	outline: none;
+
+
+	&:hover, &[hover] {
+		border-color: $link-active-color;
+		transition: 0.25s all ease-in-out;
+		color: $link-active-color;
+	}
+
+	&[disabled] {
+		opacity: 0.5;
+		cursor: initial;
+			
+			&:hover {
+				border-color: $tertiary-color-1;
+				transition: 0.25s all ease-in-out;
+				color: $primary-text-color;			
+			}
+	}
+
+	&:active, &[active] {
+		background: $link-active-color;
+		border-color: $link-active-color;
+		color: #fff;
+		outline: none;
+
+	}
+}

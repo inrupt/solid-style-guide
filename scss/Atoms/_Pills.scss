@@ -1,0 +1,77 @@
+/* scss/Atoms/_Pills.scss */
+
+
+button {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	color: $primary-text-color;
+	border: 1px solid $tertiary-color-1;
+	cursor: pointer;
+	font-size: .8em;
+	padding: 0.5em 1em;
+	transition: 0.25s all ease-in-out;
+	outline: none;
+
+
+	&.pill {
+		border-radius: 100px;
+		-webkit-border-radius: 100px;
+	}
+
+	&:hover, &[hover] {
+		border-color: $link-active-color;
+		transition: 0.25s all ease-in-out;
+		color: $link-active-color;
+	}
+
+	&[disabled] {
+		opacity: 0.5;
+
+	}
+
+	&:active, &[active], &.active {
+		background: $link-active-color;
+		border-color: $link-active-color;
+		color: #fff;
+		outline: none;
+
+	}
+
+	&.filter {
+		align-items: center;
+		justify-content: center;
+		background: lighten($tertiary-color-1, 5%);
+		border-radius: 4px;
+		padding: 0.25em 1em;
+
+		img {
+			max-width: 13px;
+			width: 100%;
+			padding-right: 0.2em;
+			margin-top: 1px;
+
+		}
+
+	&:hover, &[hover] {
+		border-color: $link-active-color;
+		transition: 0.25s all ease-in-out;
+		color: $primary-text-color;
+	}
+
+	&[disabled] {
+		opacity: 0.5;
+
+	}
+
+
+	&:active, &[active], &.active {
+		border-color: $link-active-color;
+		transition: 0.25s all ease-in-out;
+		color: $link-active-color;
+		background: lighten($link-active-color, 35%);
+	}
+
+	}
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "category": "Core",
+        "order": 3
+    },
+    {
+        "category": "Atoms",
+        "order": 4
+    },
+    {
+        "category": "Molecules",
+        "order": 5
+    },
+    {
+        "category": "Organisms",
+        "order": 6
+    },
+    {
+        "category": "Templates",
+        "order": 7
+    },
+    {
+        "category": "Pages",
+        "order": 8
+    }
+]

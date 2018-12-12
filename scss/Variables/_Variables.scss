@@ -1,0 +1,86 @@
+/* scss/Variables/_Variables.scss */
+
+
+/* Colors */
+
+$primary-color: #7C4DFF;
+$secondary-color: #01C9EA;
+$tertiary-color: #18A9E6;
+$tertiary-color-1: #DAE0E6;
+$tertiary-color-2: #083575;
+$tertiary-color-3: #01FAAB;
+$link-active-color: #449DF5;
+$primary-text-color: #354866;
+$error-color: #D0021B;
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i|Roboto:300,300i,400,400i,700,700i');
+
+
+$primary-font-stack: "Raleway", "Roboto", sans-serif;
+$secondary-font-stack: "Roboto", sans-serif;
+
+
+
+/* Reset */
+.component {
+	font-family: $primary-font-stack;
+	font-size: 1em;
+	line-height: 1;
+
+	.source {
+		font-family: $primary-font-stack;
+		font-size: 1em;
+		line-height: 1;
+
+	}
+}
+
+
+/* Gradient Functions */
+
+
+@mixin linear-gradient($direction, $color-stops...) {
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+
+/// Convert a direction to legacy syntax
+/// @param {Keyword | Angle} $value - Value to convert
+/// @require {function} is-direction
+/// @require {function} convert-angle
+/// @throw Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.;
+@function legacy-direction($value) {
+  @if is-direction($value) == false {
+    @error "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
+  }
+
+  $conversion-map: (
+    to top          : bottom,
+    to top right    : bottom left,
+    to right top    : left bottom,
+    to right        : left,
+    to bottom right : top left,
+    to right bottom : left top,
+    to bottom       : top,
+    to bottom left  : top right,
+    to left bottom  : right top,
+    to left         : right,
+    to left top     : right bottom,
+    to top left     : bottom right
+  );
+
+  @if map-has-key($conversion-map, $value) {
+    @return map-get($conversion-map, $value);
+  }
+
+  @return 90deg - $value;
+}

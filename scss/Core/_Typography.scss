@@ -1,0 +1,78 @@
+/* scss/Core/_Typography.scss */
+
+
+.text-raleway {
+	font-family: $primary-font-stack;
+	padding-bottom: 1em;
+
+
+	&__title {
+		text-transform: uppercase;
+		line-height: 1;
+		margin-bottom: 0.2em;
+		font-size: 1.2em;
+	}
+
+	&__sub-title {
+			font-weight: 300;
+			font-size: 0.8em;
+			color: darken($tertiary-color-1, 15%);
+			line-height: 1;
+			margin: 0;
+	}
+
+	&--bold-text {
+		font-weight: 700;
+	}
+
+}
+
+.text-roboto {
+	font-family: $secondary-font-stack;
+	font-weight: 400;
+	padding-bottom: 1em;
+
+	&__title {
+		text-transform: uppercase;
+		line-height: 1;
+		margin-bottom: 0.2em;
+		font-size: 1.2em;
+	}
+
+	&__sub-title {
+			font-weight: 300;
+			font-size: 0.8em;
+			color: darken($tertiary-color-1, 15%);
+			line-height: 1;
+			margin: 0;
+	}
+
+	&--bold-text {
+		font-weight: 700;
+	}
+
+	&--light-text {
+		font-weight: 300;
+	}
+}
+
+
+
+
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+	text-transform: uppercase;
+	font-weight: 300;
+}

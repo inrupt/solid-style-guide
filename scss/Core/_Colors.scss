@@ -1,0 +1,100 @@
+/* scss/Core/_Colors.scss */
+
+
+.swatch-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+}
+
+	.swatch {
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			justify-content: space-around;
+			padding: 1em;
+			height: 250px;
+			flex-basis: 30%;
+			border-radius: 4px;
+			margin: 1em;
+
+
+
+		&__item {
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			justify-content: space-around;
+			padding: 1em;
+			height: 300px;
+			flex-basis: 33%;
+			border-radius: 4px;
+
+		
+
+				&__title {
+				color: #fff;
+				width: 100%;
+				text-align: center;
+				line-height: 1;
+				margin: 0;
+				text-transform: uppercase;
+				font-weight: 700;
+				}
+
+			&__value {
+				font-weight: 300;
+				color: #fff;
+				width: 100%;
+				text-align: center;
+				line-height: 1;
+				margin: 0;
+				text-transform: uppercase;
+			}
+
+			
+			&--primary {
+				background-color: $primary-color;	
+
+			}
+
+			&--secondary {
+				background-color: $secondary-color;	
+
+			}
+
+			&--tertiary {
+				background-color: $tertiary-color;	
+
+			}
+
+			&--tertiary-1 {
+				background-color: $tertiary-color-1;	
+
+			}
+
+			&--tertiary-2{
+				background-color: $tertiary-color-2;	
+
+			}
+
+			&--tertiary-3 {
+				background-color: $tertiary-color-3;	
+
+			}
+
+			/* Gradients */
+
+			&--primary-gradient {
+				@include linear-gradient(to right, $primary-color 0%, $tertiary-color 50%, $secondary-color 100%);
+
+			}
+
+		
+		}
+
+	}
+
+
