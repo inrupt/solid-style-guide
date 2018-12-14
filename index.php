@@ -50,7 +50,7 @@
 
 <div class="indexBlock">
 
-    <img class="logo" src="http://atomicdocs.io/img/atomic-logo.svg">
+    <img class="logo" src="../atomic-core/img/inrupt.svg">
 
     <p>By default, Atomic Docs is set up for Sass. If you are using Less or Sass check out this <a href="http://atomicdocs.io/docs/less-stylus">post</a>.</p>
 

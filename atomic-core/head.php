@@ -29,7 +29,7 @@
     <?php
         $filename = '../atomic-head.php';
         if (file_exists($filename)) {
-            include("$_SERVER[DOCUMENT_ROOT]/atomic-core/atomic-head.php");
+            include("../atomic-head.php");
         }
     ?>
     

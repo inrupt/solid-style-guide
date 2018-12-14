@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/Databrowser active</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/Databrowser-active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(1.000000, 1.500000)" fill-rule="nonzero">
+            <g id="Icon/Databrowser" fill="#FFFFFF" stroke="#7C55FB">
+                <rect id="Rectangle" x="0.5" y="0.5" width="21" height="20" rx="0.5"></rect>
+            </g>
+            <path d="M0.5,0.5 L21.5,0.5 C21.7761424,0.5 22,0.723857625 22,1 L22,6.5 L0,6.5 L0,1 C-3.38176876e-17,0.723857625 0.223857625,0.5 0.5,0.5 Z" id="Rectangle" fill="#7C55FB"></path>
+            <circle id="Oval-3" fill="#FFFFFF" cx="15.13" cy="3.17" r="1.25"></circle>
+            <circle id="Oval-3-Copy" fill="#FFFFFF" cx="19.45" cy="3.17" r="1.25"></circle>
+            <circle id="Oval-3-Copy-2" fill="#FFFFFF" cx="10.81" cy="3.17" r="1.25"></circle>
+        </g>
+    </g>
+</svg>

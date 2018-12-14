@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/Databrowser white active</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/Databrowser-white-active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#7C55FB" x="0" y="0" width="24" height="24"></rect>
+        <g id="Group-2" transform="translate(1.000000, 1.500000)" fill-rule="nonzero">
+            <g id="Icon/Databrowser" fill="#7C55FB" stroke="#FFFFFF">
+                <path d="M0.5,0.5 L0.5,20.5 L21.5,20.5 L21.5,0.5 L0.5,0.5 Z M1.5,5.5 L20.5,5.5 C21.0522847,5.5 21.5,5.94771525 21.5,6.5 L21.5,19.5 C21.5,20.0522847 21.0522847,20.5 20.5,20.5 L1.5,20.5 C0.94771525,20.5 0.5,20.0522847 0.5,19.5 L0.5,6.5 C0.5,5.94771525 0.94771525,5.5 1.5,5.5 Z" id="Combined-Shape"></path>
+            </g>
+            <path d="M0.5,0.5 L21.5,0.5 C21.7761424,0.5 22,0.723857625 22,1 L22,6.5 L0,6.5 L0,1 C-3.38176876e-17,0.723857625 0.223857625,0.5 0.5,0.5 Z M15.13,4.42 C15.8203559,4.42 16.38,3.86035594 16.38,3.17 C16.38,2.47964406 15.8203559,1.92 15.13,1.92 C14.4396441,1.92 13.88,2.47964406 13.88,3.17 C13.88,3.86035594 14.4396441,4.42 15.13,4.42 Z M19.45,4.42 C20.1403559,4.42 20.7,3.86035594 20.7,3.17 C20.7,2.47964406 20.1403559,1.92 19.45,1.92 C18.7596441,1.92 18.2,2.47964406 18.2,3.17 C18.2,3.86035594 18.7596441,4.42 19.45,4.42 Z M10.81,4.42 C11.5003559,4.42 12.06,3.86035594 12.06,3.17 C12.06,2.47964406 11.5003559,1.92 10.81,1.92 C10.1196441,1.92 9.56,2.47964406 9.56,3.17 C9.56,3.86035594 10.1196441,4.42 10.81,4.42 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

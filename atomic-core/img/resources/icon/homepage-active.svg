@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/homepage-active</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/homepage-active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M9.31875,18.4192635 L1.446875,18.4192635 C1.20178125,18.4148442 1.00446875,18.2197167 1,17.9773371 L1,16.2096317 L1,2.44192635 C1.00446875,2.19954674 1.20178125,2.00441926 1.446875,2 L22.553125,2 C22.7982188,2.00441926 22.9955312,2.19954674 23,2.44192635 L23,16.2096317 L23,17.9773371 C22.9955312,18.2197167 22.7982188,18.4148442 22.553125,18.4192635 L14.68125,18.4192635 L15.128125,21.5467422 L16.709375,21.5467422 L16.709375,22 L7.290625,22 L7.290625,21.5467422 L8.871875,21.5467422 L9.31875,18.4192635 Z M2,3 L2,15.5 L22,15.5 L22,3 L2,3 Z" id="Combined-Shape" fill="#7C55FB" fill-rule="nonzero"></path>
+    </g>
+</svg>
