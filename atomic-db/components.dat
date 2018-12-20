@@ -48,7 +48,7 @@
         "has_js": "false"
     },
     {
-        "component": "Form-Elements",
+        "component": "Input",
         "category": "Atoms",
         "description": "",
         "backgroundColor": "",
@@ -77,6 +77,46 @@
         "description": "",
         "backgroundColor": "",
         "order": -8,
+        "has_js": "false"
+    },
+    {
+        "component": "Select",
+        "category": "Atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -9,
+        "has_js": "false"
+    },
+    {
+        "component": "Checkbox",
+        "category": "Atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -10,
+        "has_js": "false"
+    },
+    {
+        "component": "Radio",
+        "category": "Atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -11,
+        "has_js": "true"
+    },
+    {
+        "component": "Toggle",
+        "category": "Atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -12,
+        "has_js": "true"
+    },
+    {
+        "component": "Range-Slider",
+        "category": "Atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -13,
         "has_js": "false"
     }
 ]

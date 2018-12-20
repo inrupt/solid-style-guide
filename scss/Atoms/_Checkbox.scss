@@ -1,0 +1,50 @@
+/* scss/Atoms/_Checkbox.scss */
+
+
+label.checkbox {
+	display: flex;
+	align-items: center;
+	
+
+	input[type="checkbox"] {
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		border: 1px solid $tertiary-color-1;
+		width: 2em;
+		height: 2em;
+		margin-right: 1em;
+		cursor: pointer;
+		border-radius: 1px;
+		
+		&:hover {
+			border-color: $link-active-color;
+		}
+
+		&:checked {
+			border-color: $link-active-color;
+			color: $link-active-color;
+
+
+			&::before  {
+				color: $link-active-color;
+				content: "\f00c";
+				font-family: "FontAwesome";
+				align-self: center;
+				position: relative;
+				font-size: 1.5em;
+				top: 0.15em;
+				left: 0.1em;
+			}
+		}
+
+
+	}
+
+	&[disabled] {
+			opacity: 0.5;
+			cursor: initial;
+			pointer-events: none;
+		}
+}

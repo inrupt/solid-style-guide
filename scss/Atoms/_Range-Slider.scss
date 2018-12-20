@@ -1,0 +1,30 @@
+/* scss/Atoms/_Range-Slider.scss */
+
+
+input[type="range"] {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: $tertiary-color-1;
+	height: 2px;
+	border-radius: 1px;	
+	color: #fff;
+
+	&::-webkit-slider-thumb, &::-moz-slider-thumb, &::-ms-slider-thumb {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-color: #fff;
+		height: 20px;
+		width: 20px;
+		border-radius: 50em;
+		box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+	}	
+
+
+
+}
+
+
+
+

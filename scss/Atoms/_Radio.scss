@@ -1,0 +1,100 @@
+/* scss/Atoms/_Radio.scss */
+
+
+
+label.radio {
+	display: flex;
+	align-items: center;
+
+
+	input[type="radio"] {
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		border: 1px solid $tertiary-color-1;
+		width: 2em;
+		height: 2em;
+		margin-right: 1em;
+		cursor: pointer;
+		border-radius: 20em;
+		
+		&:hover {
+			border-color: $link-active-color;
+		}
+
+		 &:checked {
+			border-color: $link-active-color;
+			color: $link-active-color;
+			font-weight: bold;
+
+
+
+			&::before  {
+				content: " ";
+				align-self: center;
+				position: relative;
+				display: block;
+				width: 12px;
+				height: 12px;
+				border-radius: 50em;
+				background-color: $link-active-color;
+				top: 0.4em;
+				left: 0.4em;
+			}
+		}
+
+		&:checked+label {
+				font-weight: 700;
+			}
+
+
+
+	}
+
+	&[disabled] {
+			opacity: 0.5;
+			cursor: initial;
+		}
+}
+
+
+input[type="radio"] {
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		border: 1px solid $tertiary-color-1;
+		width: 2em;
+		height: 2em;
+		margin-right: 1em;
+		cursor: pointer;
+		border-radius: 20em;
+		
+		&:hover {
+			border-color: $link-active-color;
+		}
+
+		 &:checked {
+			border-color: $link-active-color;
+			color: $link-active-color;
+			font-weight: bold;
+
+
+
+			&::before  {
+				content: " ";
+				align-self: center;
+				position: relative;
+				display: block;
+				width: 12px;
+				height: 12px;
+				border-radius: 50em;
+				background-color: $link-active-color;
+				top: 0.4em;
+				left: 0.4em;
+			}
+		}
+
+
+	}

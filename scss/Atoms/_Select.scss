@@ -1,0 +1,33 @@
+/* scss/Atoms/_Select.scss */
+
+
+.select-wrap {  
+	width: 100%;
+	display: flex;
+	align-content: center;
+
+   	&::after  {
+		color: $tertiary-color-1;
+		content: "\f107";
+		font-family: "FontAwesome";
+		align-self: center;
+		position: relative;
+		font-size: 2em;
+		top: 0em;
+		left: -1em;
+
+	}
+		select {
+		   -webkit-appearance: none; 
+		   -moz-appearance: none;
+		   appearance: none;
+
+	   &:active, &:focus {
+	   	 -webkit-appearance: none; 
+	   	 -moz-appearance: none;
+	     appearance: none;
+	     border-color: blue;
+	   }
+	}
+
+}
