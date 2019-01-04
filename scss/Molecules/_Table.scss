@@ -1,0 +1,277 @@
+/* scss/Molecules/_Table.scss */
+
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.9rem;
+	overflow: scroll;
+
+
+	thead {
+		background: #fff;
+		
+		tr {
+			text-align: left;
+			color: $secondary-text-color;
+			padding: 0 1em;
+			
+			th {
+				padding: 1em;		
+				border-top: 1px solid rgba($tertiary-color-1, 0.8);
+				border-bottom: 1px solid rgba($tertiary-color-1, 0.8);
+				white-space: nowrap;
+				width: 1%;
+				
+
+				
+				&.sortable {
+					cursor: pointer;
+				}
+
+				&.name-value {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+
+	tbody {
+		padding: 0 1em;
+		
+		tr {
+			color: $secondary-text-color;
+			cursor: pointer;
+			transition: all 0.5s ease-in-out;
+			padding: 0 1em;
+			border-bottom: 1px solid rgba($tertiary-color-1, 0.8);
+
+			&:hover {
+				background: rgba($primary-color,0.2);
+			}
+
+
+			td {
+				padding: 1em;
+				white-space: nowrap;
+				width: 1%;
+
+
+				span {
+					&.file-preview {				
+						text-align: center;						
+
+						img {
+							display: block;
+							margin: 0 auto;
+							text-align: center;
+							max-width: 30px;
+							height: 30px;
+							width: 100%;
+							@include borderRadius(2px);
+						}
+					}
+				}
+
+
+				&.menu-additional {
+					text-align: center;	
+					margin: 0 auto;
+					min-width: 1em;
+
+					i {
+						text-align: center;	
+						margin: 0 auto;
+						display: block;						
+					}
+				}
+
+
+				&.preview {
+					width: 55px;
+					white-space: nowrap;
+					display: block;
+					padding: 1em 0;
+					
+
+					span {
+						&.type-icon {
+							position: relative;
+						    margin-bottom: 0;
+						    top: 1em;
+						    left: .5em;
+						    width: 10px;
+						    margin-top: -21px;
+						    display: block;
+
+						    img {
+						    	min-width: 18px;
+						    	width: 100%;
+						    	@include box-shadow();
+
+						    }
+						}
+					}
+				}
+
+				&.name-value {
+					max-width: 250px;
+					min-width: 150px;
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+ table.fixed-col__table {	
+
+ 	thead {
+		
+		tr {
+			
+			th {		
+
+				&.preview {
+			    	width: 55px;
+			    	border-bottom: 1px solid rgba($tertiary-color-1, 0.8);
+			    	height: 45px;
+
+			    	span {
+						
+						&.type-icon {
+							position: relative;
+						    margin-bottom: 0;
+						    top: 1em;
+						    left: .5em;
+						    width: 10px;
+						    margin-top: -21px;
+						    display: block;
+
+						    img {
+						    	min-width: 18px;
+						    	width: 100%;
+						    	@include box-shadow();
+
+						    }
+						}
+					}
+
+					&.fixed-col__item {		
+						position: absolute;
+						top: auto;		   
+					    background: #fff;
+					    z-index: 100;				    
+					   				 		
+					 }
+				}	
+
+				
+
+			     &.name {
+			    	border-right: 1px solid rgba($tertiary-color-1, 0.8);				    	
+			    	border-bottom: 1px solid rgba($tertiary-color-1, 0.8);			    	
+			    	top: auto;
+			    	width: 200px;
+			    	left: 55px;
+			    	padding: 1em 0;
+
+			    	&.fixed-col__item {		
+						position: absolute;
+						top: auto;		   
+					    background: #fff;
+					    z-index: 100;				    
+					   				 		
+					 }
+			    }
+			
+			} 
+
+				
+		}
+	}
+
+	tbody {
+		tr {
+			td.fixed-col__item {
+		    	position: absolute;
+				top: auto;		   
+			    background: #fff;
+			    z-index: 100;			
+
+		    	&.preview { 
+			    	width: 55px;
+			    	border-bottom: 1px solid rgba($tertiary-color-1, 0.8);
+			    	height: 50px;
+
+			    	span {
+						
+						&.type-icon {
+							position: relative;
+						    margin-bottom: 0;
+						    top: 1em;
+						    left: .5em;
+						    width: 10px;
+						    margin-top: -21px;
+						    display: block;
+
+						    img {
+						    	min-width: 18px;
+						    	width: 100%;
+						    	@include box-shadow();
+
+						    }
+						}
+					}			
+				}
+
+				&.name-value {
+					width: 200px;
+					padding-left: 1em; 
+					left: 55px;
+					border-right: 1px solid rgba($tertiary-color-1, 0.8);
+					border-right: 1px solid rgba($tertiary-color-1, 0.8);
+				}
+			}
+		}				
+	}
+	
+}
+
+.fixed-col {
+	position: absolute;
+	top: auto;		   
+	background: #fff;
+	z-index: 100;
+
+	&__item {
+		position: absolute;
+		top: auto;		   
+	    background: #fff;
+	    z-index: 100;			
+
+	}
+
+}
+
+
+.fixed-table-wrap {
+	max-width: 400px; /* width value for example purpose only, change or remove to suit your needs */
+	width: 100%;
+	display: block;
+	position: relative;
+
+	.fixed-table-scroller {
+		left: 350px;
+    overflow: scroll;
+    /* overflow-y: visible; */
+    padding-bottom: 5px;
+    width: 500px;
+    /* position: relative; */
+	}
+}
+
+

@@ -5,6 +5,8 @@
 label.radio {
 	display: flex;
 	align-items: center;
+	padding: 0;
+	
 
 
 	input[type="radio"] {
@@ -34,13 +36,12 @@ label.radio {
 				content: " ";
 				align-self: center;
 				position: relative;
-				display: block;
+				display: inline-block;
 				width: 12px;
 				height: 12px;
 				border-radius: 50em;
 				background-color: $link-active-color;
-				top: 0.4em;
-				left: 0.4em;
+				
 			}
 		}
 
@@ -91,8 +92,8 @@ input[type="radio"] {
 				height: 12px;
 				border-radius: 50em;
 				background-color: $link-active-color;
-				top: 0.4em;
-				left: 0.4em;
+			    top: 17%;
+    			left: 19%;
 			}
 		}
 

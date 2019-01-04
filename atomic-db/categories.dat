@@ -1,10 +1,18 @@
 [
     {
         "category": "Core",
-        "order": 3
+        "order": 0
     },
     {
         "category": "Atoms",
-        "order": 4
+        "order": 1
+    },
+    {
+        "category": "Molecules",
+        "order": 2
+    },
+    {
+        "category": "Organisms",
+        "order": 3
     }
 ]

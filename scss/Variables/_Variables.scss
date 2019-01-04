@@ -11,7 +11,11 @@ $tertiary-color-2: #083575;
 $tertiary-color-3: #01FAAB;
 $link-active-color: #449DF5;
 $primary-text-color: #354866;
+$secondary-text-color: #666666;
 $error-color: #D0021B;
+$icon-color: #5361FD;
+
+
 
 /* Typography */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i|Roboto:300,300i,400,400i,700,700i');
@@ -21,6 +25,9 @@ $primary-font-stack: "Raleway", "Roboto", sans-serif;
 $secondary-font-stack: "Roboto", sans-serif;
 
 
+$blur: 2px;
+$default: rgba(0,0,0,0.1);
+$color: $default;
 
 /* Reset */
 .component {
@@ -37,6 +44,12 @@ $secondary-font-stack: "Roboto", sans-serif;
 }
 
 
+.row-wrap {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+ 
 /* Gradient Functions */
 
 
@@ -83,4 +96,51 @@ $secondary-font-stack: "Roboto", sans-serif;
   }
 
   @return 90deg - $value;
+}
+
+
+
+
+
+
+/* Border Radius Mixin Controller */
+
+
+$prefixes: -webkit-, -moz-, -o-, "";
+
+@mixin borderRadius($size...) {
+  @if length($size) == 1 {
+    @each $prefix in $prefixes {
+      #{$prefix}border-radius: $size;
+    }
+  } @else {
+    @include customBorderRadius($size...);
+  }
+}
+
+@mixin customBorderRadius($topLeft: 0, $topRight: 0, $bottomRight: 0, $bottomLeft: 0) {
+  @each $prefix in $prefixes {
+    @if $prefix == "-moz-" {
+      @if $topLeft != 0 { -moz-border-radius-topleft: $topLeft; }
+      @if $topRight != 0 { -moz-border-radius-topright: $topRight; }
+      @if $bottomRight != 0 { -moz-border-radius-bottomright: $bottomRight; }
+      @if $bottomLeft != 0 { -moz-border-radius-bottomleft: $bottomLeft; }
+    } @else {
+      @if $topLeft != 0 { #{$prefix}border-top-left-radius: $topLeft; }
+      @if $topRight != 0 { #{$prefix}border-top-right-radius: $topRight; }
+      @if $bottomRight != 0 { #{$prefix}border-bottom-right-radius: $bottomRight; }
+      @if $bottomLeft != 0 { #{$prefix}border-bottom-left-radius: $bottomLeft; }
+    }
+  }
+}
+
+
+/* Box Shadow Mixin Controller */
+
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+  box-shadow: $x-axis $y-axis $blur $color;
+  -webkit-box-shadow: $x-axis $y-axis $blur $color;
+  -moz-box-shadow: $x-axis $y-axis $blur $color;
+  -ms-box-shadow: $x-axis $y-axis $blur $color;
+  -o-box-shadow: $x-axis $y-axis $blur $color;
 }

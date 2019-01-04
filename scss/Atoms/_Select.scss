@@ -5,8 +5,9 @@
 	width: 100%;
 	display: flex;
 	align-content: center;
+	background: #fff;
 
-   	&::after  {
+   	 &::after  {
 		color: $tertiary-color-1;
 		content: "\f107";
 		font-family: "FontAwesome";
@@ -16,18 +17,27 @@
 		top: 0em;
 		left: -1em;
 
-	}
+	} 
 		select {
-		   -webkit-appearance: none; 
-		   -moz-appearance: none;
-		   appearance: none;
+		   -webkit-appearance: button;
+		   background: #fff;
+		   outline: none;
+		   color: #fff;
+
 
 	   &:active, &:focus {
-	   	 -webkit-appearance: none; 
-	   	 -moz-appearance: none;
-	     appearance: none;
-	     border-color: blue;
+	     border-color: $link-active-color;
 	   }
+
+		option {
+		 -webkit-appearance: menulist;
+		 color: #fff;
+		 background: blue;	
+		}
+
+
 	}
 
 }
+
+

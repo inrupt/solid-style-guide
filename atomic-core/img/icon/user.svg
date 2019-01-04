@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-16" transform="translate(1.000000, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask-Copy" stroke="#8B8B8B" fill="#D8D8D8" xlink:href="#path-1"></use>
+            <g id="user-copy" mask="url(#mask-2)" fill="#8B8B8B" fill-rule="nonzero">
+                <g transform="translate(3.000000, 6.000000)" id="Shape">
+                    <path d="M8.90322581,11.3099579 C8.90322581,11.3099579 2.42815249,11.3099579 0,16.9649369 C0,16.9649369 4.05501466,18.5806452 8.90322581,18.5806452 C13.751437,18.5806452 17.8064516,16.9649369 17.8064516,16.9649369 C15.3782991,11.3099579 8.90322581,11.3099579 8.90322581,11.3099579 Z M8.90322581,10.5021038 C11.3313783,10.5021038 12.9501466,8.07854137 12.9501466,4.03927069 C12.9501466,0 8.90322581,0 8.90322581,0 C8.90322581,0 4.85630499,0 4.85630499,4.03927069 C4.85630499,8.07854137 6.47507331,10.5021038 8.90322581,10.5021038 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

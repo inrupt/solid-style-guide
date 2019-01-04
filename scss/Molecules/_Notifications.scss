@@ -1,0 +1,228 @@
+/* scss/Molecules/_Notifications.scss */
+
+
+/* Banner Notification Styles */
+
+.banner-wrap {
+	width: 100%;
+	display: flex;
+	padding: 1em;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 1em;
+
+
+		&--primary {
+			background-color: $primary-color;
+			color: #fff;	
+		}
+
+
+		&--secondary {
+			background-color: $secondary-color;	
+			color: #fff;
+		}
+
+
+	
+		&--tertiary {
+			background-color: $tertiary-color;
+			color: #fff;	
+
+		}
+
+		&--tertiary-1 {
+			background-color: $tertiary-color-1;	
+
+		}
+
+		&--tertiary-2{
+			background-color: $tertiary-color-2;	
+
+		}
+
+		&--tertiary-3 {
+			background-color: $tertiary-color-3;	
+
+		}
+
+		/* Gradients */
+
+		&--primary-gradient {
+			@include linear-gradient(to right, $primary-color 0%, $tertiary-color 50%, $secondary-color 100%);
+
+		}
+	
+} 
+
+
+.banner, .banner-wrap {
+	width: 100%;
+	display: flex;
+	padding: 1em;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 1em;
+}
+
+
+/* Toaster Notification Styles */
+
+
+.toaster-wrap, .toaster {
+	display: flex;
+	padding: 1em;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 1em;
+	@include borderRadius(4px);
+	@include box-shadow();
+	max-width: 40%;
+	width: 100%;
+	margin: 0 1em;
+	cursor: pointer;
+
+
+	&:first-of-type {
+		margin-left: 0;
+	}
+
+}
+
+
+.toaster-wrap {
+	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+
+
+		&--primary {
+			background-color: rgba($primary-color, 0.9);
+			color: #fff;
+			transition: all 0.25s ease-in-out;
+
+			&:hover {
+				background-color: rgba($primary-color, 1);
+				transition: all 0.25s ease-in-out;				
+			}
+		}
+
+
+		&--secondary {
+			background-color:rgba($secondary-color, .9);
+			color: #fff;		
+			transition: all 0.25s ease-in-out;
+
+			&:hover {
+				background-color: rgba($secondary-color, 1);
+				transition: all 0.25s ease-in-out;				
+			}
+		}
+
+
+	
+		&--tertiary {
+			background-color: rgba($tertiary-color, .9);
+			color: #fff;	
+			transition: all 0.25s ease-in-out;
+
+			&:hover {
+				background-color: rgba($tertiary-color, 1);
+				transition: all 0.25s ease-in-out;				
+			}
+		}
+
+		&--tertiary-1 {
+			background-color: rgba($tertiary-color-1, .9);
+			transition: all 0.25s ease-in-out;
+
+
+			&:hover {
+				background-color: rgba($tertiary-color-1, 1);
+				transition: all 0.25s ease-in-out;				
+			}
+		}
+
+		&--tertiary-2{
+			background-color: rgba($tertiary-color-2, 0.9);
+			transition: all 0.25s ease-in-out;
+
+			&:hover {
+				background-color: rgba($tertiary-color-2, 1);
+				transition: all 0.25s ease-in-out;				
+			}
+
+		}
+
+		&--tertiary-3 {
+			background-color: rgba($tertiary-color-3, 0.9);
+			transition: all 0.25s ease-in-out;
+
+			&:hover {
+				background-color: rgba($tertiary-color-3, 1);
+				transition: all 0.25s ease-in-out;				
+			}
+
+		}
+
+		
+		
+}
+
+	.toaster-wrap {
+	  max-width: 40% !important;
+	  width: 100% !important;
+	  @include borderRadius(4px);
+	  @include box-shadow();
+
+
+
+			&__content {
+
+
+
+				.content__title {
+					font-weight: bold;
+					text-transform: uppercase;
+					margin: 0;
+					margin-bottom: 0.25em;
+				}
+
+				.content__message {
+					margin: 0;
+					font-size: 0.9rem;
+				}
+
+			}
+			
+		
+	} 
+
+
+
+.banner-wrap__dismiss, .banner-wrap__dismiss i,
+.toaster-wrap__dismiss, .toaster-wrap__dismiss i {
+			opacity: 0.7;
+			transition: all 0.25s ease-in-out;
+			cursor: pointer;
+
+			&:hover {
+				transition: all 0.25s ease-in-out;
+				opacity: 1;
+				
+			}
+		}
+
+
+
+
+
+.row-wrap {
+	display: flex; 
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	
+	h4 {
+		width: 100%;
+	}
+}

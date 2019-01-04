@@ -85,7 +85,7 @@
         "description": "",
         "backgroundColor": "",
         "order": -9,
-        "has_js": "false"
+        "has_js": "true"
     },
     {
         "component": "Checkbox",
@@ -117,6 +117,30 @@
         "description": "",
         "backgroundColor": "",
         "order": -13,
+        "has_js": "false"
+    },
+    {
+        "component": "Notifications",
+        "category": "Molecules",
+        "description": "",
+        "backgroundColor": "",
+        "order": -14,
+        "has_js": "false"
+    },
+    {
+        "component": "Navigation",
+        "category": "Organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -15,
+        "has_js": "false"
+    },
+    {
+        "component": "Table",
+        "category": "Molecules",
+        "description": "",
+        "backgroundColor": "",
+        "order": -16,
         "has_js": "false"
     }
 ]

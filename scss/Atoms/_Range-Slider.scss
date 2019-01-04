@@ -5,10 +5,10 @@ input[type="range"] {
 	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: $tertiary-color-1;
 	height: 2px;
 	border-radius: 1px;	
-	color: #fff;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
 
 	&::-webkit-slider-thumb, &::-moz-slider-thumb, &::-ms-slider-thumb {
 		appearance: none;
@@ -27,4 +27,74 @@ input[type="range"] {
 
 
 
+$track-w: 12.5em;
+$track-h: .25em;
+$thumb-d: 1.5em;
+$track-c: #ccc;
+$filll-c: blue;
+
+@mixin track($fill: 0) {
+    box-sizing: border-box;
+    border: none;
+    width: $track-w; height: $track-h;
+    background: $track-c;
+    border-radius: 1em;
+    
+    @if $fill == 1 {
+        .js & {
+            background: linear-gradient($filll-c, $track-c)
+                0/ var(--sx) 100% no-repeat $track-c;
+        }
+    }
+}
+
+@mixin fill() {
+    height: $track-h;
+    background: $filll-c
+}
+
+@mixin thumb() {
+    box-sizing: border-box;
+    border: none;
+    width: $thumb-d; height: $thumb-d;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+}
+
+[type='range'] {
+    &, &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+    }
+    
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--val) - var(--min))/var(--range));
+    --sx: calc(.5*#{$thumb-d} + var(--ratio)*(100% - #{$thumb-d}));
+    margin: 0;
+    padding: 0;
+    width: $track-w; height: $thumb-d;
+    background: transparent;
+    font: 1em/1 arial, sans-serif;
+    
+    &::-webkit-slider-runnable-track {
+        @include track(1)
+    }
+    &::-moz-range-track { @include track }
+    &::-ms-track { @include track }
+    
+    &::-moz-range-progress { @include fill }
+    &::-ms-fill-lower { @include fill }
+    
+    &::-webkit-slider-thumb {
+        margin-top: .5*($track-h - $thumb-d);
+        @include thumb
+    }
+    &::-moz-range-thumb { @include thumb }
+    &::-ms-thumb {
+        margin-top: 0;
+        @include thumb
+    }
+    
+    &::-ms-tooltip { display: none }
+}
 

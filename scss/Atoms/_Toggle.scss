@@ -6,6 +6,7 @@ label.switch {
   display: inline-block;
   min-width: 50px;
   height: 15px;
+  margin: 1em;
 
 	 input[type="checkbox" i], input[type="checkbox"] { 
 	  appearance: none;
@@ -62,5 +63,12 @@ label.switch {
 	.slider.round:before {
 	  border-radius: 50%;
 	}
-
+	
 }
+
+
+	input[type="checkbox"]:disabled + .slider{
+			opacity: .5;
+			cursor: initial;
+			pointer-events: none;
+	}
