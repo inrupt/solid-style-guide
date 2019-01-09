@@ -1,8 +1,22 @@
-  "title": "Inrupt Live Style Guide",
-  "description": "Atomic Live Style Guide for front-end components, and styles"
-  "main": "README.md",
-  "version": "1.0.0",
-  "repository": {
+
+
+  {
+    "name": "inrupt-atomic-styleguide",
+    "description": "Atomic live styleguide for FE components and styles",
+    "version": "1.0.0",
+    "main": "index.php",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
       "type": "git",
       "url": "https://github.com/janeirodigital/inrupt-atomic-styleguide"
+    },
+    "keywords": [],
+    "author": "Tony Morelli",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/janeirodigital/inrupt-atomic-styleguide/issues"
+    },
+    "homepage": "https://github.com/janeirodigital/inrupt-atomic-styleguide/README.md"
   }
