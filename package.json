@@ -1,0 +1,8 @@
+  "title": "Inrupt Live Style Guide",
+  "description": "Atomic Live Style Guide for front-end components, and styles"
+  "main": "README.md",
+  "version": "1.0.0",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/janeirodigital/inrupt-atomic-styleguide"
+  }
