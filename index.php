@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="refresh" content="0; URL='/atomic-core/'" />
+
     <title>Title of the document</title>
 
     <?php include("atomic-head.php"); ?>
