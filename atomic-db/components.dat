@@ -142,5 +142,21 @@
         "backgroundColor": "",
         "order": -16,
         "has_js": "false"
+    },
+    {
+        "component": "Grid",
+        "category": "Core",
+        "description": "",
+        "backgroundColor": "",
+        "order": -17,
+        "has_js": "false"
+    },
+    {
+        "component": "Card",
+        "category": "Atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -18,
+        "has_js": "false"
     }
 ]

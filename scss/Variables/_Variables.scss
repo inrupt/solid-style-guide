@@ -49,6 +49,12 @@ $color: $default;
   margin-bottom: 3em;
 }
 
+.wrap {
+  display: flex;
+  justify-content: space-around;
+
+}
+
  
 /* Gradient Functions */
 
@@ -137,7 +143,7 @@ $prefixes: -webkit-, -moz-, -o-, "";
 
 /* Box Shadow Mixin Controller */
 
-@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 4px, $color: $default) {
   box-shadow: $x-axis $y-axis $blur $color;
   -webkit-box-shadow: $x-axis $y-axis $blur $color;
   -moz-box-shadow: $x-axis $y-axis $blur $color;
