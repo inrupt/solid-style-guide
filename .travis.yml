@@ -1,7 +1,15 @@
 language: php
+php:
+  - 7.1
 branches:
   only:
   - master
+before_script:
+  - env
+  - pwd
+  - ls -alrt
+  - php -version
+script: echo "ToDo... test like phpunit..."
 deploy:
   provider: elasticbeanstalk
   access_key_id:
