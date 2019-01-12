@@ -1,0 +1,24 @@
+/* scss/Atoms/_Card.scss */
+
+
+.card {
+	display: flex;
+	@include borderRadius(4px);
+	@include box-shadow(0, 1px, 5px, rgba(0,0,0,0.2));
+	max-width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+	width: 100%;
+    min-height: 320px;
+    cursor: pointer;
+    border: 1px solid rgba($primary-color, 0);
+    transition: all .25s ease-in-out;
+
+
+
+    	&:hover {
+    		border: 1px solid rgba($primary-color, 1);
+    		transition: all .25s ease-in-out;
+    	}
+}
