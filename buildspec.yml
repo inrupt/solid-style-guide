@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pwd
+      - ls -alrt
+      - env
+      - echo "$application"
+      - echo "${deploy-key}"
+  build:
+    commands:
+      - echo "skipping build initially"
+  post_build:
+    commands:
+      - echo "skipping install initially"
+
