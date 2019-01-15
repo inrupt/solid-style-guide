@@ -2,7 +2,7 @@
 
 # Courtesy of https://github.com/thii/aws-codebuild-extras
 
-/bin/bash -version
+# /bin/bash -version
 
 export CI=true
 export CODEBUILD=true
@@ -58,4 +58,7 @@ while [[ $SAFE_GIT_BRANCH =~ $re ]] ; do
   SAFE_GIT_BRANCH=${BASH_REMATCH[1]}-${BASH_REMATCH[2]}
 done
 echo "export SAFE_GIT_BRANCH=$SAFE_GIT_BRANCH"
+
+
+env
 
