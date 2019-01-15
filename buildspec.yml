@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pwd
+      - ls -alrt
+      - . ./codebuild-extras.sh 2>/dev/null
+      - echo "Build branch ${CODEBUILD_GIT_BRANCH}"
+      - echo "Safe branch  ${CODEBUILD_GIT_CLEAN_BRANCH}"
+      - echo "__________ Building $application __________"
+  build:
+    commands:
+      - echo "No explicit build/test commands yet..."
+  post_build:
+    commands:
+      - echo "No explicit post build commands yet..."
+artifacts:
+  files:
+    - atomic-db/**/*
+    - ./*.php
+    - config.codekit
+    - ./*.json
+    - scss/**/*
+    - atomic-core/**/*
+    - components/**/*
+    - css/**/*
+    - js/**/*
+  name: inrupt-live-style-guide-${CODEBUILD_GIT_CLEAN_BRANCH}-$(date +%Y-%m-%d_%H-%M-%S).zip
+
