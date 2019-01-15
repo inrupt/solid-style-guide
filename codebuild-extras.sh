@@ -2,6 +2,8 @@
 
 # Courtesy of https://github.com/thii/aws-codebuild-extras
 
+/bin/bash -version
+
 export CI=true
 export CODEBUILD=true
 
