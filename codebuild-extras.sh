@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Courtesy of https://github.com/thii/aws-codebuild-extras
 
