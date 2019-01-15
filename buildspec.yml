@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - echo "Release 1.0.0"
       - pwd
       - ls -alrt
       - . ./codebuild-extras.sh 2>/dev/null
