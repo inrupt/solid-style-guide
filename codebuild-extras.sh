@@ -50,3 +50,10 @@ export CODEBUILD_BUILD_URL=https://$AWS_DEFAULT_REGION.console.aws.amazon.com/co
 
 echo "export CODEBUILD_GIT_BRANCH=$CODEBUILD_GIT_BRANCH"
 
+SAFE_GIT_BRANCH=${CODEBUILD_GIT_BRANCH}
+re='(.*)/+(.*)'
+while [[ $SAFE_GIT_BRANCH =~ $re ]] ; do
+  SAFE_GIT_BRANCH=${BASH_REMATCH[1]}-${BASH_REMATCH[2]}
+done
+echo "export SAFE_GIT_BRANCH=$SAFE_GIT_BRANCH"
+

@@ -6,9 +6,8 @@ phases:
       - pwd
       - ls -alrt
       - . ./codebuild-extras.sh 2>/dev/null
-      - echo "------ ${CODEBUILD_GIT_BRANCH} ------"
+      - echo "------ ${CODEBUILD_GIT_BRANCH} (SAFE: ${SAFE_GIT_BRANCH}) ------"
       - echo "__________ Building $application __________"
-      - export SAFE_GIT_BRANCH=${CODEBUILD_GIT_BRANCH} ; re='(.*)/+(.*)' ; while [[ $SAFE_GIT_BRANCH =~ $re ]]; do SAFE_GIT_BRANCH=${BASH_REMATCH[1]}-${BASH_REMATCH[2]}; done ; echo ${SAFE_GIT_BRANCH}
   build:
     commands:
       - echo "No explicit build/test commands yet..."
