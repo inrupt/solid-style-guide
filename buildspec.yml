@@ -18,14 +18,14 @@ phases:
       - echo "No explicit post build commands yet..."
 artifacts:
   files:
-    - atomic-db
+    - atomic-db/**/*
     - ./*.php
     - config.codekit
     - ./*.json
-    - scss
-    - atomic-core
-    - components
-    - css
-    - js
+    - scss/**/*
+    - atomic-core/**/*
+    - components/**/*
+    - css/**/*
+    - js/**/*
   name: inrupt-live-style-guide-${CODEBUILD_GIT_CLEAN_BRANCH}-$(date +%Y-%m-%d_%H-%M-%S).zip
 
