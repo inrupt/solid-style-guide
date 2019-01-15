@@ -3,16 +3,28 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Version alpha.00005"
       - pwd
       - ls -alrt
-      - env
-      - echo "$application"
-      - echo "${deploy_key}"
+      - . ./codebuild-extras.sh 2>/dev/null
+      - echo "------ ${CODEBUILD_GIT_BRANCH} ------"
+      - echo "__________ Building $application __________"
   build:
     commands:
-      - echo "skipping build initially"
+      - echo "No explicit build/test commands yet..."
   post_build:
     commands:
-      - echo "skipping install initially"
+      - echo "No explicit post build commands yet..."
+
+artifacts:
+  files:
+    - atomic-db
+    - *.php
+    - config.codekit
+    - *.json
+    - scss
+    - atomic-core
+    - components
+    - css
+    - js
+  name: inrupt-live-style-guide-${CODEBUILD_GIT_BRANCH}-$(date +%Y-%m-%d_%H-%M-%S).zip"
 
