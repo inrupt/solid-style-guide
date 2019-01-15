@@ -6,7 +6,8 @@ phases:
       - pwd
       - ls -alrt
       - . ./codebuild-extras.sh 2>/dev/null
-      - echo "------ $CODEBUILD_GIT_BRANCH SAFE - SAFE: $SAFE_GIT_BRANCH ------"
+      - echo "${CODEBUILD_GIT_BRANCH}"
+      - echo "${SAFE_GIT_BRANCH}"
       - echo "__________ Building $application __________"
   build:
     commands:
