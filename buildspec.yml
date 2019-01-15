@@ -3,12 +3,12 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Version alpha.00004"
+      - echo "Version alpha.00005"
       - pwd
       - ls -alrt
       - env
       - echo "$application"
-      - echo "${deploy-key}"
+      - echo "${deploy_key}"
   build:
     commands:
       - echo "skipping build initially"
