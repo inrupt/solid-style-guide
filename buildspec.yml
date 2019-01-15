@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Version alpha.00001"
+      - echo "Version alpha.00002"
       - pwd
       - ls -alrt
       - env
