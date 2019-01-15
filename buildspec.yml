@@ -5,7 +5,7 @@ phases:
     commands:
       - pwd
       - ls -alrt
-      - ./codebuild-extras.sh
+      - sh ./codebuild-extras.sh
       - . ./codebuild-extras.sh 2>/dev/null
       - echo "${CODEBUILD_GIT_BRANCH}"
       - echo "${SAFE_GIT_BRANCH}"
