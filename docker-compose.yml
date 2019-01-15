@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    image: "nimmis/apache-php7"
+    ports:
+      - "8080:80"
+    volumes:
+      - "./:/var/www/html"
