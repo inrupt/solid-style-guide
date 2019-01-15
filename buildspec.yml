@@ -26,5 +26,5 @@ artifacts:
     - components
     - css
     - js
-  name: inrupt-live-style-guide-${CODEBUILD_GIT_BRANCH}-$(date +%Y-%m-%d_%H-%M-%S).zip"
+  name: inrupt-live-style-guide-${CODEBUILD_GIT_BRANCH}-$(date +%Y-%m-%d_%H-%M-%S).zip
 
