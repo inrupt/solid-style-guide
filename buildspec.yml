@@ -7,8 +7,8 @@ phases:
       - ls -alrt
       - sh ./codebuild-extras.sh
       - . ./codebuild-extras.sh 2>/dev/null
-      - echo "${CODEBUILD_GIT_BRANCH}"
-      - echo "${SAFE_GIT_BRANCH}"
+      - echo "Build branch: ${CODEBUILD_GIT_BRANCH}"
+      - echo "Safe branch: ${CODEBUILD_GIT_CLEAN_BRANCH}"
       - echo "__________ Building $application __________"
   build:
     commands:
@@ -27,5 +27,5 @@ artifacts:
     - components
     - css
     - js
-  name: inrupt-live-style-guide-${SAFE_GIT_BRANCH}-$(date +%Y-%m-%d_%H-%M-%S).zip
+  name: inrupt-live-style-guide-${CODEBUILD_GIT_CLEAN_BRANCH}-$(date +%Y-%m-%d_%H-%M-%S).zip
 
