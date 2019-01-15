@@ -17,9 +17,9 @@ phases:
 artifacts:
   files:
     - atomic-db
-    - *.php
+    - ./*.php
     - config.codekit
-    - *.json
+    - ./*.json
     - scss
     - atomic-core
     - components
