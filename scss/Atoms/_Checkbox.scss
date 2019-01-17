@@ -40,6 +40,23 @@ label.checkbox {
 			}
 		}
 
+		&[intermediate] {
+			border-color: $link-active-color;
+			color: $link-active-color;
+
+			&::before  {
+				color: $link-active-color;
+				content: "\f068";
+				font-family: "FontAwesome";
+				align-self: center;
+				position: relative;
+				font-size: 1.5em;
+				display: inline-block;
+				top: 0.1em;
+				left: .2em;
+			}
+		}
+
 
 	}
 
@@ -48,4 +65,6 @@ label.checkbox {
 			cursor: initial;
 			pointer-events: none;
 		}
+
+
 }

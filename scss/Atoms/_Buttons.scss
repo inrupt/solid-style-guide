@@ -1,7 +1,10 @@
 /* scss/Atoms/_Buttons.scss */
 
 
-button {
+button,
+link, 
+.ids-button, 
+.ids-link {
 	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -9,7 +12,7 @@ button {
 	font-family: $primary-font-stack;
 	color: $primary-text-color;
 	border: 1px solid $tertiary-color-1;
-	border-radius: 4px;
+	@include borderRadius(4px);
 	cursor: pointer;
 	font-size: .8em;
 	padding: 0.5em 1em;
