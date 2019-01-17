@@ -77,9 +77,7 @@
 	margin-bottom: 1em;
 	@include borderRadius(4px);
 	@include box-shadow();
-	max-width: 40%;
 	width: 100%;
-	margin: 0 1em;
 	cursor: pointer;
 
 
@@ -169,8 +167,6 @@
 }
 
 	.toaster-wrap {
-	  max-width: 40% !important;
-	  width: 100% !important;
 	  @include borderRadius(4px);
 	  @include box-shadow();
 

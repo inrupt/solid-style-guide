@@ -2,6 +2,39 @@
 
 
 
+
+
+/* CSS Grid System */
+
+
+.grid {
+    display: grid;
+
+    &__two-col {
+        grid-column: 2;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*!
 Pure v1.0.0
 Copyright 2013 Yahoo!
