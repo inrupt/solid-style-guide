@@ -11,8 +11,16 @@
     display: grid;
 
     &__two-col {
-        grid-column: 2;
+         grid-template-columns: 45% 45%;
+         grid-gap: 10%;
     }
+
+    &__three-col {
+         grid-template-columns: 33% 33% 33%;
+         grid-gap: 1%;
+    }
+
+    
 }
 
 

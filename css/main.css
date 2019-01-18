@@ -226,7 +226,11 @@ ol {
 .grid {
   display: grid; }
   .grid__two-col {
-    grid-column: 2; }
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%; }
+  .grid__three-col {
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 1%; }
 
 /*!
 Pure v1.0.0
@@ -799,6 +803,7 @@ link,
   border-radius: 4px;
   cursor: pointer;
   font-size: .8em;
+  text-decoration: none;
   padding: 0.5em 1em;
   transition: 0.25s all ease-in-out;
   outline: none; }
