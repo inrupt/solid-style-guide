@@ -202,8 +202,8 @@ if (file_exists($filename)) {
 
 
 <?php 
-  //Uncomment the following include to enable client mode.
-  //include "clientmode.php" 
+  // Uncomment the following include to enable client mode.
+  include "clientmode.php" 
 ?>
 
 

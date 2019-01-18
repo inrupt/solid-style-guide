@@ -1,6 +1,6 @@
 <!-- components/Core/Typography.php -->
 
-<div class="grid">
+<div class="grid grid__two-col">
 	<section class="text-raleway card">
 		<h5 class="text-raleway__title">Raleway</h5>
 		<p class="text-raleway__sub-title">Primary Typography - Regular, Bold </p>
