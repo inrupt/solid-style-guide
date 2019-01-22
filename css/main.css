@@ -1747,7 +1747,9 @@ header.header, footer.footer {
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1); }
+  -o-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  max-height: 60px;
+  height: 100%; }
   header.header .header-wrap, header.header .footer-wrap, footer.footer .header-wrap, footer.footer .footer-wrap {
     display: flex;
     justify-content: flex-start;
@@ -1763,6 +1765,11 @@ header.header, footer.footer {
       header.header .header-wrap .logo__item, header.header .footer-wrap .logo__item, footer.footer .header-wrap .logo__item, footer.footer .footer-wrap .logo__item {
         padding: 0 !important;
         margin: 0; }
+    header.header .header-wrap .logo-block img, header.header .footer-wrap .logo-block img, footer.footer .header-wrap .logo-block img, footer.footer .footer-wrap .logo-block img {
+      max-height: 60px;
+      height: 100%;
+      max-width: 100%;
+      width: 100%; }
   header.header__mobile, footer.footer__mobile {
     width: 100%;
     max-width: 500px; }
@@ -1774,7 +1781,8 @@ header.header, footer.footer {
         header.header__mobile .header-wrap nav.nav__primary, footer.footer__mobile .header-wrap nav.nav__primary {
           margin-left: 0; }
           header.header__mobile .header-wrap nav.nav__primary ul li, footer.footer__mobile .header-wrap nav.nav__primary ul li {
-            padding: .5em; }
+            padding: .5em;
+            line-height: 1; }
             header.header__mobile .header-wrap nav.nav__primary ul li.user-avatar, footer.footer__mobile .header-wrap nav.nav__primary ul li.user-avatar {
               padding: .5rem 1.5em; }
               header.header__mobile .header-wrap nav.nav__primary ul li.user-avatar a span.icon img, footer.footer__mobile .header-wrap nav.nav__primary ul li.user-avatar a span.icon img {
@@ -1788,12 +1796,14 @@ header.header, footer.footer {
                 header.header__mobile .header-wrap nav.nav__primary ul li.has-children span.label, footer.footer__mobile .header-wrap nav.nav__primary ul li.has-children span.label {
                   font-size: 1.2rem;
                   margin-right: .5em; }
-        header.header__mobile .header-wrap nav.nav__toolbar ul li, footer.footer__mobile .header-wrap nav.nav__toolbar ul li {
-          border: none;
-          padding-left: 0.75em;
-          padding-right: 0.75em; }
-          header.header__mobile .header-wrap nav.nav__toolbar ul li.has-children span.label, footer.footer__mobile .header-wrap nav.nav__toolbar ul li.has-children span.label {
-            font-size: 1.3rem; }
+        header.header__mobile .header-wrap nav.nav__toolbar ul, footer.footer__mobile .header-wrap nav.nav__toolbar ul {
+          height: 60px; }
+          header.header__mobile .header-wrap nav.nav__toolbar ul li, footer.footer__mobile .header-wrap nav.nav__toolbar ul li {
+            border: none;
+            padding-left: 0.75em;
+            padding-right: 0.75em; }
+            header.header__mobile .header-wrap nav.nav__toolbar ul li.has-children span.label, footer.footer__mobile .header-wrap nav.nav__toolbar ul li.has-children span.label {
+              font-size: 1.3rem; }
 
 nav.nav ul {
   list-style: none;
@@ -1801,21 +1811,29 @@ nav.nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  min-height: 60px;
+  height: 100%; }
   nav.nav ul li {
     display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: no-wrap;
     cursor: pointer;
+    line-height: 1;
     transition: all 0.5s ease-in-out;
     background: rgba(124, 77, 255, 0);
     background: -webkit-linear-gradient(left, rgba(124, 77, 255, 0) 0%, rgba(24, 169, 230, 0) 50%, rgba(1, 201, 234, 0) 100%);
     background: linear-gradient(to right, rgba(124, 77, 255, 0) 0%, rgba(24, 169, 230, 0) 50%, rgba(1, 201, 234, 0) 100%); }
-    nav.nav ul li a {
+    nav.nav ul li a, nav.nav ul li button {
       text-decoration: none;
       font-weight: 700;
-      text-align: center; }
+      text-align: center;
+      appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      background: none;
+      padding: 0; }
     nav.nav ul li span.icon {
       margin: 0 auto;
       text-align: center; }
@@ -1845,21 +1863,29 @@ nav.nav__primary {
       transition: all 0.5s ease-in-out; }
 nav.nav__toolbar {
   margin-left: auto; }
-  nav.nav__toolbar ul li {
-    padding: .5rem 1.5em;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    border-left: 1px solid rgba(8, 53, 117, 0.1);
-    min-height: 60px;
-    height: 100%; }
-    nav.nav__toolbar ul li:hover {
-      background: rgba(124, 77, 255, 0.2);
-      background: -webkit-linear-gradient(left, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%);
-      background: linear-gradient(to right, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%);
-      transition: all 0.5s ease-in-out; }
-    nav.nav__toolbar ul li a span img {
-      min-height: 25px;
-      min-width: 25px; }
+  nav.nav__toolbar ul {
+    height: 60px;
+    display: flex; }
+    nav.nav__toolbar ul li {
+      height: 100%;
+      padding: .5rem 1.5em;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      border-left: 1px solid rgba(8, 53, 117, 0.1); }
+      nav.nav__toolbar ul li:hover {
+        background: rgba(124, 77, 255, 0.2);
+        background: -webkit-linear-gradient(left, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%);
+        background: linear-gradient(to right, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%);
+        transition: all 0.5s ease-in-out; }
+      nav.nav__toolbar ul li a, nav.nav__toolbar ul li button {
+        appearance: none;
+        -webkit-appearance: none;
+        border: none;
+        background: none;
+        padding: 0; }
+        nav.nav__toolbar ul li a span img, nav.nav__toolbar ul li button span img {
+          min-height: 25px;
+          min-width: 25px; }
 nav.nav span.icon.notification {
   position: relative;
   top: -.5em; }
@@ -1879,15 +1905,18 @@ nav.nav span.badge {
   margin-left: 1.75em; }
 
 /* Footer Navigation Mobile - Specific Overrides */
-footer.footer .footer-wrap {
-  padding-left: 0; }
-  footer.footer .footer-wrap nav.nav__primary {
-    margin-left: 0;
-    width: 100%; }
-    footer.footer .footer-wrap nav.nav__primary ul {
+footer.footer {
+  /* position: fixed; //remove comments for fixed positioned footer  */
+  /* bottom: 0; //remove comments for bottom fixed positioned footer  */ }
+  footer.footer .footer-wrap {
+    padding-left: 0; }
+    footer.footer .footer-wrap nav.nav__primary {
+      margin-left: 0;
       width: 100%; }
-      footer.footer .footer-wrap nav.nav__primary ul li {
-        padding: .5rem 0;
-        width: 100%;
-        align-items: center;
-        justify-content: space-evenly; }
+      footer.footer .footer-wrap nav.nav__primary ul {
+        width: 100%; }
+        footer.footer .footer-wrap nav.nav__primary ul li {
+          padding: .5rem 0;
+          width: 100%;
+          align-items: center;
+          justify-content: space-evenly; }
