@@ -173,6 +173,7 @@
 
 
 			&__content {
+				color: #fff;
 
 
 
@@ -181,11 +182,13 @@
 					text-transform: uppercase;
 					margin: 0;
 					margin-bottom: 0.25em;
+					color: #fff;
 				}
 
 				.content__message {
 					margin: 0;
 					font-size: 0.9rem;
+					color: #fff;
 				}
 
 			}
@@ -197,6 +200,7 @@
 
 .banner-wrap__dismiss, .banner-wrap__dismiss i,
 .toaster-wrap__dismiss, .toaster-wrap__dismiss i {
+			color: #fff;
 			opacity: 0.7;
 			transition: all 0.25s ease-in-out;
 			cursor: pointer;

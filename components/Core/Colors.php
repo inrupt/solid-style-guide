@@ -13,7 +13,7 @@
 
 <h4> Accent Colors <h4>
 
-<section class="grid grid__three-col">
+<section class="grid grid__three-column">
 	<div class="swatch swatch__item--secondary">
 		<p class="swatch__item__title">Deep Sky Blue</p>
 		<p class="swatch__item__value">#01C9EA</p>
