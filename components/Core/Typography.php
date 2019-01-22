@@ -1,6 +1,6 @@
 <!-- components/Core/Typography.php -->
 
-<div class="grid grid__two-column">
+<div class="grid grid__two-column demo">
 	<section class="text-raleway card">
 		<h5 class="text-raleway__title">Raleway</h5>
 		<p class="text-raleway__sub-title">Primary Typography - Regular, Bold </p>
@@ -30,7 +30,7 @@
 <h3>h3 Heading - Roboto - Light</h3>
 <h4>h4 Heading - Raleway - Bold</h4>
 <h5>h5 Heading - Raleway - Bold </h5>
-<h6>h5 Heading - Roboto - Bold</h6>
+<h6>h6 Heading - Roboto - Bold</h6>
 
 
 <p>lorem ipsum dolor sit amet. <a href="">This is a Link.</a></p>

@@ -4,7 +4,7 @@
 <h4>Card/Tiles</h4>
 
 
-<section class="wrap">
+<section class="grid grid__two-column demo">
     <div class="card">This is a card.</div>
     <div class="card">This is a card.</div>
 </section>
