@@ -5,6 +5,7 @@ header.header, footer.footer {
 	width: 100%;
 	@include box-shadow(0px, 1px, 4px);
 	height: 60px;
+	background: rgba(255,255,255,1); /* Default white background color for header bar. change this value to customize your header background color. */
 
 	.header-wrap, .footer-wrap {
 		display: flex;

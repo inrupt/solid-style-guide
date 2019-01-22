@@ -1748,7 +1748,9 @@ header.header, footer.footer {
   -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-  height: 60px; }
+  height: 60px;
+  background: white;
+  /* Default white background color for header bar. change this value to customize your header background color. */ }
   header.header .header-wrap, header.header .footer-wrap, footer.footer .header-wrap, footer.footer .footer-wrap {
     display: flex;
     justify-content: flex-start;
