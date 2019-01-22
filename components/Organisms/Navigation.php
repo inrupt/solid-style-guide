@@ -16,9 +16,9 @@
 
 					<nav role="nav" class="nav nav__toolbar">
 					    <ul>
-					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/gear.svg" /></span></a></li>
-					        <li><a href="#"><span class="icon notification"><img src="/atomic-core/img/icon/notification.svg" /><span class="badge">3</span></span></a></li>
-					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/user.svg" /></span></a></li>
+					        <li><button><span class="icon"><img src="/atomic-core/img/icon/gear.svg" /></span></button></li>
+					        <li><button ><span class="icon notification"><img src="/atomic-core/img/icon/notification.svg" /><span class="badge">3</span></span></button></li>
+					        <li><button ><span class="icon"><img src="/atomic-core/img/icon/user.svg" /></span></button></li>
 					    </ul>
 					</nav>
 		</section>
@@ -41,9 +41,9 @@
 
 					<nav role="nav" class="nav nav__toolbar">
 					    <ul>
-					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/add-hex.svg" /></span></a></li>
-					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/search.svg" /></span></a></li>
-					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/vert-menu.svg" /></span></a></li>
+					        <li><button><span class="icon"><img src="/atomic-core/img/icon/add-hex.svg" /></span></a></li>
+					        <li><button><span class="icon"><img src="/atomic-core/img/icon/search.svg" /></span></a></li>
+					        <li><button><span class="icon"><img src="/atomic-core/img/icon/vert-menu.svg" /></span></a></li>
 					    </ul>
 					</nav>
 		</section>
