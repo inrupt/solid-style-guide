@@ -222,15 +222,13 @@ ol {
       padding-bottom: 2em; }
 
 /* scss/Core/_Grid.scss */
-/* CSS Grid System */
+/* Grid System */
 .grid {
   display: grid; }
-  .grid__two-col {
-    grid-template-columns: 45% 45%;
-    grid-gap: 10%; }
-  .grid__three-col {
-    grid-template-columns: 33% 33% 33%;
-    grid-gap: 1%; }
+  .grid__two-column {
+    grid-template-columns: 1fr 1fr; }
+  .grid__three-column {
+    grid-template-columns: 1fr 1fr 1fr; }
 
 /*!
 Pure v1.0.0
@@ -1369,17 +1367,22 @@ input[type="range"] {
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
-  .toaster-wrap__content .content__title {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 0.25em; }
-  .toaster-wrap__content .content__message {
-    margin: 0;
-    font-size: 0.9rem; }
+  .toaster-wrap__content {
+    color: #fff; }
+    .toaster-wrap__content .content__title {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 0.25em;
+      color: #fff; }
+    .toaster-wrap__content .content__message {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #fff; }
 
 .banner-wrap__dismiss, .banner-wrap__dismiss i,
 .toaster-wrap__dismiss, .toaster-wrap__dismiss i {
+  color: #fff;
   opacity: 0.7;
   transition: all 0.25s ease-in-out;
   cursor: pointer; }

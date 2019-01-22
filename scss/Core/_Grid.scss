@@ -4,23 +4,22 @@
 
 
 
-/* CSS Grid System */
+/* Grid System */
 
 
 .grid {
     display: grid;
 
-    &__two-col {
-         grid-template-columns: 45% 45%;
-         grid-gap: 10%;
+    &__two-column {
+         grid-template-columns: 1fr 1fr;
+    }
+ 
+ 
+    &__three-column {
+         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    &__three-col {
-         grid-template-columns: 33% 33% 33%;
-         grid-gap: 1%;
-    }
 
-    
 }
 
 
