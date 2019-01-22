@@ -54,11 +54,11 @@ header.header, footer.footer {
 
 						ul {
 							li {
-								padding: .5em;
 								line-height: 1;
 
 								&.user-avatar {
-									padding: .5rem 1.5em;
+									padding-left:  1.5em;
+									padding-right:  1.5em;
 
 									a {
 										span.icon {
@@ -178,7 +178,8 @@ nav.nav {
 			
 			ul {
 				li {
-					padding: .5rem 2em;
+					padding-left: 2em;
+					padding-right: 2em;
 					cursor: pointer;
 					transition: all 0.5s ease-in-out;			       
 			        min-height: 60px;
@@ -202,7 +203,8 @@ nav.nav {
 
 				li {
 					height: 100%;
-					padding: .5rem 1.5em;
+					padding-left:  1.5em;
+					padding-right:  1.5em;
 					cursor: pointer;
 					transition: all 0.5s ease-in-out;
 			        border-left: 1px solid rgba($tertiary-color-2, 0.1);
@@ -271,7 +273,6 @@ footer.footer {
 			ul {
 				width: 100%;
 				li {
-					padding: .5rem 0;
 					width: 100%;				  				  
 				    align-items: center;
 				    justify-content: space-evenly;

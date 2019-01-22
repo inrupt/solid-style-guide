@@ -1781,10 +1781,10 @@ header.header, footer.footer {
         header.header__mobile .header-wrap nav.nav__primary, footer.footer__mobile .header-wrap nav.nav__primary {
           margin-left: 0; }
           header.header__mobile .header-wrap nav.nav__primary ul li, footer.footer__mobile .header-wrap nav.nav__primary ul li {
-            padding: .5em;
             line-height: 1; }
             header.header__mobile .header-wrap nav.nav__primary ul li.user-avatar, footer.footer__mobile .header-wrap nav.nav__primary ul li.user-avatar {
-              padding: .5rem 1.5em; }
+              padding-left: 1.5em;
+              padding-right: 1.5em; }
               header.header__mobile .header-wrap nav.nav__primary ul li.user-avatar a span.icon img, footer.footer__mobile .header-wrap nav.nav__primary ul li.user-avatar a span.icon img {
                 max-height: 40px; }
             header.header__mobile .header-wrap nav.nav__primary ul li.has-children, footer.footer__mobile .header-wrap nav.nav__primary ul li.has-children {
@@ -1848,7 +1848,8 @@ nav.nav ul {
 nav.nav__primary {
   margin-left: 1em; }
   nav.nav__primary ul li {
-    padding: .5rem 2em;
+    padding-left: 2em;
+    padding-right: 2em;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     min-height: 60px;
@@ -1868,7 +1869,8 @@ nav.nav__toolbar {
     display: flex; }
     nav.nav__toolbar ul li {
       height: 100%;
-      padding: .5rem 1.5em;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
       cursor: pointer;
       transition: all 0.5s ease-in-out;
       border-left: 1px solid rgba(8, 53, 117, 0.1); }
@@ -1916,7 +1918,6 @@ footer.footer {
       footer.footer .footer-wrap nav.nav__primary ul {
         width: 100%; }
         footer.footer .footer-wrap nav.nav__primary ul li {
-          padding: .5rem 0;
           width: 100%;
           align-items: center;
           justify-content: space-evenly; }
