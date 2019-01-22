@@ -46,6 +46,12 @@
 
 		}
 
+		&--error {
+			background-color: $error-color;	
+			color: #fff;	
+
+		}
+
 		/* Gradients */
 
 		&--primary-gradient {
@@ -162,6 +168,18 @@
 
 		}
 
+
+		&--error {
+			background-color: $error-color;
+			transition: all 0.25s ease-in-out;	
+
+			&:hover {
+				background-color: rgba($error-color, 1);
+				transition: all 0.25s ease-in-out;				
+			}
+
+		}
+
 		
 		
 }
@@ -215,14 +233,8 @@
 
 
 
+/* Demo Display Styles for Toaster Wrap */
 
-.row-wrap {
-	display: flex; 
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: flex-start;
-	
-	h4 {
-		width: 100%;
-	}
+section.grid.grid__three-column.demo {
+	grid-gap: 1%;
 }
