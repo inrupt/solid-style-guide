@@ -881,13 +881,14 @@ input[type="range"] {
   flex-direction: column;
   justify-content: center;
   padding: 1em 0;
-  cursor: pointer;
   border: 1px solid rgba(124, 77, 255, 0);
   transition: all .25s ease-in-out;
   width: 100%; }
-  .card.interactive:hover {
-    border: 1px solid #7c4dff;
-    transition: all .25s ease-in-out; }
+  .card.interactive {
+    cursor: pointer; }
+    .card.interactive:hover {
+      border: 1px solid #7c4dff;
+      transition: all .25s ease-in-out; }
 
 /* scss/Molecules/_Notifications.scss */
 /* Banner Notification Styles */
