@@ -25,12 +25,12 @@
 
 
 
-<h1>h1 Heading - Raleway - Bold</h1>
-<h2>h2 Heading - Raleway - Light</h2>
-<h3>h3 Heading - Roboto - Light</h3>
-<h4>h4 Heading - Raleway - Bold</h4>
+<h1>h1 Heading - Raleway - Bold </h1>
+<h2>h2 Heading - Raleway - Light </h2>
+<h3>h3 Heading - Roboto - Light </h3>
+<h4>h4 Heading - Raleway - Bold </h4>
 <h5>h5 Heading - Raleway - Bold </h5>
-<h6>h6 Heading - Roboto - Bold</h6>
+<h6>h6 Heading - Roboto - Bold </h6>
 
 
 <p>lorem ipsum dolor sit amet. <a href="">This is a Link.</a></p>
