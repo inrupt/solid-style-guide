@@ -1768,7 +1768,8 @@ header.header, footer.footer {
         padding: 0 !important;
         margin: 0; }
     header.header .header-wrap .logo-block, header.header .footer-wrap .logo-block, footer.footer .header-wrap .logo-block, footer.footer .footer-wrap .logo-block {
-      padding-left: 1.5rem; }
+      padding-left: 1.5rem;
+      /* change to relative padding needed for logo alignment */ }
       header.header .header-wrap .logo-block img, header.header .footer-wrap .logo-block img, footer.footer .header-wrap .logo-block img, footer.footer .footer-wrap .logo-block img {
         max-height: 60px;
         height: 100%;
