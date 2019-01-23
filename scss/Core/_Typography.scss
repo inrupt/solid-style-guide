@@ -88,6 +88,8 @@ h1 {
 	&.title--white {
 		color: #ffffff;
 	}
+
+
 }
 
 h2 {
@@ -123,6 +125,16 @@ h6 {
  	font-size: 0.8rem;
 }
 
+
+h1,
+h2, 
+h3, 
+h5, 
+h6 {
+	a {
+		text-decoration: none;
+	}
+}
 
 small {
 	font-family: $secondary-font-stack;
