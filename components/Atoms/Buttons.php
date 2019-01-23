@@ -22,7 +22,7 @@
 <div class="grid grid__two-column demo">
 	<a href="" class="ids-link-filled ids-link-filled--primary">Filled Button</a>
 	<a href="" class="ids-button-filled ids-button-filled--secondary">Filled Button</a>
-		<a href="" class="ids-link-stroke ids-link-stroke--primary">Filled Button</a>
-	<a href="" class="ids-button-stroke ids-button-stroke--secondary">Filled Button</a>
+		<a href="" class="ids-link-stroke ids-link-stroke--primary">Button</a>
+	<a href="" class="ids-button-stroke ids-button-stroke--secondary">Button</a>
 </div>
 </div>
