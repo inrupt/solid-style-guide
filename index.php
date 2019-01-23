@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; URL='/atomic-core/'" />
+    <meta http-equiv="refresh" content="0; URL='/atomic-core/?cat=Core'" />
 
     <title>Title of the document</title>
 
@@ -53,15 +53,6 @@
 <div class="indexBlock">
 
     <img class="logo" src="../atomic-core/img/inrupt.svg">
-
-    <p>By default, Atomic Docs is set up for Sass. If you are using Less or Sass check out this <a href="http://atomicdocs.io/docs/less-stylus">post</a>.</p>
-
-    <p>Set up in your php local environment and configure your preprocessor and start
-        <a href="atomic-core/?cat=readme">here</a>.</p>
-
-    <p>This GIF pretty much explains what to do after that. Otherwise you can checkout
-        this <a href="https://www.youtube.com/watch?v=e8LjP6ynryQ" target="_blank">video</a>.</p><br/>
-    <img class="shadow" src="http://atomicdocs.io/img/demo1.gif"/>
 
 </div>
 </body>
