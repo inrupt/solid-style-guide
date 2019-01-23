@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; URL='/atomic-core/?cat=Core'" />
+    <meta http-equiv="refresh" content="0; URL='/atomic-core/'" />
 
     <title>Title of the document</title>
 
@@ -53,6 +53,7 @@
 <div class="indexBlock">
 
     <img class="logo" src="../atomic-core/img/inrupt.svg">
+
 
 </div>
 </body>
