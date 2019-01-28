@@ -11,7 +11,7 @@
     <base href="../">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>Inrupt Atomic Styleguide</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,7 +19,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="atomic-core/css/site.css">
-    
+
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <link rel="stylesheet" href="atomic-core/font-awesome/css/font-awesome.min.css">
@@ -35,9 +35,9 @@
         }
     ?>
 
-    
+
     <?php
-    
+
         $parse_uri = explode( 'wp-content', $_SERVER['SCRIPT_FILENAME'] );
 
         $file_name =  $parse_uri[0] . 'wp-load.php';
@@ -48,7 +48,7 @@
 
     ?>
 
-    
+
 
 
 </head>
