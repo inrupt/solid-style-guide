@@ -85,6 +85,14 @@
 
 			}
 
+			&--warning {
+				background-color: $warning-color;	
+			}
+
+			&--error {
+				background-color: $error-color;	
+			}
+
 			/* Gradients */
 
 			&--primary-gradient {

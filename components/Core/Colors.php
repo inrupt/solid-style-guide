@@ -37,6 +37,19 @@
 </section>
 
 
+<h4> Utility Colors <h4>
+
+<section class="grid grid__three-column">
+	<div class="swatch swatch__item--warning">
+		<p class="swatch__item__title">Warning Orange</p>
+		<p class="swatch__item__value">#FFA600</p>
+	</div>
+	<div class="swatch swatch__item--error">
+		<p class="swatch__item__title">Error Red</p>
+		<p class="swatch__item__value">#D0021B</p>
+	</div>
+</section>
+
 
 <h4> Gradients </h4>
 

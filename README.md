@@ -1,48 +1,40 @@
-# Atomic Docs
 
-Atomic Docs is a front end style guide generator and component manager. Atomic Docs is built in PHP and Sass. Inspired by Brad Frost's Atomic Design principles.
+# inrupt Atomic Design System
 
-Atomic Docs works with Sass, Less and Stylus.
+A Live respository of UI styles and UX patterns utilized by the inrupt generator for Solid React applications (<a href="https://github.com/Inrupt-inc/generator-solid-react" target="_blank">https://github.com/Inrupt-inc/generator-solid-react</a>). By leveraging Nick Berens' Atomic Docs framework (inspired by Brad Frost's Atomic design principles) as a base style guide/design system generation tool, the inrupt creative and front-end development team define UI/UX decisions and styled components are documented here to be used across inrupt applications. 
 
-Documentation can be found at <a href="http://atomicdocs.io/">AtomicDocs.io</a>.
+This design system can be downloaded and customized for unique theming in your solid react projects. 
 
-<img src="atomic-core/img/demo1.gif" alt="atomic docs gif" />
+inrup Atomic Design System Demo: <a href="https://design.inrupt.com" target="_blank">https://design.inrupt.com</a>
 
-##Set up
+Note: As this is a living design system, new compenents are continually added and refactored as the design system evolves. 
+
+
+## Set up:
 
 1. Download Atomic Docs and add to your local PHP environment.
 2. Configure your preprocessor to output `scss/main.scss` to `css/main.css`.
 3. Go to `http://localhost/atomic-docs/atomic-core/index.php` and get started.
 
-##Document
-Have full documentation to hand off to other teams, internal or external.
 
-<img src="atomic-core/img/document.png" />
+## Built With:
+Built using Nick Berens' Atomic Docs Framework based in PHP and SASS/SCSS. 
 
-##Edit in the Browser
-Edit your components directly in the browser using the Ace.js editor.
-
-<img src="atomic-core/img/editor-gif.gif" />
+Additional documentation regarding the Atomic Docs framework and installation can be found at <a href="http://atomicdocs.io/">AtomicDocs.io</a>.
 
 
-##Organize
-Organize all your components under categories that you name. "Base", "Modules", "Atoms" etc...
+## Goals
 
-<img src="atomic-core/img/organize.png"/>
+We started this project wanting to create a home where creatives and developers could document UI/UX patterns & design decisions, and UI styles and FE guidelines. This framework allows us to reduce siloed knowledge, crafting a source of truth for inrupt application interfaces. This documentation and examples can then be utilized to accellerate additional application projects.  
 
-##Manage
-Manage all your components. Move, rename and delete with a clean GUI interface.
+As we continue working on new applications and features, the inrupt Atomic Design System will evolve as we commit and release new patterns and features. 
 
-<img src="atomic-core/img/manage.gif" />
 
-##Save time
-Does all the "wiring" of your SCSS partials. Never write `@import "partial-name";` again.
 
-<img width="500" src="atomic-core/img/helpful.png"/>
 
-Documentation can be found at <a href="http://atomicdocs.io/">AtomicDocs.io</a>.
 
-##Join the conversation!
-We'd love to hear your thoughts and suggestions. Join us on <a href="https://nick578.typeform.com/to/NwX0ox">Slack</a>.
+
+
+
 
 
