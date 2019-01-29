@@ -75,6 +75,31 @@
 </div>
 
 
+<!-- /Start Mobile Navigation Panel -->
+<section class="mobile-navigation-panel hidden">
+	<div class="mobile-navigation-panel__wrap">
+		<div class="close-panel__toggle"><button><i class="icon fa fa-close"></i></button></div>
+		<nav role="nav" class="nav nav__primary">
+					    <ul>
+					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/things.svg" /></span><span class="label">Things</span></a></li>
+					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/files.svg" /></span><span class="label">Files</span></a></li>
+					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/people.svg" /></span><span class="label">People</span></a></li>
+					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/apps.svg" /></span><span class="label">Apps</span></a></li>
+					    </ul>
+					</nav>
+
+					<nav role="nav" class="nav nav__toolbar">
+					    <ul>					       
+					        <li><button><span class="icon"><img src="/atomic-core/img/icon/user.svg" /></span><span class="label">Profile</span></button></li>
+					        <li><button><span class="icon"><img src="/atomic-core/img/icon/gear.svg" /></span><span class="label">Settings</span></button></li>
+					        <li><button><span class="icon"><img src="/atomic-core/img/icon/lock.svg" /></span><span class="label">Log Out</span></button></li>
+					    </ul>
+					</nav>
+			</div>
+</section>
+<!-- End/ Mobile Navigation Panel -->
+
+
 <div class="row-wrap">
 	<h4> Header Navigation Banner - Small Screen/Mobile - Tablet</h4>
 
@@ -115,3 +140,21 @@
 		</section>
 	</footer>
 </div>
+
+
+
+
+
+
+<script type="text/javascript">
+$('.mobile-navigation__toggle').click(function() {
+		$('.mobile-navigation-panel').removeClass('hidden').addClass('slideLeft');
+	});
+
+$('.close-panel__toggle').click(function() {
+		$('.mobile-navigation-panel').addClass('hidden');		
+		setTimeout(function() {
+			$('.mobile-navigation-panel').removeClass('slideLeft');
+		},1500);
+});
+</script>
