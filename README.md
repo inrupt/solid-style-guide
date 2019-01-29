@@ -31,7 +31,7 @@ yarn add @inrupt/inrupt-atomic-style-guide
 
 (Dependent on the dependency tool utilized on your project)
 
-After installation, the diesgn system can be added to your root component as import @inrupt/inrupt-atomic-style-guide
+After installation, the design system can be added to your root component as import @inrupt/inrupt-atomic-style-guide
 
 ## Built With:
 Built using Nick Berens' Atomic Docs Framework based in PHP and SASS/SCSS. 
