@@ -52,6 +52,12 @@
 
 		}
 
+		&--warning {
+			background-color: $warning-color;
+			color: #fff;	
+
+		}
+
 		/* Gradients */
 
 		&--primary-gradient {
@@ -175,6 +181,18 @@
 
 			&:hover {
 				background-color: rgba($error-color, 1);
+				transition: all 0.25s ease-in-out;				
+			}
+
+		}
+
+
+		&--warning {
+			background-color: $warning-color;
+			transition: all 0.25s ease-in-out;	
+
+			&:hover {
+				background-color: rgba($warning-color, 1);
 				transition: all 0.25s ease-in-out;				
 			}
 

@@ -1,11 +1,12 @@
 /* scss/Organisms/_Navigation.scss */
 
 
-header.header, footer.footer {
+header.header, footer.footer, header.header__desktop {
 	width: 100%;
 	@include box-shadow(0px, 1px, 4px);
 	height: 60px;
 	background: rgba(255,255,255,1); /* Default white background color for header bar. change this value to customize your header background color. */
+	transition: all ease-in-out .5s;
 
 	.header-wrap, .footer-wrap {
 		display: flex;
@@ -58,10 +59,10 @@ header.header, footer.footer {
 						ul {
 							li {
 								line-height: 1;
+								padding: 0;
 
 								&.user-avatar {
-									padding-left:  1.5em;
-									padding-right:  1.5em;
+									padding: 0;
 
 									a {
 										span.icon {
@@ -73,8 +74,8 @@ header.header, footer.footer {
 								}
 
 								&.has-children {
-									padding-left: 1em;
-									padding-right: 1em;
+									padding-left: 0.75em;
+									padding-right: 0.75em;
 
 									span {
 										color: $icon-color;
@@ -97,8 +98,12 @@ header.header, footer.footer {
 							
 							li {
 								border: none;
-								padding-left: 0.75em;
-								padding-right: 0.75em;
+								padding: 0;
+
+								a,button {
+									padding-left: 0.75em;
+									padding-right: 0.75em;
+								}
 
 								&.has-children {
 									span {
@@ -117,6 +122,90 @@ header.header, footer.footer {
 	
 
 }
+
+
+
+header.header {
+	&.fixed, &--fixed {  /* should be used with a <div class="header-spacer"> element */
+		position: fixed;
+		z-index: 5000; /* Adjust to meet z-index needs */
+		top: 0;
+		left: 0;
+		width: 100vw;
+	}
+	
+
+	&__desktop {
+
+		.header-wrap {
+
+			@include tablet {
+				nav.nav__primary,
+				nav.nav__toolbar {
+					display: none;
+				}
+
+				.mobile-navigation__toggle {
+					display: flex;
+				}
+			}
+
+
+			@include mobile {
+				nav.nav__primary,
+				nav.nav__toolbar {
+					display: none;
+				}
+
+				.mobile-navigation__toggle {
+					display: flex;
+				}
+			}
+
+			/* Desktop Media Query for Navigation Bar */
+			@include desktop {
+
+				nav.nav__primary,
+				nav.nav__toolbar {
+					display: flex;
+				}
+
+				.mobile-navigation__toggle {
+					display: none;
+				}
+
+
+			}	
+
+		}
+	}
+}
+
+
+.header-spacer {
+	position: relative;
+	top: 0;
+	height: 60px; /* adjust value to height of header navigation */
+	display: block;
+}
+
+.mobile-navigation__toggle {
+	margin-left: auto;
+	height: 100%;
+		
+		button, a {
+			appearance: none;
+			-webkit-appearance: none;
+			border: none;
+			padding: 0 2rem;
+			background: rgba(255,255,255,1);
+			border-radius: 0;
+
+			&:hover, &:active {
+			    @include linear-gradient(to right, rgba($primary-color, 0) 0%, rgba($tertiary-color, 0) 50%, rgba($secondary-color, 0) 100%);	
+			}
+		}
+}	
 
 
 
@@ -180,18 +269,31 @@ nav.nav {
 			margin-left: 1em;
 			
 			ul {
-				li {
-					padding-left: 2em;
-					padding-right: 2em;
+				height: 60px;
+
+				li {					
 					cursor: pointer;
 					transition: all 0.5s ease-in-out;			       
-			        min-height: 60px;
-			        @include linear-gradient(to right, rgba($primary-color, 0.0) 0%, rgba($tertiary-color, 0.0) 50%, rgba($secondary-color, 0.0) 100%);
 			        height: 100%;
+			       
 
-			        &:hover, &.active {
-						@include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%); 
-						transition: all 0.5s ease-in-out;
+					a, button {
+						display: flex;
+    					flex-direction: column;
+    					height: 100%;
+    					width: 100%;
+    					justify-content: center;
+						padding-left: 2em;
+					    padding-right: 2em;
+					    transition: all 0.5s ease-in-out;			       
+					    @include borderRadius(0px);
+					    @include linear-gradient(to right, rgba($primary-color, 0.0) 0%, rgba($tertiary-color, 0.0) 50%, rgba($secondary-color, 0.0) 100%);
+
+
+					    &:hover, &.active {
+							@include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%); 
+							transition: all 0.5s ease-in-out;
+						}
 					}
 				}
 			}
@@ -205,17 +307,12 @@ nav.nav {
 		        display: flex;
 
 				li {
-					height: 100%;
-					padding-left:  1.5em;
-					padding-right:  1.5em;
+					height: 100%;					
 					cursor: pointer;
 					transition: all 0.5s ease-in-out;
 			        border-left: 1px solid rgba($tertiary-color-2, 0.1);
 
-			        &:hover {
-						@include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%);
-						transition: all 0.5s ease-in-out;
-					}
+			        
 
 					a, button {
 						appearance: none;
@@ -223,6 +320,12 @@ nav.nav {
 						border: none;
 						background: none;
 						padding: 0;
+						padding-left: 1.5em;
+					    padding-right: 1.5em;
+					    width: 100%;
+					    height: 100%;
+					    @include borderRadius(0px);
+
 					
 						span {
 							img {
@@ -230,6 +333,62 @@ nav.nav {
 								min-width: 25px;
 							}
 						}
+
+						&:hover {
+						    @include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%);
+							transition: all 0.5s ease-in-out;
+						}
+					}
+
+
+					&.has-children {
+						
+						ul, .sub-nav-dropdown {
+							display: none;
+							position: relative;
+							top: 60px;
+							min-width: 200px;
+    						flex-direction: column;
+							right: 0;
+							height: auto;
+							background: #fff;
+							@include borderRadius (0px 0px 4	px 4px);
+							@include box-shadow();	
+							position: fixed;
+							transition: all 0.25s ease-in-out;						
+
+							li {
+								border-left: none;
+								border-top: 1px solid rgba($tertiary-color-2, 0.1);
+								width: 100%;	
+								background: #fff;
+								padding: 0;
+								text-align: left;
+
+								a,button {
+									line-height: 2;
+									padding: 1rem;
+									text-align: left;
+								}
+							}
+						}
+
+						&:hover {
+							ul, .sub-nav-dropdown {
+								display: flex;
+
+
+								li {
+								 
+								 	&:hover {
+								 		@include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%);
+								 	}
+
+								}
+								
+							}
+						}
+
 					}
 
 				}
@@ -254,6 +413,146 @@ span.badge {
 	margin-top: -2rem;
 	margin-left: 1.75em;
 }
+
+}
+
+
+
+.mobile-navigation-panel {
+	display: grid;
+	position: fixed;
+	background: rgba(255,255,255,0.95);
+	height: 100%;
+	top: 0;
+	right: 0;
+	@include box-shadow($x-axis: 0, $y-axis: 1px, $blur: 4px, $color: $default);
+	z-index: 6000;
+	transition: all .5s ease-in-out;
+	min-width: 300px;
+
+	&.hidden {
+		display: none;
+		visibility: hidden;
+		transform: translateX(150%);
+	}
+
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+
+		.close-panel__toggle {
+			align-self: flex-end;
+			margin-top: 1rem;
+			margin-right: 1rem;
+
+			button {
+				@include borderRadius(100px);
+				padding: .75rem 1rem;
+				font-size: 1rem;
+				border: 1px solid rgba(255,255,255,0);
+				cursor: pointer;
+				opacity: .8;
+
+				&:hover {
+					border: 1px solid rgba(#449DF5, .8);
+					opacity: 1;
+
+				}
+			}
+		}
+
+
+		nav.nav {
+			&__primary {
+				margin-left: 0;
+				height: auto;		
+			}
+
+			ul {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+					height: auto;
+					 
+					 li {
+					 	width: 100%;
+
+						a, button {
+							width: 100%;							
+							flex-direction: row;
+							justify-content: flex-start;
+							padding: 1em;
+							padding-left: 1.5em;
+    						align-items: center;
+
+							span {
+								text-align: left;
+								margin: 0;
+
+								&.icon {	
+								text-align: center;
+								max-width: 20px;
+								height: auto;								
+								}
+
+								&.label {
+									margin-left: 1.5rem;
+								}
+							}
+						}
+
+					 }
+				}
+
+			&__toolbar {
+				margin-left: 0;
+				height: auto;	
+				margin-top: auto;
+				bottom: 0;
+				position: relative;
+
+				ul {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+					height: auto;
+
+					 
+					 li {
+					 	width: 100%;
+
+						a, button {
+							display: flex;
+							width: 100%;							
+							flex-direction: row;
+							justify-content: flex-start;
+							padding: 1em;
+							padding-left: 1.5em;
+    						align-items: center;
+
+							span {
+								text-align: left;
+								margin: 0;
+
+								&.icon {	
+									text-align: center;
+									max-width: 20px;
+									height: auto;								
+								}
+
+								&.label {
+									margin-left: 1.5rem;
+								}
+							}
+						}
+
+					 }
+				}	
+			}
+
+		}
+	}
 
 }
 
@@ -285,6 +584,9 @@ footer.footer {
 		}
 	}
 }
+
+
+
 
 
 

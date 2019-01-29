@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="refresh" content="0; URL='/atomic-core/?cat=Core'" />
 
-    <title>Title of the document</title>
+    <title>inrupt Atomic Design System</title>
 
     <?php include("atomic-head.php"); ?>
 

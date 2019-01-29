@@ -133,7 +133,7 @@
         "description": "",
         "backgroundColor": "",
         "order": -15,
-        "has_js": "false"
+        "has_js": "true"
     },
     {
         "component": "Table",

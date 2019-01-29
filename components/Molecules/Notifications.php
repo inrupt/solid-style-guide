@@ -8,12 +8,16 @@
 	<div class="banner-wrap__dismiss"><i class="fa fa-times"></i></div>
 </section>
 
-
-
 <section class="banner-wrap--secondary banner">
 	<div class="banner-wrap__content">Notification Mesage</div>
 	<div class="banner-wrap__dismiss"><i class="fa fa-times"></i></div>
 </section>
+
+<section class="banner-wrap--warning banner">
+	<div class="banner-wrap__content"><i class="icon fa fa-exclamation-circle"> </i> Notification Mesage</div>
+	<div class="banner-wrap__dismiss"><i class="fa fa-times"></i></div>
+</section>
+
 
 <section class="banner-wrap--error banner">
 	<div class="banner-wrap__content"><i class="icon fa fa-exclamation-circle"> </i> Error Notification Mesage</div>
@@ -35,9 +39,9 @@
 		<div class="toaster-wrap__dismiss"><i class="fa fa-times"></i></div>
 	</section>
 
-	<section class="toaster-wrap--secondary toaster">
+	<section class="toaster-wrap--warning toaster">
 		<div class="toaster-wrap__content">
-			<p class="content__title">Notification Mesage</p>
+			<p class="content__title"><i class="icon fa fa-exclamation-circle"> </i> Notification Mesage</p>
 			<p class="content__message">This is a toaster/popup notification.</p>
 		</div>
 		<div class="toaster-wrap__dismiss"><i class="fa fa-times"></i></div>
