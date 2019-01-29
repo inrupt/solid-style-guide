@@ -6,21 +6,37 @@
 <body>
 <h1 id="inruptatomicdesignsystem">inrupt Atomic Design System</h1>
 
-<p>A Live respository of UI styles and UX patterns utilized by the inrupt generator for Solid React applications (<a href="https://github.com/Inrupt-inc/generator-solid-react" target="_blank">https://github.com/Inrupt-inc/generator-solid-react</a>). By leveraging Nick Berens&#8217; Atomic Docs framework (inspired by Brad Frost&#8217;s Atomic design principles) as a base style guide/design system generation tool, the inrupt creative and front-end development team define UI/UX decisions and styled components are documented here to be used across inrupt applications. </p>
+<p>A Live respository of UI styles and UX patterns utilized by the inrupt generator for Solid React applications (<a href="https://github.com/inrupt-inc/generator-solid-react" target="_blank">https://github.com/inrupt-inc/generator-solid-react</a>). By leveraging Nick Berens&#8217; Atomic Docs framework (inspired by Brad Frost&#8217;s Atomic design principles) as a base style guide/design system generation tool, the inrupt creative and front-end development team define UI/UX decisions and styled components are documented here to be used across inrupt applications. </p>
 
 <p>This design system can be downloaded and customized for unique theming in your solid react projects. </p>
 
-<p>inrup Atomic Design System Demo: <a href="https://design.inrupt.com" target="_blank">https://design.inrupt.com</a></p>
+<p>inrupt Atomic Design System Demo: <a href="https://design.inrupt.com" target="_blank">https://design.inrupt.com</a></p>
 
 <p>Note: As this is a living design system, new compenents are continually added and refactored as the design system evolves. </p>
 
-<h2 id="setup:">Set up:</h2>
+<h2 id="setupforlocaldevelopment:">Set up For Local Development:</h2>
+
+<p>To set up the inrupt atomic design system for local development/custom theming: </p>
 
 <ol>
-<li>Download Atomic Docs and add to your local PHP environment.</li>
+<li>Download this repository and add to your local PHP environment.</li>
 <li>Configure your preprocessor to output <code>scss/main.scss</code> to <code>css/main.css</code>.</li>
 <li>Go to <code>http://localhost/atomic-docs/atomic-core/index.php</code> and get started.</li>
 </ol>
+
+<h3 id="toconsumeinapplicatons:">To Consume In Applicatons:</h3>
+
+<p>There are two main ways to install the inrupt atomic design system output (which can be replicated for customized themes/systems):</p>
+
+<p>npm install &#8211;save @inrupt/inrupt-atomic-style-guide</p>
+
+<p>or </p>
+
+<p>yarn add @inrupt/inrupt-atomic-style-guide </p>
+
+<p>(Dependent on the dependency tool utilized on your project)</p>
+
+<p>After installation, the diesgn system can be added to your root component as import @inrupt/inrupt-atomic-style-guide</p>
 
 <h2 id="builtwith:">Built With:</h2>
 
