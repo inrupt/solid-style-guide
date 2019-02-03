@@ -1,56 +1,39 @@
 
-# inrupt Atomic Design System
+# Atomic Design System for Solid Applications
 
-A Live respository of UI styles and UX patterns utilized by the inrupt generator for Solid React applications (<a href="https://github.com/inrupt-inc/generator-solid-react" target="_blank">https://github.com/inrupt-inc/generator-solid-react</a>). By leveraging Nick Berens' Atomic Docs framework (inspired by Brad Frost's Atomic design principles) as a base style guide/design system generation tool, the inrupt creative and front-end development team define UI/UX decisions and styled components are documented here to be used across inrupt applications. 
-	
-This design system can be downloaded and customized for unique theming in your solid react projects. 
+Inspired by Brad Frost's Atomic design principles, we use Nick Berens' Atomic Docs framework as a base style guide / design system generation tool for Solid applications. This is a live repository of UI styles and UX patterns utilized in our Software Development Kits for Solid. The design system will continue to evolve as we commit and release new patterns and features.
 
-inrupt Atomic Design System Demo: <a href="https://design.inrupt.com" target="_blank">https://design.inrupt.com</a>
+This design system can be forked and customized for unique theming in your Solid application projects.
 
-Note: As this is a living design system, new compenents are continually added and refactored as the design system evolves. 
+To see this applied, check out the [React Application Generator](https://github.com/inrupt-inc/generator-solid-react) in the [Solid React SDK](https://github.com/inrupt-inc/solid-react-sdk).
 
+To see this live, go to [design.inrupt.com](https://design.inrupt.com).
 
-## Set up For Local Development:
+*As this is a living design system, new components are continually added and refactored as the system evolves.*
 
-To set up the inrupt atomic design system for local development/custom theming: 
+## To use it in your application
 
-1. Download this repository and add to your local PHP environment.
+There are two main ways to install the design system output (which can be replicated for customized themes/systems):
+
+#### npm
+`npm install --save @inrupt/inrupt-atomic-style-guide`
+
+#### yarn
+`yarn add @inrupt/inrupt-atomic-style-guide`
+
+#### Post-install
+After installation, the design system can be added to your root component:  
+`import @inrupt/inrupt-atomic-style-guide`
+
+## To customize your own version
+
+To set up the design system for local development / custom theming:
+
+1. Fork this repository and add to your local PHP environment.
 2. Configure your preprocessor to output `scss/main.scss` to `css/main.css`.
 3. Go to `http://localhost/atomic-docs/atomic-core/index.php` and get started.
 
+## Credit
+Built using Nick Berens' [Atomic Docs](http://atomicdocs.io/) Framework based in PHP and SASS/SCSS.
 
-### To Consume In Applicatons: 
-
-There are two main ways to install the inrupt atomic design system output (which can be replicated for customized themes/systems):
-
-npm install --save @inrupt/inrupt-atomic-style-guide
-
-or 
- 
-yarn add @inrupt/inrupt-atomic-style-guide 
-
-(Dependent on the dependency tool utilized on your project)
-
-After installation, the design system can be added to your root component as import @inrupt/inrupt-atomic-style-guide
-
-## Built With:
-Built using Nick Berens' Atomic Docs Framework based in PHP and SASS/SCSS. 
-
-Additional documentation regarding the Atomic Docs framework and installation can be found at <a href="http://atomicdocs.io/">AtomicDocs.io</a>.
-
-
-## Goals
-
-We started this project wanting to create a home where creatives and developers could document UI/UX patterns & design decisions, and UI styles and FE guidelines. This framework allows us to reduce siloed knowledge, crafting a source of truth for inrupt application interfaces. This documentation and examples can then be utilized to accellerate additional application projects.  
-
-As we continue working on new applications and features, the inrupt Atomic Design System will evolve as we commit and release new patterns and features. 
-
-
-
-
-
-
-
-
-
-
+Check out [AtomicDocs.io](https://www.atomicdocs.io) for more detail on the framework and installation tips.
