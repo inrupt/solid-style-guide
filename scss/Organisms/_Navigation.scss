@@ -363,7 +363,7 @@ nav.nav {
 							right: 0;
 							height: auto;
 							background: #fff;
-							@include borderRadius (0px 0px 4	px 4px);
+							@include borderRadius (0px 0px 4px 4px);
 							@include box-shadow();	
 							position: fixed;
 							list-style: none;
@@ -460,7 +460,6 @@ span.badge {
 		transform: translateX(150%);
 	}
 
-
 	&__wrap {
 		display: flex;
 		flex-direction: column;
@@ -485,7 +484,6 @@ span.badge {
 				}
 			}
 		}
-
 
 		nav.nav {
 			&__primary {
