@@ -257,10 +257,6 @@ section.grid.grid__three-column.demo {
 	grid-gap: 1%;
 }
 
-
-
-
-
 .banner-wrap {
 	&--footer {
 		position: fixed;
@@ -269,7 +265,7 @@ section.grid.grid__three-column.demo {
 		left: 0;
 		background: $primary-color;
 		color: #fff;
-		z-index: 5000;
+		z-index: 9999;
 		padding: 0;
 		box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
 
