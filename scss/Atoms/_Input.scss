@@ -77,3 +77,23 @@ select {
 		}
 		
 	}
+
+
+input, select, textarea {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		width: 100%;
+		font-family: $primary-font-stack;
+		outline: none;
+		transition: all 0.25s ease-in-out;
+}
+
+
+input:read-only {
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }

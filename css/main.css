@@ -1116,6 +1116,21 @@ select {
     pointer-events: none;
     display: block; }
 
+input, select, textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  width: 100%;
+  font-family: "Raleway", "Roboto", sans-serif;
+  outline: none;
+  transition: all 0.25s ease-in-out; }
+
+input:read-only {
+  border: none; }
+  input:read-only:focus {
+    outline: none; }
+
 /* scss/Atoms/_Select.scss */
 .select-wrap {
   width: 100%;

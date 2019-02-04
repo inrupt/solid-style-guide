@@ -10,3 +10,5 @@ $('.close-panel__toggle').click(function() {
 			$(this).addClass('hidden');
 		},3000);
 });
+
+
