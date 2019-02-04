@@ -1,70 +1,77 @@
 /* scss/Atoms/_Range-Slider.scss */
 
-
 input[type="range"] {
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
+	@include appearance(none);
 	height: 2px;
-	border-radius: 1px;	
+	@include borderRadius(1px);
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
 
 	&::-webkit-slider-thumb, &::-moz-slider-thumb, &::-ms-slider-thumb {
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
+        @include appearance(none);
 		background-color: #fff;
 		height: 20px;
 		width: 20px;
 		border-radius: 50em;
 		box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
 	}	
-
-
-
 }
 
-
-
-$track-w: 12.5em;
+$track-w: 100%;
 $track-h: .25em;
 $thumb-d: 1.5em;
 $track-c: #ccc;
-$filll-c: blue;
+$fill-c: blue;
 
 @mixin track($fill: 0) {
     box-sizing: border-box;
     border: none;
     width: $track-w; height: $track-h;
     background: $track-c;
-    border-radius: 1em;
+    @include borderRadius(1em);
+    outline: none;
     
     @if $fill == 1 {
         .js & {
-            background: linear-gradient($filll-c, $track-c)
-                0/ var(--sx) 100% no-repeat $track-c;
+            background: transparent;
         }
+    }
+
+
+    &:focus, &:active {
+        outline: none;
+        border: none;
     }
 }
 
 @mixin fill() {
-    height: $track-h;
-    background: $filll-c
+    display: block;
+    background: rgba($secondary-color,0.8);
 }
 
 @mixin thumb() {
     box-sizing: border-box;
-    border: none;
+    border: 1px solid rgba(white, 0.0);
     width: $thumb-d; height: $thumb-d;
-    border-radius: 50%;
+    @include borderRadius(50%);
     background: #fff;
-    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+    cursor: pointer;
+    @include box-shadow($x-axis:0px,  $y-axis:0px, $blur: 2px, $color:rgba(0,0,0,0.3));
+    transition: all 0.25s ease-in-out;
+
+     &:hover {
+            border: 1px solid rgba($secondary-color, 1);
+            transition: all 0.25s ease-in-out;
+        }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 [type='range'] {
     &, &::-webkit-slider-thumb {
-        -webkit-appearance: none;
+        @include appearance(none);
     }
     
     --range: calc(var(--max) - var(--min));
@@ -97,4 +104,3 @@ $filll-c: blue;
     
     &::-ms-tooltip { display: none }
 }
-
