@@ -48,25 +48,27 @@ header.header, footer.footer, header.header__desktop {
 			width: 100%;
 			max-width: 500px;
 
-			.header-wrap  {
+			 .header-wrap  {
 				padding: 0;
 
-				nav.nav {
+				> nav.nav {
 					
 					&__primary {
 						margin-left: 0;
 
-						ul {
-							li {
+						> ul {
+							> li {
 								line-height: 1;
 								padding: 0;
 
 								&.user-avatar {
 									padding: 0;
 
-									a {
-										span.icon {
-											img {
+									> a, > button {
+										cursor: pointer; 
+
+										> span.icon {
+											 img {
 												max-height: 40px;
 											}
 										}
@@ -77,13 +79,13 @@ header.header, footer.footer, header.header__desktop {
 									padding-left: 0.75em;
 									padding-right: 0.75em;
 
-									span {
+									> span {
 										color: $icon-color;
 										font-size: 1.1rem;
 										
 										&.label {
 											font-size: 1.2rem;
-											margin-right: .5em;
+											margin-right: .5em;											
 										}
 									}
 								}
@@ -93,22 +95,23 @@ header.header, footer.footer, header.header__desktop {
 
 
 					&__toolbar {
-						ul {
+						> ul {
 							height: 60px;
 							
-							li {
+							> li {
 								border: none;
 								padding: 0;
 
-								a,button {
+								> a, > button {
 									padding-left: 0.75em;
 									padding-right: 0.75em;
+									cursor: pointer; 
 								}
 
 								&.has-children {
-									span {
+									> span {
 										&.label {
-											font-size: 1.3rem;
+											font-size: 1.3rem;										
 										}
 									}
 								}
@@ -193,13 +196,14 @@ header.header {
 	margin-left: auto;
 	height: 100%;
 		
-		button, a {
+		> button, > a {
 			appearance: none;
 			-webkit-appearance: none;
 			border: none;
 			padding: 0 2rem;
 			background: rgba(255,255,255,1);
 			border-radius: 0;
+			cursor: pointer; 
 
 			&:hover, &:active {
 			    @include linear-gradient(to right, rgba($primary-color, 0) 0%, rgba($tertiary-color, 0) 50%, rgba($secondary-color, 0) 100%);	
@@ -210,7 +214,7 @@ header.header {
 
 
 nav.nav {
-	ul {
+	> ul {
 		list-style: none;
 		list-style-type: none;
 		padding: 0;
@@ -221,7 +225,7 @@ nav.nav {
     	height: 100%;
 
 
-		li {
+		> li {
 			display: flex;
 			align-items: center;
 			flex-direction: row;
@@ -232,7 +236,7 @@ nav.nav {
 			@include linear-gradient(to right, rgba($primary-color, 0) 0%, rgba($tertiary-color, 0) 50%, rgba($secondary-color, 0) 100%);
 
 
-			a, button {
+	     	> a, > button {
 				text-decoration: none;
 				font-weight: 700;
 				text-align: center;
@@ -241,26 +245,31 @@ nav.nav {
 				border: none;
 				background: none;
 				padding: 0;
-			}
+				cursor: pointer; 
+			
 
-			span.icon {
-				margin: 0 auto;
-				text-align: center;
-				
-				img {
-					max-height: 20px;
-					width: 100%;
+				> span.icon {
+					margin: 0 auto;
+					text-align: center;
+					
+					> img {
+						max-height: 20px;
+						width: 100%;
+					}
 				}
-			}
 
 
-			span.label {
-				margin: 0 auto;
-				text-align: center;
-				color: $tertiary-color-2;
-				font-size: 0.7rem;
+				> span.label {
+					margin: 0 auto;
+					text-align: center;
+					color: $tertiary-color-2;
+					font-size: 0.7rem;
+				}
+
 			}
+
 		}
+
 
 	}
 
@@ -268,16 +277,16 @@ nav.nav {
 		&__primary {
 			margin-left: 1em;
 			
-			ul {
+			> ul {
 				height: 60px;
 
-				li {					
+				> li {					
 					cursor: pointer;
 					transition: all 0.5s ease-in-out;			       
 			        height: 100%;
 			       
 
-					a, button {
+					> a, > button {
 						display: flex;
     					flex-direction: column;
     					height: 100%;
@@ -288,6 +297,7 @@ nav.nav {
 					    transition: all 0.5s ease-in-out;			       
 					    @include borderRadius(0px);
 					    @include linear-gradient(to right, rgba($primary-color, 0.0) 0%, rgba($tertiary-color, 0.0) 50%, rgba($secondary-color, 0.0) 100%);
+					    cursor: pointer; 
 
 
 					    &:hover, &.active {
@@ -302,11 +312,11 @@ nav.nav {
 		&__toolbar {
 			margin-left: auto;
 
-			ul {
+			> ul {
 			    height: 60px;
 		        display: flex;
 
-				li {
+				> li {
 					height: 100%;					
 					cursor: pointer;
 					transition: all 0.5s ease-in-out;
@@ -314,7 +324,7 @@ nav.nav {
 
 			        
 
-					a, button {
+					> a, > button {
 						appearance: none;
 						-webkit-appearance: none;
 						border: none;
@@ -325,10 +335,11 @@ nav.nav {
 					    width: 100%;
 					    height: 100%;
 					    @include borderRadius(0px);
+					    cursor: pointer; 
 
 					
-						span {
-							img {
+						> span {
+							 > img {
 								min-height: 25px;
 								min-width: 25px;
 							}
@@ -343,7 +354,7 @@ nav.nav {
 
 					&.has-children {
 						
-						ul, .sub-nav-dropdown {
+						> ul, > .sub-nav-dropdown {
 							display: none;
 							position: relative;
 							top: 60px;
@@ -352,12 +363,15 @@ nav.nav {
 							right: 0;
 							height: auto;
 							background: #fff;
-							@include borderRadius (0px 0px 4	px 4px);
+							@include borderRadius (0px 0px 4px 4px);
 							@include box-shadow();	
 							position: fixed;
+							list-style: none;
+							list-style-type: none;
+    						padding: 0;
 							transition: all 0.25s ease-in-out;						
 
-							li {
+							> li {
 								border-left: none;
 								border-top: 1px solid rgba($tertiary-color-2, 0.1);
 								width: 100%;	
@@ -365,20 +379,30 @@ nav.nav {
 								padding: 0;
 								text-align: left;
 
-								a,button {
+								> a, > button {
 									line-height: 2;
 									padding: 1rem;
 									text-align: left;
+									cursor: pointer; 
+									width: 100%;
+    								border: none;
+    								@include borderRadius(0px);
+									
+									&:hover {
+    								    @include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%);
+										transition: all 0.5s ease-in-out;
+										color: $tertiary-color-2;
+									}
 								}
 							}
 						}
 
 						&:hover {
-							ul, .sub-nav-dropdown {
+							> ul, > .sub-nav-dropdown {
 								display: flex;
 
 
-								li {
+								> li {
 								 
 								 	&:hover {
 								 		@include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%);
@@ -436,17 +460,16 @@ span.badge {
 		transform: translateX(150%);
 	}
 
-
 	&__wrap {
 		display: flex;
 		flex-direction: column;
 
-		.close-panel__toggle {
+		> .close-panel__toggle {
 			align-self: flex-end;
 			margin-top: 1rem;
 			margin-right: 1rem;
 
-			button {
+			> button {
 				@include borderRadius(100px);
 				padding: .75rem 1rem;
 				font-size: 1rem;
@@ -462,31 +485,31 @@ span.badge {
 			}
 		}
 
-
 		nav.nav {
 			&__primary {
 				margin-left: 0;
 				height: auto;		
 			}
 
-			ul {
+			> ul {
 					display: flex;
 					flex-direction: column;
 					width: 100%;
 					height: auto;
 					 
-					 li {
+					 > li {
 					 	width: 100%;
 
-						a, button {
+						> a, > button {
 							width: 100%;							
 							flex-direction: row;
 							justify-content: flex-start;
 							padding: 1em;
 							padding-left: 1.5em;
     						align-items: center;
+    						cursor: pointer; 
 
-							span {
+							> span {
 								text-align: left;
 								margin: 0;
 
@@ -512,17 +535,17 @@ span.badge {
 				bottom: 0;
 				position: relative;
 
-				ul {
+				> ul {
 					display: flex;
 					flex-direction: column;
 					width: 100%;
 					height: auto;
 
 					 
-					 li {
+					> li {
 					 	width: 100%;
 
-						a, button {
+						> a, > button {
 							display: flex;
 							width: 100%;							
 							flex-direction: row;
@@ -530,8 +553,9 @@ span.badge {
 							padding: 1em;
 							padding-left: 1.5em;
     						align-items: center;
+    						cursor: pointer; 
 
-							span {
+							> span {
 								text-align: left;
 								margin: 0;
 
@@ -543,6 +567,8 @@ span.badge {
 
 								&.label {
 									margin-left: 1.5rem;
+									color: $tertiary-color-2;
+									font-size: 0.7rem;
 								}
 							}
 						}
@@ -567,16 +593,25 @@ footer.footer {
 		padding-left: 0;
 		height: 100%;
 
-		nav.nav__primary {					
+		> nav.nav__primary {					
 			margin-left: 0;
 			width: 100%;
 
-			ul {
+			> ul {
 				width: 100%;
-				li {
+				> li {
 					width: 100%;				  				  
 				    align-items: center;
 				    justify-content: space-evenly;
+
+				    > a, > button {
+				    	> span {
+							&.label {
+								color: $tertiary-color-2;
+								font-size: 0.7rem;
+							}
+				    	}
+				    }
 				}
 			}
 		}

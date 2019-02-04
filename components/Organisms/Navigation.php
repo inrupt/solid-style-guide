@@ -40,7 +40,7 @@
 
 	<div class="header-spacer"></div>
 
--->
+/ End of Fixed Header Bar Example - Remove This comment to use.  / -->
 
 
 <div class="row-wrap">
