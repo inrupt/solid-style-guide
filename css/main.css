@@ -1799,36 +1799,39 @@ header.header, footer.footer, header.header__desktop {
     max-width: 500px; }
     header.header__mobile .header-wrap, footer.footer__mobile .header-wrap, header.header__desktop__mobile .header-wrap {
       padding: 0; }
-      header.header__mobile .header-wrap nav.nav, footer.footer__mobile .header-wrap nav.nav, header.header__desktop__mobile .header-wrap nav.nav {
+      header.header__mobile .header-wrap > nav.nav, footer.footer__mobile .header-wrap > nav.nav, header.header__desktop__mobile .header-wrap > nav.nav {
         /* End mobile primary menu */
         /* End mobile toolbar menu */ }
-        header.header__mobile .header-wrap nav.nav__primary, footer.footer__mobile .header-wrap nav.nav__primary, header.header__desktop__mobile .header-wrap nav.nav__primary {
+        header.header__mobile .header-wrap > nav.nav__primary, footer.footer__mobile .header-wrap > nav.nav__primary, header.header__desktop__mobile .header-wrap > nav.nav__primary {
           margin-left: 0; }
-          header.header__mobile .header-wrap nav.nav__primary ul li, footer.footer__mobile .header-wrap nav.nav__primary ul li, header.header__desktop__mobile .header-wrap nav.nav__primary ul li {
+          header.header__mobile .header-wrap > nav.nav__primary > ul > li, footer.footer__mobile .header-wrap > nav.nav__primary > ul > li, header.header__desktop__mobile .header-wrap > nav.nav__primary > ul > li {
             line-height: 1;
             padding: 0; }
-            header.header__mobile .header-wrap nav.nav__primary ul li.user-avatar, footer.footer__mobile .header-wrap nav.nav__primary ul li.user-avatar, header.header__desktop__mobile .header-wrap nav.nav__primary ul li.user-avatar {
+            header.header__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar, footer.footer__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar, header.header__desktop__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar {
               padding: 0; }
-              header.header__mobile .header-wrap nav.nav__primary ul li.user-avatar a span.icon img, footer.footer__mobile .header-wrap nav.nav__primary ul li.user-avatar a span.icon img, header.header__desktop__mobile .header-wrap nav.nav__primary ul li.user-avatar a span.icon img {
-                max-height: 40px; }
-            header.header__mobile .header-wrap nav.nav__primary ul li.has-children, footer.footer__mobile .header-wrap nav.nav__primary ul li.has-children, header.header__desktop__mobile .header-wrap nav.nav__primary ul li.has-children {
+              header.header__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > a, header.header__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > button, footer.footer__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > a, footer.footer__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > button, header.header__desktop__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > a, header.header__desktop__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > button {
+                cursor: pointer; }
+                header.header__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > a > span.icon img, header.header__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > button > span.icon img, footer.footer__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > a > span.icon img, footer.footer__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > button > span.icon img, header.header__desktop__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > a > span.icon img, header.header__desktop__mobile .header-wrap > nav.nav__primary > ul > li.user-avatar > button > span.icon img {
+                  max-height: 40px; }
+            header.header__mobile .header-wrap > nav.nav__primary > ul > li.has-children, footer.footer__mobile .header-wrap > nav.nav__primary > ul > li.has-children, header.header__desktop__mobile .header-wrap > nav.nav__primary > ul > li.has-children {
               padding-left: 0.75em;
               padding-right: 0.75em; }
-              header.header__mobile .header-wrap nav.nav__primary ul li.has-children span, footer.footer__mobile .header-wrap nav.nav__primary ul li.has-children span, header.header__desktop__mobile .header-wrap nav.nav__primary ul li.has-children span {
+              header.header__mobile .header-wrap > nav.nav__primary > ul > li.has-children > span, footer.footer__mobile .header-wrap > nav.nav__primary > ul > li.has-children > span, header.header__desktop__mobile .header-wrap > nav.nav__primary > ul > li.has-children > span {
                 color: #5361FD;
                 font-size: 1.1rem; }
-                header.header__mobile .header-wrap nav.nav__primary ul li.has-children span.label, footer.footer__mobile .header-wrap nav.nav__primary ul li.has-children span.label, header.header__desktop__mobile .header-wrap nav.nav__primary ul li.has-children span.label {
+                header.header__mobile .header-wrap > nav.nav__primary > ul > li.has-children > span.label, footer.footer__mobile .header-wrap > nav.nav__primary > ul > li.has-children > span.label, header.header__desktop__mobile .header-wrap > nav.nav__primary > ul > li.has-children > span.label {
                   font-size: 1.2rem;
                   margin-right: .5em; }
-        header.header__mobile .header-wrap nav.nav__toolbar ul, footer.footer__mobile .header-wrap nav.nav__toolbar ul, header.header__desktop__mobile .header-wrap nav.nav__toolbar ul {
+        header.header__mobile .header-wrap > nav.nav__toolbar > ul, footer.footer__mobile .header-wrap > nav.nav__toolbar > ul, header.header__desktop__mobile .header-wrap > nav.nav__toolbar > ul {
           height: 60px; }
-          header.header__mobile .header-wrap nav.nav__toolbar ul li, footer.footer__mobile .header-wrap nav.nav__toolbar ul li, header.header__desktop__mobile .header-wrap nav.nav__toolbar ul li {
+          header.header__mobile .header-wrap > nav.nav__toolbar > ul > li, footer.footer__mobile .header-wrap > nav.nav__toolbar > ul > li, header.header__desktop__mobile .header-wrap > nav.nav__toolbar > ul > li {
             border: none;
             padding: 0; }
-            header.header__mobile .header-wrap nav.nav__toolbar ul li a, header.header__mobile .header-wrap nav.nav__toolbar ul li button, footer.footer__mobile .header-wrap nav.nav__toolbar ul li a, footer.footer__mobile .header-wrap nav.nav__toolbar ul li button, header.header__desktop__mobile .header-wrap nav.nav__toolbar ul li a, header.header__desktop__mobile .header-wrap nav.nav__toolbar ul li button {
+            header.header__mobile .header-wrap > nav.nav__toolbar > ul > li > a, header.header__mobile .header-wrap > nav.nav__toolbar > ul > li > button, footer.footer__mobile .header-wrap > nav.nav__toolbar > ul > li > a, footer.footer__mobile .header-wrap > nav.nav__toolbar > ul > li > button, header.header__desktop__mobile .header-wrap > nav.nav__toolbar > ul > li > a, header.header__desktop__mobile .header-wrap > nav.nav__toolbar > ul > li > button {
               padding-left: 0.75em;
-              padding-right: 0.75em; }
-            header.header__mobile .header-wrap nav.nav__toolbar ul li.has-children span.label, footer.footer__mobile .header-wrap nav.nav__toolbar ul li.has-children span.label, header.header__desktop__mobile .header-wrap nav.nav__toolbar ul li.has-children span.label {
+              padding-right: 0.75em;
+              cursor: pointer; }
+            header.header__mobile .header-wrap > nav.nav__toolbar > ul > li.has-children > span.label, footer.footer__mobile .header-wrap > nav.nav__toolbar > ul > li.has-children > span.label, header.header__desktop__mobile .header-wrap > nav.nav__toolbar > ul > li.has-children > span.label {
               font-size: 1.3rem; }
 
 header.header.fixed, header.header--fixed {
@@ -1870,19 +1873,20 @@ header.header__desktop .header-wrap {
 .mobile-navigation__toggle {
   margin-left: auto;
   height: 100%; }
-  .mobile-navigation__toggle button, .mobile-navigation__toggle a {
+  .mobile-navigation__toggle > button, .mobile-navigation__toggle > a {
     appearance: none;
     -webkit-appearance: none;
     border: none;
     padding: 0 2rem;
     background: white;
-    border-radius: 0; }
-    .mobile-navigation__toggle button:hover, .mobile-navigation__toggle button:active, .mobile-navigation__toggle a:hover, .mobile-navigation__toggle a:active {
+    border-radius: 0;
+    cursor: pointer; }
+    .mobile-navigation__toggle > button:hover, .mobile-navigation__toggle > button:active, .mobile-navigation__toggle > a:hover, .mobile-navigation__toggle > a:active {
       background: rgba(124, 77, 255, 0);
       background: -webkit-linear-gradient(left, rgba(124, 77, 255, 0) 0%, rgba(24, 169, 230, 0) 50%, rgba(1, 201, 234, 0) 100%);
       background: linear-gradient(to right, rgba(124, 77, 255, 0) 0%, rgba(24, 169, 230, 0) 50%, rgba(1, 201, 234, 0) 100%); }
 
-nav.nav ul {
+nav.nav > ul {
   list-style: none;
   list-style-type: none;
   padding: 0;
@@ -1891,7 +1895,7 @@ nav.nav ul {
   align-items: center;
   min-height: 60px;
   height: 100%; }
-  nav.nav ul li {
+  nav.nav > ul > li {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -1902,7 +1906,7 @@ nav.nav ul {
     background: rgba(124, 77, 255, 0);
     background: -webkit-linear-gradient(left, rgba(124, 77, 255, 0) 0%, rgba(24, 169, 230, 0) 50%, rgba(1, 201, 234, 0) 100%);
     background: linear-gradient(to right, rgba(124, 77, 255, 0) 0%, rgba(24, 169, 230, 0) 50%, rgba(1, 201, 234, 0) 100%); }
-    nav.nav ul li a, nav.nav ul li button {
+    nav.nav > ul > li > a, nav.nav > ul > li > button {
       text-decoration: none;
       font-weight: 700;
       text-align: center;
@@ -1910,27 +1914,28 @@ nav.nav ul {
       -webkit-appearance: none;
       border: none;
       background: none;
-      padding: 0; }
-    nav.nav ul li span.icon {
-      margin: 0 auto;
-      text-align: center; }
-      nav.nav ul li span.icon img {
-        max-height: 20px;
-        width: 100%; }
-    nav.nav ul li span.label {
-      margin: 0 auto;
-      text-align: center;
-      color: #083575;
-      font-size: 0.7rem; }
+      padding: 0;
+      cursor: pointer; }
+      nav.nav > ul > li > a > span.icon, nav.nav > ul > li > button > span.icon {
+        margin: 0 auto;
+        text-align: center; }
+        nav.nav > ul > li > a > span.icon > img, nav.nav > ul > li > button > span.icon > img {
+          max-height: 20px;
+          width: 100%; }
+      nav.nav > ul > li > a > span.label, nav.nav > ul > li > button > span.label {
+        margin: 0 auto;
+        text-align: center;
+        color: #083575;
+        font-size: 0.7rem; }
 nav.nav__primary {
   margin-left: 1em; }
-  nav.nav__primary ul {
+  nav.nav__primary > ul {
     height: 60px; }
-    nav.nav__primary ul li {
+    nav.nav__primary > ul > li {
       cursor: pointer;
       transition: all 0.5s ease-in-out;
       height: 100%; }
-      nav.nav__primary ul li a, nav.nav__primary ul li button {
+      nav.nav__primary > ul > li > a, nav.nav__primary > ul > li > button {
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -1945,23 +1950,24 @@ nav.nav__primary {
         border-radius: 0px;
         background: rgba(124, 77, 255, 0);
         background: -webkit-linear-gradient(left, rgba(124, 77, 255, 0) 0%, rgba(24, 169, 230, 0) 50%, rgba(1, 201, 234, 0) 100%);
-        background: linear-gradient(to right, rgba(124, 77, 255, 0) 0%, rgba(24, 169, 230, 0) 50%, rgba(1, 201, 234, 0) 100%); }
-        nav.nav__primary ul li a:hover, nav.nav__primary ul li a.active, nav.nav__primary ul li button:hover, nav.nav__primary ul li button.active {
+        background: linear-gradient(to right, rgba(124, 77, 255, 0) 0%, rgba(24, 169, 230, 0) 50%, rgba(1, 201, 234, 0) 100%);
+        cursor: pointer; }
+        nav.nav__primary > ul > li > a:hover, nav.nav__primary > ul > li > a.active, nav.nav__primary > ul > li > button:hover, nav.nav__primary > ul > li > button.active {
           background: rgba(124, 77, 255, 0.2);
           background: -webkit-linear-gradient(left, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%);
           background: linear-gradient(to right, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%);
           transition: all 0.5s ease-in-out; }
 nav.nav__toolbar {
   margin-left: auto; }
-  nav.nav__toolbar ul {
+  nav.nav__toolbar > ul {
     height: 60px;
     display: flex; }
-    nav.nav__toolbar ul li {
+    nav.nav__toolbar > ul > li {
       height: 100%;
       cursor: pointer;
       transition: all 0.5s ease-in-out;
       border-left: 1px solid rgba(8, 53, 117, 0.1); }
-      nav.nav__toolbar ul li a, nav.nav__toolbar ul li button {
+      nav.nav__toolbar > ul > li > a, nav.nav__toolbar > ul > li > button {
         appearance: none;
         -webkit-appearance: none;
         border: none;
@@ -1974,16 +1980,17 @@ nav.nav__toolbar {
         -webkit-border-radius: 0px;
         -moz-border-radius: 0px;
         -o-border-radius: 0px;
-        border-radius: 0px; }
-        nav.nav__toolbar ul li a span img, nav.nav__toolbar ul li button span img {
+        border-radius: 0px;
+        cursor: pointer; }
+        nav.nav__toolbar > ul > li > a > span > img, nav.nav__toolbar > ul > li > button > span > img {
           min-height: 25px;
           min-width: 25px; }
-        nav.nav__toolbar ul li a:hover, nav.nav__toolbar ul li button:hover {
+        nav.nav__toolbar > ul > li > a:hover, nav.nav__toolbar > ul > li > button:hover {
           background: rgba(124, 77, 255, 0.2);
           background: -webkit-linear-gradient(left, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%);
           background: linear-gradient(to right, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%);
           transition: all 0.5s ease-in-out; }
-      nav.nav__toolbar ul li.has-children ul, nav.nav__toolbar ul li.has-children .sub-nav-dropdown {
+      nav.nav__toolbar > ul > li.has-children > ul, nav.nav__toolbar > ul > li.has-children > .sub-nav-dropdown {
         display: none;
         position: relative;
         top: 60px;
@@ -2002,21 +2009,37 @@ nav.nav__toolbar {
         -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
         -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
         position: fixed;
+        list-style: none;
+        list-style-type: none;
+        padding: 0;
         transition: all 0.25s ease-in-out; }
-        nav.nav__toolbar ul li.has-children ul li, nav.nav__toolbar ul li.has-children .sub-nav-dropdown li {
+        nav.nav__toolbar > ul > li.has-children > ul > li, nav.nav__toolbar > ul > li.has-children > .sub-nav-dropdown > li {
           border-left: none;
           border-top: 1px solid rgba(8, 53, 117, 0.1);
           width: 100%;
           background: #fff;
           padding: 0;
           text-align: left; }
-          nav.nav__toolbar ul li.has-children ul li a, nav.nav__toolbar ul li.has-children ul li button, nav.nav__toolbar ul li.has-children .sub-nav-dropdown li a, nav.nav__toolbar ul li.has-children .sub-nav-dropdown li button {
+          nav.nav__toolbar > ul > li.has-children > ul > li > a, nav.nav__toolbar > ul > li.has-children > ul > li > button, nav.nav__toolbar > ul > li.has-children > .sub-nav-dropdown > li > a, nav.nav__toolbar > ul > li.has-children > .sub-nav-dropdown > li > button {
             line-height: 2;
             padding: 1rem;
-            text-align: left; }
-      nav.nav__toolbar ul li.has-children:hover ul, nav.nav__toolbar ul li.has-children:hover .sub-nav-dropdown {
+            text-align: left;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            -o-border-radius: 0px;
+            border-radius: 0px; }
+            nav.nav__toolbar > ul > li.has-children > ul > li > a:hover, nav.nav__toolbar > ul > li.has-children > ul > li > button:hover, nav.nav__toolbar > ul > li.has-children > .sub-nav-dropdown > li > a:hover, nav.nav__toolbar > ul > li.has-children > .sub-nav-dropdown > li > button:hover {
+              background: rgba(124, 77, 255, 0.2);
+              background: -webkit-linear-gradient(left, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%);
+              background: linear-gradient(to right, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%);
+              transition: all 0.5s ease-in-out;
+              color: #083575; }
+      nav.nav__toolbar > ul > li.has-children:hover > ul, nav.nav__toolbar > ul > li.has-children:hover > .sub-nav-dropdown {
         display: flex; }
-        nav.nav__toolbar ul li.has-children:hover ul li:hover, nav.nav__toolbar ul li.has-children:hover .sub-nav-dropdown li:hover {
+        nav.nav__toolbar > ul > li.has-children:hover > ul > li:hover, nav.nav__toolbar > ul > li.has-children:hover > .sub-nav-dropdown > li:hover {
           background: rgba(124, 77, 255, 0.2);
           background: -webkit-linear-gradient(left, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%);
           background: linear-gradient(to right, rgba(124, 77, 255, 0.2) 0%, rgba(24, 169, 230, 0.2) 50%, rgba(1, 201, 234, 0.2) 100%); }
@@ -2060,11 +2083,11 @@ nav.nav span.badge {
   .mobile-navigation-panel__wrap {
     display: flex;
     flex-direction: column; }
-    .mobile-navigation-panel__wrap .close-panel__toggle {
+    .mobile-navigation-panel__wrap > .close-panel__toggle {
       align-self: flex-end;
       margin-top: 1rem;
       margin-right: 1rem; }
-      .mobile-navigation-panel__wrap .close-panel__toggle button {
+      .mobile-navigation-panel__wrap > .close-panel__toggle > button {
         -webkit-border-radius: 100px;
         -moz-border-radius: 100px;
         -o-border-radius: 100px;
@@ -2074,34 +2097,35 @@ nav.nav span.badge {
         border: 1px solid rgba(255, 255, 255, 0);
         cursor: pointer;
         opacity: .8; }
-        .mobile-navigation-panel__wrap .close-panel__toggle button:hover {
+        .mobile-navigation-panel__wrap > .close-panel__toggle > button:hover {
           border: 1px solid rgba(68, 157, 245, 0.8);
           opacity: 1; }
     .mobile-navigation-panel__wrap nav.nav__primary {
       margin-left: 0;
       height: auto; }
-    .mobile-navigation-panel__wrap nav.nav ul {
+    .mobile-navigation-panel__wrap nav.nav > ul {
       display: flex;
       flex-direction: column;
       width: 100%;
       height: auto; }
-      .mobile-navigation-panel__wrap nav.nav ul li {
+      .mobile-navigation-panel__wrap nav.nav > ul > li {
         width: 100%; }
-        .mobile-navigation-panel__wrap nav.nav ul li a, .mobile-navigation-panel__wrap nav.nav ul li button {
+        .mobile-navigation-panel__wrap nav.nav > ul > li > a, .mobile-navigation-panel__wrap nav.nav > ul > li > button {
           width: 100%;
           flex-direction: row;
           justify-content: flex-start;
           padding: 1em;
           padding-left: 1.5em;
-          align-items: center; }
-          .mobile-navigation-panel__wrap nav.nav ul li a span, .mobile-navigation-panel__wrap nav.nav ul li button span {
+          align-items: center;
+          cursor: pointer; }
+          .mobile-navigation-panel__wrap nav.nav > ul > li > a > span, .mobile-navigation-panel__wrap nav.nav > ul > li > button > span {
             text-align: left;
             margin: 0; }
-            .mobile-navigation-panel__wrap nav.nav ul li a span.icon, .mobile-navigation-panel__wrap nav.nav ul li button span.icon {
+            .mobile-navigation-panel__wrap nav.nav > ul > li > a > span.icon, .mobile-navigation-panel__wrap nav.nav > ul > li > button > span.icon {
               text-align: center;
               max-width: 20px;
               height: auto; }
-            .mobile-navigation-panel__wrap nav.nav ul li a span.label, .mobile-navigation-panel__wrap nav.nav ul li button span.label {
+            .mobile-navigation-panel__wrap nav.nav > ul > li > a > span.label, .mobile-navigation-panel__wrap nav.nav > ul > li > button > span.label {
               margin-left: 1.5rem; }
     .mobile-navigation-panel__wrap nav.nav__toolbar {
       margin-left: 0;
@@ -2109,30 +2133,33 @@ nav.nav span.badge {
       margin-top: auto;
       bottom: 0;
       position: relative; }
-      .mobile-navigation-panel__wrap nav.nav__toolbar ul {
+      .mobile-navigation-panel__wrap nav.nav__toolbar > ul {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto; }
-        .mobile-navigation-panel__wrap nav.nav__toolbar ul li {
+        .mobile-navigation-panel__wrap nav.nav__toolbar > ul > li {
           width: 100%; }
-          .mobile-navigation-panel__wrap nav.nav__toolbar ul li a, .mobile-navigation-panel__wrap nav.nav__toolbar ul li button {
+          .mobile-navigation-panel__wrap nav.nav__toolbar > ul > li > a, .mobile-navigation-panel__wrap nav.nav__toolbar > ul > li > button {
             display: flex;
             width: 100%;
             flex-direction: row;
             justify-content: flex-start;
             padding: 1em;
             padding-left: 1.5em;
-            align-items: center; }
-            .mobile-navigation-panel__wrap nav.nav__toolbar ul li a span, .mobile-navigation-panel__wrap nav.nav__toolbar ul li button span {
+            align-items: center;
+            cursor: pointer; }
+            .mobile-navigation-panel__wrap nav.nav__toolbar > ul > li > a > span, .mobile-navigation-panel__wrap nav.nav__toolbar > ul > li > button > span {
               text-align: left;
               margin: 0; }
-              .mobile-navigation-panel__wrap nav.nav__toolbar ul li a span.icon, .mobile-navigation-panel__wrap nav.nav__toolbar ul li button span.icon {
+              .mobile-navigation-panel__wrap nav.nav__toolbar > ul > li > a > span.icon, .mobile-navigation-panel__wrap nav.nav__toolbar > ul > li > button > span.icon {
                 text-align: center;
                 max-width: 20px;
                 height: auto; }
-              .mobile-navigation-panel__wrap nav.nav__toolbar ul li a span.label, .mobile-navigation-panel__wrap nav.nav__toolbar ul li button span.label {
-                margin-left: 1.5rem; }
+              .mobile-navigation-panel__wrap nav.nav__toolbar > ul > li > a > span.label, .mobile-navigation-panel__wrap nav.nav__toolbar > ul > li > button > span.label {
+                margin-left: 1.5rem;
+                color: #083575;
+                font-size: 0.7rem; }
 
 /* Footer Navigation Mobile - Specific Overrides */
 footer.footer {
@@ -2141,12 +2168,15 @@ footer.footer {
   footer.footer .footer-wrap {
     padding-left: 0;
     height: 100%; }
-    footer.footer .footer-wrap nav.nav__primary {
+    footer.footer .footer-wrap > nav.nav__primary {
       margin-left: 0;
       width: 100%; }
-      footer.footer .footer-wrap nav.nav__primary ul {
+      footer.footer .footer-wrap > nav.nav__primary > ul {
         width: 100%; }
-        footer.footer .footer-wrap nav.nav__primary ul li {
+        footer.footer .footer-wrap > nav.nav__primary > ul > li {
           width: 100%;
           align-items: center;
           justify-content: space-evenly; }
+          footer.footer .footer-wrap > nav.nav__primary > ul > li > a > span.label, footer.footer .footer-wrap > nav.nav__primary > ul > li > button > span.label {
+            color: #083575;
+            font-size: 0.7rem; }
