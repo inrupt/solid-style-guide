@@ -7,16 +7,13 @@ label.checkbox {
 	
 
 	input[type="checkbox"] {
-		appearance: none;
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
+		@include appearance(none);
 		border: 1px solid $tertiary-color-1;
 		width: 2em;
 		height: 2em;
 		margin-right: 1em;
 		cursor: pointer;
-		border-radius: 1px;
+		@include borderRadius(1px);
 		
 		&:hover {
 			border-color: $link-active-color;

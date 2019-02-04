@@ -164,6 +164,19 @@ $prefixes: -webkit-, -moz-, -o-, "";
 
 
 
+/* Appearance Mixin Controller */
+
+@mixin appearance($value) {
+  appearance: $value;
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  -ms-appearance: $value;
+  -o-appearance: $value;
+}
+
+
+
+
 /* Media Query Mixins */
 
 

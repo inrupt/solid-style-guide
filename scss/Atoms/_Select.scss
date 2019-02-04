@@ -19,7 +19,7 @@
 
 	} 
 		select {
-		   -webkit-appearance: button;
+		   @include appearance(none);
 		   background: #fff;
 		   outline: none;
 		   color: #fff;
@@ -30,7 +30,7 @@
 	   }
 
 		option {
-		 -webkit-appearance: menulist;
+		 @include appearance(menulist);
 		 color: #fff;
 		 background: blue;	
 		}

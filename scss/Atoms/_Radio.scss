@@ -10,16 +10,13 @@ label.radio {
 
 
 	input[type="radio"] {
-		appearance: none;
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
+		@include appearance(none);
 		border: 1px solid $tertiary-color-1;
 		width: 2em;
 		height: 2em;
 		margin-right: 1em;
 		cursor: pointer;
-		border-radius: 20em;
+		@include borderRadius(20em);
 		
 		&:hover {
 			border-color: $link-active-color;
@@ -39,7 +36,7 @@ label.radio {
 				display: inline-block;
 				width: 12px;
 				height: 12px;
-				border-radius: 50em;
+				@include borderRadius(50em);
 				background-color: $link-active-color;
 				
 			}
@@ -61,16 +58,13 @@ label.radio {
 
 
 input[type="radio"] {
-		appearance: none;
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
+		@include appearance(none);
 		border: 1px solid $tertiary-color-1;
 		width: 2em;
 		height: 2em;
 		margin-right: 1em;
 		cursor: pointer;
-		border-radius: 20em;
+		@include borderRadius(20em);
 		
 		&:hover {
 			border-color: $link-active-color;
@@ -90,7 +84,7 @@ input[type="radio"] {
 				display: block;
 				width: 12px;
 				height: 12px;
-				border-radius: 50em;
+				@include borderRadius(50em);
 				background-color: $link-active-color;
 			    top: 17%;
     			left: 19%;

@@ -7,10 +7,7 @@ button,
 link, 
 .ids-button, 
 .ids-link {
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
+	@include appearance(none);
 	font-family: $primary-font-stack;
 	color: $primary-text-color;
 	border: 1px solid $tertiary-color-1;

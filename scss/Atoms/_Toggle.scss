@@ -9,8 +9,7 @@ label.switch {
   margin: 1em;
 
 	 input[type="checkbox" i], input[type="checkbox"] { 
-	  appearance: none;
-	  -webkit-appearance: none;
+	  @include appearance(none);
 	  opacity: 0;
 	  width: 0;
 	  height: 0;
@@ -57,11 +56,11 @@ label.switch {
 
 	/* Rounded sliders */
 	.slider.round {
-	  border-radius: 34px;
+	  @include borderRadius(34px);	  
 	}
 
 	.slider.round:before {
-	  border-radius: 50%;
+	  @include borderRadius(34px);	  
 	}
 	
 }
