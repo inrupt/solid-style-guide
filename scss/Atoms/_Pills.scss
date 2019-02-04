@@ -1,11 +1,7 @@
 /* scss/Atoms/_Pills.scss */
 
-
 button {
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
+	@include appearance(none);
 	color: $primary-text-color;
 	border: 1px solid $tertiary-color-1;
 	cursor: pointer;
@@ -14,10 +10,8 @@ button {
 	transition: 0.25s all ease-in-out;
 	outline: none;
 
-
 	&.pill {
-		border-radius: 100px;
-		-webkit-border-radius: 100px;
+		@include borderRadius(100px);
 	}
 
 	&:hover, &[hover] {
@@ -43,7 +37,7 @@ button {
 		align-items: center;
 		justify-content: center;
 		background: lighten($tertiary-color-1, 5%);
-		border-radius: 4px;
+		@include borderRadius(4px);
 		padding: 0.25em 1em;
 
 		img {
@@ -64,7 +58,6 @@ button {
 		opacity: 0.5;
 
 	}
-
 
 	&:active, &[active], &.active {
 		border-color: $link-active-color;

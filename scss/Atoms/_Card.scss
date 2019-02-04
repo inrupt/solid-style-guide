@@ -1,6 +1,5 @@
 /* scss/Atoms/_Card.scss */
 
-
 .card {
 	display: flex;
 	@include borderRadius(4px);
@@ -14,7 +13,6 @@
     transition: all .25s ease-in-out;
     width: 100%;
 
-
     &.interactive  {
         cursor: pointer;
         
@@ -25,4 +23,3 @@
     }
     
 }
-

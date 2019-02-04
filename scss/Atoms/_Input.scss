@@ -1,6 +1,5 @@
 /* scss/Atoms/_Input.scss */
 
-
 .input-wrap {
 	display: flex;
 	flex-wrap: wrap;
@@ -15,10 +14,7 @@
 	}
 
 	input, select, textarea {
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		-ms-appearance: none;
+		@include appearance(none);
 		width: 100%;
 		font-family: $primary-font-stack;
 		outline: none;
@@ -30,7 +26,7 @@
 			font-size: .8em;
 			padding: .5em 0;
 			text-indent: .5em;
-			border-radius: 4px;
+			@include borderRadius(4px);
 
 			&:active, &[active], &:focus {
 				border-color: $link-active-color;
@@ -51,8 +47,7 @@ select {
 		font-size: .8em;
 		padding: .5em 0;
 		text-indent: .5em;
-		border-radius: 4px;
-
+		@include borderRadius(4px);
 
 		&:after {
 		    content:"\f107";   
@@ -77,3 +72,18 @@ select {
 		}
 		
 	}
+
+input, select, textarea {
+		@include appearance(none);		
+		width: 100%;
+		font-family: $primary-font-stack;
+		outline: none;
+		transition: all 0.25s ease-in-out;
+}
+
+input:read-only {
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
