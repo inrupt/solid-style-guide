@@ -23,11 +23,18 @@
 	align-items: center;
 	padding-bottom: 2em;
 
-	img {
+	> img {
 		
 		width: 100%;
 		height: 100%;
 		padding-bottom: 2em;
+
+
+		&.logo-small {
+			width: 200px;
+			margin: 0 auto;
+			margin-top: 1rem;
+		}
 	}
 }
 
