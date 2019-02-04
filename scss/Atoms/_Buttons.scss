@@ -47,9 +47,6 @@ link,
 
 }
 
-
-
-
 /* Filled button Styles */ 
 
 .ids-button-filled, 
@@ -73,8 +70,6 @@ link,
 		  font-family: $primary-font-stack;
 		  font-weight: 700;
 
-
-
 		  &--primary {
 		  	background: $primary-color;
 
@@ -83,14 +78,12 @@ link,
 		  		}
 		  }  
 
-
 			&--secondary {
 				background-color: $secondary-color;	
 
 				&:hover {
 					background: lighten($secondary-color, 5%);		  			
 		  		}
-
 			}
 
 			&--tertiary {
@@ -99,7 +92,6 @@ link,
 				&:hover {
 					background: lighten($tertiary-color, 5%);		  			
 		  		}
-
 			}
 
 			&--tertiary-1 {
@@ -108,7 +100,6 @@ link,
 				&:hover {
 					background: lighten($tertiary-color-1, 5%);		  			
 		  		}
-
 			}
 
 			&--tertiary-2{
@@ -117,7 +108,6 @@ link,
 				&:hover {
 					background: lighten($tertiary-color-2, 5%);		  			
 		  		}
-
 			}
 
 			&--tertiary-3 {
@@ -126,14 +116,12 @@ link,
 				&:hover {
 					background: lighten($tertiary-color-3, 5%);		  			
 		  		}
-
 			}
 
 			/* Gradients */
 
 			&--primary-gradient {
 				@include linear-gradient(to right, $primary-color 0%, $tertiary-color 50%, $secondary-color 100%);
-
 			}
 
 
@@ -172,8 +160,6 @@ link,
 		  background: rgba(255,255,255,0);
 		  font-weight: 700;
 
-
-
 		  &--primary {
 		  	color: $primary-color;
 		  	border-color: $primary-color;
@@ -184,7 +170,6 @@ link,
 		  		}
 		  }  
 
-
 			&--secondary {
 				color: $secondary-color;
 			  	border-color: $secondary-color;
@@ -193,7 +178,6 @@ link,
 					background: rgba($secondary-color, 1);	
 					color: #fff;
 		  		}
-
 			}
 
 			&--tertiary {
@@ -204,7 +188,6 @@ link,
 					background: rgba($tertiary-color, 1);	
 					color: #fff;
 		  		}
-
 			}
 
 			&--tertiary-1 {
@@ -213,7 +196,6 @@ link,
 				&:hover {
 					background: lighten($tertiary-color-1, 5%);		  			
 		  		}
-
 			}
 
 			&--tertiary-2{
@@ -222,7 +204,6 @@ link,
 				&:hover {
 					background: lighten($tertiary-color-2, 5%);		  			
 		  		}
-
 			}
 
 			&--tertiary-3 {
@@ -231,7 +212,6 @@ link,
 				&:hover {
 					background: lighten($tertiary-color-3, 5%);		  			
 		  		}
-
 			}
 
 			/* Gradients */
@@ -240,6 +220,4 @@ link,
 				@include linear-gradient(to right, $primary-color 0%, $tertiary-color 50%, $secondary-color 100%);
 
 			}
-
 }
-

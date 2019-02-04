@@ -1,14 +1,10 @@
 /* scss/Atoms/_Radio.scss */
 
-
-
 label.radio {
 	display: flex;
 	align-items: center;
 	padding: 0;
 	
-
-
 	input[type="radio"] {
 		@include appearance(none);
 		border: 1px solid $tertiary-color-1;
@@ -27,8 +23,6 @@ label.radio {
 			color: $link-active-color;
 			font-weight: bold;
 
-
-
 			&::before  {
 				content: " ";
 				align-self: center;
@@ -45,9 +39,6 @@ label.radio {
 		&:checked+label {
 				font-weight: 700;
 			}
-
-
-
 	}
 
 	&[disabled] {
@@ -55,7 +46,6 @@ label.radio {
 			cursor: initial;
 		}
 }
-
 
 input[type="radio"] {
 		@include appearance(none);
@@ -75,8 +65,6 @@ input[type="radio"] {
 			color: $link-active-color;
 			font-weight: bold;
 
-
-
 			&::before  {
 				content: " ";
 				align-self: center;
@@ -90,6 +78,5 @@ input[type="radio"] {
     			left: 19%;
 			}
 		}
-
 
 	}

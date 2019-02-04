@@ -1,6 +1,5 @@
 /* scss/Atoms/_Input.scss */
 
-
 .input-wrap {
 	display: flex;
 	flex-wrap: wrap;
@@ -49,7 +48,6 @@ select {
 		padding: .5em 0;
 		text-indent: .5em;
 		@include borderRadius(4px);
-
 
 		&:after {
 		    content:"\f107";   

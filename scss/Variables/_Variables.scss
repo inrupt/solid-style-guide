@@ -2,7 +2,6 @@
 
 
 /* Colors - inrupt Branded - Generic*/
-
 $primary-color: #7C4DFF;
 $secondary-color: #01C9EA;
 $tertiary-color: #18A9E6;
@@ -16,23 +15,18 @@ $error-color: #D0021B;
 $icon-color: #5361FD;
 $warning-color: #FFA600;
 
-
 /* inrupt Additional Specific Color Variables */
-
 $neon-blue: #5361FD;
 $steel: #666666;
 $concord-gray: #7D7D7D;
-
 
 /* Typography */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i|Roboto:300,300i,400,400i,700,700i');
 
-
 /* Typography  Variables */
 $primary-font-stack: "Raleway", "Roboto", sans-serif;
 $secondary-font-stack: "Roboto", sans-serif;
-
 
 /* additional Variables */
 $blur: 2px;
@@ -54,7 +48,6 @@ $color: $default;
 	}
 }
 
-
 .row-wrap {
   width: 100%;
   margin-bottom: 3em;
@@ -66,9 +59,7 @@ $color: $default;
 
 }
 
- 
 /* Gradient Functions */
-
 
 @mixin linear-gradient($direction, $color-stops...) {
   // Direction has been omitted and happens to be a color-stop
@@ -117,9 +108,6 @@ $color: $default;
 
 
 
-
-
-
 /* Border Radius Mixin Controller */
 
 
@@ -151,7 +139,6 @@ $prefixes: -webkit-, -moz-, -o-, "";
   }
 }
 
-
 /* Box Shadow Mixin Controller */
 
 @mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 4px, $color: $default) {
@@ -161,7 +148,6 @@ $prefixes: -webkit-, -moz-, -o-, "";
   -ms-box-shadow: $x-axis $y-axis $blur $color;
   -o-box-shadow: $x-axis $y-axis $blur $color;
 }
-
 
 
 /* Appearance Mixin Controller */
@@ -175,8 +161,6 @@ $prefixes: -webkit-, -moz-, -o-, "";
 }
 
 
-
-
 /* Media Query Mixins */
 
 
@@ -188,7 +172,6 @@ $desktop-width: 1024px;
     @content;
   }
 }
-
 
 @mixin tablet {
   @media (max-width: #{$desktop-width - 1px}) {

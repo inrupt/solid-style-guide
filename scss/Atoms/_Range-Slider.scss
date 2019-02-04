@@ -1,6 +1,5 @@
 /* scss/Atoms/_Range-Slider.scss */
 
-
 input[type="range"] {
 	@include appearance(none);
 	height: 2px;
@@ -16,12 +15,7 @@ input[type="range"] {
 		border-radius: 50em;
 		box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
 	}	
-
-
-
 }
-
-
 
 $track-w: 100%;
 $track-h: .25em;
@@ -110,4 +104,3 @@ $fill-c: blue;
     
     &::-ms-tooltip { display: none }
 }
-

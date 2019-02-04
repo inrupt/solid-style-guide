@@ -1,6 +1,5 @@
 /* scss/Atoms/_Select.scss */
 
-
 .select-wrap {  
 	width: 100%;
 	display: flex;
@@ -16,14 +15,12 @@
 		font-size: 2em;
 		top: 0em;
 		left: -1em;
-
 	} 
 		select {
 		   @include appearance(none);
 		   background: #fff;
 		   outline: none;
 		   color: #fff;
-
 
 	   &:active, &:focus {
 	     border-color: $link-active-color;
@@ -34,10 +31,5 @@
 		 color: #fff;
 		 background: blue;	
 		}
-
-
 	}
-
 }
-
-

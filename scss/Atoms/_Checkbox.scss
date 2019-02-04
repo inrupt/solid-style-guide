@@ -1,10 +1,8 @@
 /* scss/Atoms/_Checkbox.scss */
 
-
 label.checkbox {
 	display: flex;
 	align-items: center;
-	
 
 	input[type="checkbox"] {
 		@include appearance(none);
@@ -62,6 +60,4 @@ label.checkbox {
 			cursor: initial;
 			pointer-events: none;
 		}
-
-
 }

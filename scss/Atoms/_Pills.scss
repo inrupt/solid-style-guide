@@ -1,6 +1,5 @@
 /* scss/Atoms/_Pills.scss */
 
-
 button {
 	@include appearance(none);
 	color: $primary-text-color;
@@ -10,7 +9,6 @@ button {
 	padding: 0.5em 1em;
 	transition: 0.25s all ease-in-out;
 	outline: none;
-
 
 	&.pill {
 		@include borderRadius(100px);
@@ -60,7 +58,6 @@ button {
 		opacity: 0.5;
 
 	}
-
 
 	&:active, &[active], &.active {
 		border-color: $link-active-color;

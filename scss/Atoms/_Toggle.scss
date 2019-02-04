@@ -62,9 +62,7 @@ label.switch {
 	.slider.round:before {
 	  @include borderRadius(34px);	  
 	}
-	
 }
-
 
 	input[type="checkbox"]:disabled + .slider{
 			opacity: .5;
