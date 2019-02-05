@@ -79,13 +79,15 @@ header.header, footer.footer, header.header__desktop {
 									padding-left: 0.75em;
 									padding-right: 0.75em;
 
-									> span {
-										color: $icon-color;
-										font-size: 1.1rem;
-										
-										&.label {
-											font-size: 1.2rem;
-											margin-right: .5em;											
+									> .sub-nav-dropdown, .sub-nav-dropdown, > ul {
+										> span {
+											color: $icon-color;
+											font-size: 1.1rem;
+											
+											&.label {
+												font-size: 1.2rem;
+												margin-right: .5em;											
+											}
 										}
 									}
 								}
@@ -108,10 +110,12 @@ header.header, footer.footer, header.header__desktop {
 									cursor: pointer; 
 								}
 
-								&.has-children {
-									> span {
-										&.label {
-											font-size: 1.3rem;										
+								&.has-children, .sub-nav-dropdown {
+									.sub-nav-dropdown, > .sub-nav-dropdown, > ul {
+										> span {
+											&.label {
+												font-size: 1.3rem;										
+											}
 										}
 									}
 								}
@@ -352,9 +356,9 @@ nav.nav {
 					}
 
 
-					&.has-children {
+					&.has-children, .sub-nav-dropdown {
 						
-						> ul, > .sub-nav-dropdown {
+						> ul, > .sub-nav-dropdown, .sub-nav-dropdown {
 							display: none;
 							position: relative;
 							top: 60px;
@@ -582,9 +586,59 @@ span.badge {
 
 }
 
+
+/* Dropdown-Styles */
+
+ .sub-nav-dropdown {
+	display: flex;
+	position: relative;
+	top: 60px;
+	min-width: 200px;
+	flex-direction: column;
+	right: 0;
+	height: auto;
+	background: #fff;
+	@include borderRadius (0px 0px 4px 4px);
+	@include box-shadow();	
+	position: fixed;
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+	transition: all 0.25s ease-in-out;						
+
+	> li, > .sub-nav-dropdown__item {
+		border-left: none;
+		border-top: 1px solid rgba($tertiary-color-2, 0.1);
+		width: 100%;	
+		background: #fff;
+		padding: 0;
+		text-align: left;
+
+		> a, > button {
+			line-height: 2;
+			padding: 1rem;
+			text-align: left;
+			cursor: pointer; 
+			width: 100%;
+			border: none;
+			@include borderRadius(0px);
+			
+			&:hover {
+			    @include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%);
+				transition: all 0.5s ease-in-out;
+				color: $tertiary-color-2;
+			}
+		}
+	}
+}
+
+			
+
+
+
+
+
 /* Footer Navigation Mobile - Specific Overrides */
-
-
 footer.footer {
 	/* position: fixed; //remove comments for fixed positioned footer  */
 	/* bottom: 0; //remove comments for bottom fixed positioned footer  */
