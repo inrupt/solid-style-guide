@@ -256,3 +256,47 @@
 section.grid.grid__three-column.demo {
 	grid-gap: 1%;
 }
+
+.banner-wrap {
+	&--footer {
+		position: fixed;
+		bottom: 0;
+		margin: 0;
+		left: 0;
+		background: $primary-color;
+		color: #fff;
+		z-index: 9999;
+		padding: 0;
+		box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+
+		> .banner-wrap__content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+			width: 100%;
+
+			> i.icon {
+				font-size: 1.5rem;
+				margin-right: .5em;
+			}
+
+			> a {
+				color: #fff;
+				text-decoration: none;
+				text-transform: uppercase;
+				width: 100%;
+				padding: 1em;
+				text-align: center;
+				margin: 0 auto;
+				transition: all 0.25s ease-in-out;
+
+				&:hover {
+					background: darken($primary-color, 2%);
+					transition: all 0.25s ease-in-out;
+				}
+
+			}
+		}
+	}
+}

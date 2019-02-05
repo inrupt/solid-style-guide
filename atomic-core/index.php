@@ -481,6 +481,13 @@ $settings = $settings->select(array());
 
 
 
+<section class="banner-wrap--footer banner">
+    <div class="banner-wrap__content">
+    <a href="https://github.com/Inrupt-inc/inrupt-atomic-styleguide" target="_blank"><i class="icon fa fa-github"></i> View on Github</a></div>
+</section>
+
+
+
 
 <div class="aa_js-actionDrawer aa_actionDrawer">
     <div class="aa_actionDrawer__wrap">
