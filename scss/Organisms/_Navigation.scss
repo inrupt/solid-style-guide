@@ -146,7 +146,7 @@ header.header {
 
 		.header-wrap {
 
-			@include tablet {
+			/* @include tablet {
 				nav.nav__primary,
 				nav.nav__toolbar {
 					display: none;
@@ -155,10 +155,10 @@ header.header {
 				.mobile-navigation__toggle {
 					display: flex;
 				}
-			}
+			}  tablet media query */
 
 
-			@include mobile {
+			/* @include mobile {
 				nav.nav__primary,
 				nav.nav__toolbar {
 					display: none;
@@ -167,10 +167,10 @@ header.header {
 				.mobile-navigation__toggle {
 					display: flex;
 				}
-			}
+			} Mobile media query */
 
 			/* Desktop Media Query for Navigation Bar */
-			@include desktop {
+			/* @include desktop {
 
 				nav.nav__primary,
 				nav.nav__toolbar {
@@ -182,7 +182,13 @@ header.header {
 				}
 
 
-			}	
+			}	 Desktop Media Query */
+
+
+				.mobile-navigation__toggle {
+					display: none;
+				}
+
 
 		}
 	}
