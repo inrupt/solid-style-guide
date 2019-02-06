@@ -2019,25 +2019,42 @@ header.header.fixed, header.header--fixed {
   left: 0;
   width: 100vw; }
 header.header__desktop .header-wrap {
-  /* Desktop Media Query for Navigation Bar */ }
-  @media (max-width: 1023px) {
-    header.header__desktop .header-wrap nav.nav__primary,
-    header.header__desktop .header-wrap nav.nav__toolbar {
-      display: none; }
-    header.header__desktop .header-wrap .mobile-navigation__toggle {
-      display: flex; } }
-  @media (max-width: 768px -1px) {
-    header.header__desktop .header-wrap nav.nav__primary,
-    header.header__desktop .header-wrap nav.nav__toolbar {
-      display: none; }
-    header.header__desktop .header-wrap .mobile-navigation__toggle {
-      display: flex; } }
-  @media (min-width: 1024px) {
-    header.header__desktop .header-wrap nav.nav__primary,
-    header.header__desktop .header-wrap nav.nav__toolbar {
-      display: flex; }
-    header.header__desktop .header-wrap .mobile-navigation__toggle {
-      display: none; } }
+  			/* @include tablet {
+  				nav.nav__primary,
+  				nav.nav__toolbar {
+  					display: none;
+  				}
+  
+  				.mobile-navigation__toggle {
+  					display: flex;
+  				}
+  			}  tablet media query */
+  			/* @include mobile {
+  				nav.nav__primary,
+  				nav.nav__toolbar {
+  					display: none;
+  				}
+  
+  				.mobile-navigation__toggle {
+  					display: flex;
+  				}
+  			} Mobile media query */
+  /* Desktop Media Query for Navigation Bar */
+  			/* @include desktop {
+  
+  				nav.nav__primary,
+  				nav.nav__toolbar {
+  					display: flex;
+  				}
+  
+  				.mobile-navigation__toggle {
+  					display: none;
+  				}
+  
+  
+  			}	 Desktop Media Query */ }
+  header.header__desktop .header-wrap .mobile-navigation__toggle {
+    display: none; }
 
 .header-spacer {
   position: relative;
