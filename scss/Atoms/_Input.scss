@@ -116,11 +116,15 @@ input:read-only {
     transition: all 0.25s ease-in-out;
 
     &:read-only,
-    &[read-only] {
-      border: none;
+    &[read-only], 
+    &.read-only {
+      border: none !important;
+      pointer-events: none;
 
-      &:focus {
-        outline: none;
+      &:focus, :active {
+        outline: none !important;
+        border: none !important;
+        pointer-events: none;
       }
     }
 

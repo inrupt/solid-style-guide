@@ -1170,18 +1170,31 @@ textarea {
   font-family: "Raleway", "Roboto", sans-serif;
   outline: none;
   transition: all 0.25s ease-in-out; }
-  input:read-only, input[read-only],
+  input:read-only, input[read-only], input.read-only,
   select:read-only,
   select[read-only],
+  select.read-only,
   textarea:read-only,
-  textarea[read-only] {
-    border: none; }
-    input:read-only:focus, input[read-only]:focus,
+  textarea[read-only],
+  textarea.read-only {
+    border: none !important;
+    pointer-events: none; }
+    input:read-only:focus, input:read-only :active, input[read-only]:focus, input[read-only] :active, input.read-only:focus, input.read-only :active,
     select:read-only:focus,
+    select:read-only :active,
     select[read-only]:focus,
+    select[read-only] :active,
+    select.read-only:focus,
+    select.read-only :active,
     textarea:read-only:focus,
-    textarea[read-only]:focus {
-      outline: none; }
+    textarea:read-only :active,
+    textarea[read-only]:focus,
+    textarea[read-only] :active,
+    textarea.read-only:focus,
+    textarea.read-only :active {
+      outline: none !important;
+      border: none !important;
+      pointer-events: none; }
   input:disabled, input[disabled],
   select:disabled,
   select[disabled],
