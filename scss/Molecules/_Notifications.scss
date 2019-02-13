@@ -10,6 +10,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 1em;
+	box-sizing: border-box;
 
 
 		&--primary {
@@ -75,6 +76,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 1em;
+	box-sizing: border-box;
 }
 
 
@@ -91,6 +93,7 @@
 	@include box-shadow();
 	width: 100%;
 	cursor: pointer;
+	box-sizing: border-box;
 
 
 	&:first-of-type {
@@ -103,6 +106,7 @@
 .toaster-wrap {
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
+	box-sizing: border-box;
 
 
 		&--primary {
@@ -205,6 +209,7 @@
 	.toaster-wrap {
 	  @include borderRadius(4px);
 	  @include box-shadow();
+	  box-sizing: border-box;
 
 
 
@@ -258,7 +263,10 @@ section.grid.grid__three-column.demo {
 }
 
 .banner-wrap {
+	box-sizing: border-box;
+
 	&--footer {
+		box-sizing: border-box;
 		position: fixed;
 		bottom: 0;
 		margin: 0;
