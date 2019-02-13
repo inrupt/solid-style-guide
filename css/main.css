@@ -1072,10 +1072,18 @@ button {
 .input-wrap {
   display: flex;
   flex-wrap: wrap;
-  max-width: 50%;
+  max-width: 95%;
   margin: 1em 0; }
+  .input-wrap--inline {
+    flex-wrap: nowrap !important;
+    align-items: center; }
+    .input-wrap--inline label {
+      margin-right: .5em;
+      line-height: 1;
+      height: auto; }
+      .input-wrap--inline label span.icon, .input-wrap--inline label i.icon {
+        font-size: 1rem; }
   .input-wrap label {
-    width: 100%;
     font-size: .8em;
     color: #354866;
     padding-bottom: 0.3em; }
@@ -1150,6 +1158,62 @@ input:read-only {
   border: none; }
   input:read-only:focus {
     outline: none; }
+
+input,
+select,
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  width: 100%;
+  font-family: "Raleway", "Roboto", sans-serif;
+  outline: none;
+  transition: all 0.25s ease-in-out; }
+  input:read-only, input[read-only],
+  select:read-only,
+  select[read-only],
+  textarea:read-only,
+  textarea[read-only] {
+    border: none; }
+    input:read-only:focus, input[read-only]:focus,
+    select:read-only:focus,
+    select[read-only]:focus,
+    textarea:read-only:focus,
+    textarea[read-only]:focus {
+      outline: none; }
+  input:disabled, input[disabled],
+  select:disabled,
+  select[disabled],
+  textarea:disabled,
+  textarea[disabled] {
+    pointer-events: none; }
+  input[type="text"],
+  select[type="text"],
+  textarea[type="text"] {
+    border: 1px solid #DAE0E6;
+    font-size: 0.8em;
+    padding: 0.5em 0;
+    text-indent: 0.75em;
+    border-radius: 4px; }
+    input[type="text"]:active, input[type="text"][active], input[type="text"]:focus,
+    select[type="text"]:active,
+    select[type="text"][active],
+    select[type="text"]:focus,
+    textarea[type="text"]:active,
+    textarea[type="text"][active],
+    textarea[type="text"]:focus {
+      border-color: #449DF5; }
+    input[type="text"]:invalid, input[type="text"][invalid],
+    select[type="text"]:invalid,
+    select[type="text"][invalid],
+    textarea[type="text"]:invalid,
+    textarea[type="text"][invalid] {
+      border-color: #D0021B; }
+    input[type="text"]::placeholder,
+    select[type="text"]::placeholder,
+    textarea[type="text"]::placeholder {
+      color: rgba(0, 0, 0, 0.3); }
 
 /* scss/Atoms/_Select.scss */
 .select-wrap {
