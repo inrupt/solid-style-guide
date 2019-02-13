@@ -3,11 +3,25 @@
 .input-wrap {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 50%;
+	max-width: 95%;
 	margin: 1em 0;
 
+	&--inline {
+		flex-wrap: nowrap !important;
+		align-items: center;
+
+		label {
+			margin-right: .5em;
+			line-height: 1;
+			height: auto;
+
+			span.icon, i.icon {
+				font-size: 1rem;
+			}
+		}
+	}
+	
 	label {
-		width: 100%;
 		font-size: .8em;
 		color: $primary-text-color;
 		padding-bottom: 0.3em;
@@ -85,5 +99,60 @@ input:read-only {
     border: none;
     &:focus {
       outline: none;
+    }
+  }
+
+
+  input,
+  select,
+  textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    width: 100%;
+    font-family: $primary-font-stack;
+    outline: none;
+    transition: all 0.25s ease-in-out;
+
+    &:read-only,
+    &[read-only], 
+    &.read-only {
+      border: none !important;
+      pointer-events: none;
+
+      &:focus, :active {
+        outline: none !important;
+        border: none !important;
+        pointer-events: none;
+      }
+    }
+
+    &:disabled, 
+    &[disabled] {
+    	pointer-events: none;
+    }
+
+    &[type="text"] {
+      border: 1px solid $tertiary-color-1;
+      font-size: 0.8em;
+      padding: 0.5em 0;
+      text-indent: 0.75em;
+      border-radius: 4px;
+
+      &:active,
+      &[active],
+      &:focus {
+        border-color: $link-active-color;
+      }
+
+      &:invalid,
+      &[invalid] {
+        border-color: $error-color;
+      }
+
+      &::placeholder {
+      	color: rgba(0,0,0,0.3);
+      }
     }
   }
