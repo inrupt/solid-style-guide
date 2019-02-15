@@ -4,51 +4,50 @@
 	<meta charset="utf-8"/>
 </head>
 <body>
-<h1 id="inruptatomicdesignsystem">inrupt Atomic Design System</h1>
+<h1 id="atomicdesignsystemforsolidapplications">Atomic Design System for Solid Applications</h1>
 
-<p>A Live respository of UI styles and UX patterns utilized by the inrupt generator for Solid React applications (<a href="https://github.com/inrupt-inc/generator-solid-react" target="_blank">https://github.com/inrupt-inc/generator-solid-react</a>). By leveraging Nick Berens&#8217; Atomic Docs framework (inspired by Brad Frost&#8217;s Atomic design principles) as a base style guide/design system generation tool, the inrupt creative and front-end development team define UI/UX decisions and styled components are documented here to be used across inrupt applications. </p>
+<p>Inspired by Brad Frost&#8217;s Atomic design principles, we use Nick Berens&#8217; Atomic Docs framework as a base style guide / design system generation tool for Solid applications. This is a live repository of UI styles and UX patterns utilized in our Software Development Kits for Solid. The design system will continue to evolve as we commit and release new patterns and features.</p>
 
-<p>This design system can be downloaded and customized for unique theming in your solid react projects. </p>
+<p>This design system can be forked and customized for unique theming in your Solid application projects.</p>
 
-<p>inrupt Atomic Design System Demo: <a href="https://design.inrupt.com" target="_blank">https://design.inrupt.com</a></p>
+<p>To see this applied, check out the <a href="https://github.com/inrupt-inc/generator-solid-react">React Application Generator</a> in the <a href="https://github.com/inrupt-inc/solid-react-sdk">Solid React SDK</a>.</p>
 
-<p>Note: As this is a living design system, new compenents are continually added and refactored as the design system evolves. </p>
+<p>To see this live, go to <a href="https://design.inrupt.com">design.inrupt.com</a>.</p>
 
-<h2 id="setupforlocaldevelopment:">Set up For Local Development:</h2>
+<p><em>As this is a living design system, new components are continually added and refactored as the system evolves.</em></p>
 
-<p>To set up the inrupt atomic design system for local development/custom theming: </p>
+<h2 id="touseitinyourapplication">To use it in your application</h2>
+
+<p>There are two main ways to install the design system output (which can be replicated for customized themes/systems):</p>
+
+<h4 id="npm">npm</h4>
+
+<p><code>npm install --save @inrupt/solid-style-guide</code></p>
+
+<h4 id="yarn">yarn</h4>
+
+<p><code>yarn add @inrupt/solid-style-guide</code></p>
+
+<h4 id="post-install">Post-install</h4>
+
+<p>After installation, the design system can be added to your root component:<br/>
+<code>import @inrupt/solid-style-guide</code></p>
+
+<h2 id="tocustomizeyourownversion">To customize your own version</h2>
+
+<p>To set up the design system for local development / custom theming:</p>
 
 <ol>
-<li>Download this repository and add to your local PHP environment.</li>
+<li>Fork this repository and add to your local PHP environment.</li>
 <li>Configure your preprocessor to output <code>scss/main.scss</code> to <code>css/main.css</code>.</li>
 <li>Go to <code>http://localhost/atomic-docs/atomic-core/index.php</code> and get started.</li>
 </ol>
 
-<h3 id="toconsumeinapplicatons:">To Consume In Applicatons:</h3>
+<h2 id="credit">Credit</h2>
 
-<p>There are two main ways to install the inrupt atomic design system output (which can be replicated for customized themes/systems):</p>
+<p>Built using Nick Berens&#8217; <a href="http://atomicdocs.io/">Atomic Docs</a> Framework based in PHP and SASS/SCSS.</p>
 
-<p>npm install &#8211;save @inrupt/inrupt-atomic-style-guide</p>
-
-<p>or </p>
-
-<p>yarn add @inrupt/inrupt-atomic-style-guide </p>
-
-<p>(Dependent on the dependency tool utilized on your project)</p>
-
-<p>After installation, the design system can be added to your root component as import @inrupt/inrupt-atomic-style-guide</p>
-
-<h2 id="builtwith:">Built With:</h2>
-
-<p>Built using Nick Berens&#8217; Atomic Docs Framework based in PHP and SASS/SCSS. </p>
-
-<p>Additional documentation regarding the Atomic Docs framework and installation can be found at <a href="http://atomicdocs.io/">AtomicDocs.io</a>.</p>
-
-<h2 id="goals">Goals</h2>
-
-<p>We started this project wanting to create a home where creatives and developers could document UI/UX patterns &amp; design decisions, and UI styles and FE guidelines. This framework allows us to reduce siloed knowledge, crafting a source of truth for inrupt application interfaces. This documentation and examples can then be utilized to accellerate additional application projects. </p>
-
-<p>As we continue working on new applications and features, the inrupt Atomic Design System will evolve as we commit and release new patterns and features. </p>
+<p>Check out <a href="https://www.atomicdocs.io">AtomicDocs.io</a> for more detail on the framework and installation tips.</p>
 
 </body>
 </html>

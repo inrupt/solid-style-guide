@@ -16,14 +16,14 @@ To see this live, go to [design.inrupt.com](https://design.inrupt.com).
 There are two main ways to install the design system output (which can be replicated for customized themes/systems):
 
 #### npm
-`npm install --save @inrupt/inrupt-atomic-style-guide`
+`npm install --save @inrupt/solid-style-guide`
 
 #### yarn
-`yarn add @inrupt/inrupt-atomic-style-guide`
+`yarn add @inrupt/solid-style-guide`
 
 #### Post-install
 After installation, the design system can be added to your root component:  
-`import @inrupt/inrupt-atomic-style-guide`
+`import @inrupt/solid-style-guide`
 
 ## To customize your own version
 
