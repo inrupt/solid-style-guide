@@ -158,5 +158,13 @@
         "backgroundColor": "",
         "order": -18,
         "has_js": "false"
+    },
+    {
+        "component": "Footers",
+        "category": "Organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -19,
+        "has_js": "false"
     }
 ]
