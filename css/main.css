@@ -2507,3 +2507,29 @@ footer.footer {
           footer.footer .footer-wrap > nav.nav__primary > ul > li > a > span.label, footer.footer .footer-wrap > nav.nav__primary > ul > li > button > span.label {
             color: #083575;
             font-size: 0.7rem; }
+
+/* scss/Organisms/_Footers.scss */
+footer.solid-footer__content,
+.solid-footer__content {
+  display: flex;
+  justify-content: space-between; }
+footer.solid-footer ul, footer.solid-footer ol,
+.solid-footer ul,
+.solid-footer ol {
+  list-style-type: none;
+  list-style: none;
+  padding-left: 0;
+  display: flex; }
+  footer.solid-footer ul li:not(:first-child), footer.solid-footer ol li:not(:first-child),
+  .solid-footer ul li:not(:first-child),
+  .solid-footer ol li:not(:first-child) {
+    border-left: 1px solid #DAE0E6; }
+  footer.solid-footer ul li, footer.solid-footer ol li,
+  .solid-footer ul li,
+  .solid-footer ol li {
+    padding: 0 1em;
+    font-size: 1em; }
+    footer.solid-footer ul li a img.link-icon, footer.solid-footer ol li a img.link-icon,
+    .solid-footer ul li a img.link-icon,
+    .solid-footer ol li a img.link-icon {
+      margin-right: .5em; }

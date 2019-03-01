@@ -1,0 +1,40 @@
+/* scss/Organisms/_Footers.scss */
+
+
+
+footer.solid-footer, 
+.solid-footer {
+		
+		&__content {
+			display: flex;
+			justify-content: space-between;
+		}
+
+
+	ul, ol {
+		list-style-type: none;
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+
+		li:not(:first-child) {
+			border-left: 1px solid $tertiary-color-1;
+		}
+
+		li {
+			padding: 0 1em;
+			font-size: 1em;
+
+			a {
+
+				img.link-icon {
+					margin-right: .5em;
+				}
+			}
+		}
+	}
+}
+
+
+
+
