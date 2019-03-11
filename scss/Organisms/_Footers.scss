@@ -29,11 +29,15 @@ footer.solid-footer,
 
 			a {
 
-				img.link-icon {
+				img.link-icon, .link-icon {
 					margin-right: .5em;
 				}
 			}
 		}
+	}
+
+	img.link-icon, .link-icon {
+		margin-right: .5em;
 	}
 }
 

@@ -2540,7 +2540,13 @@ footer.solid-footer ul, footer.solid-footer ol,
   .solid-footer ol li {
     padding: 0 1em;
     font-size: 1em; }
-    footer.solid-footer ul li a img.link-icon, footer.solid-footer ol li a img.link-icon,
+    footer.solid-footer ul li a img.link-icon, footer.solid-footer ul li a .link-icon, footer.solid-footer ol li a img.link-icon, footer.solid-footer ol li a .link-icon,
     .solid-footer ul li a img.link-icon,
-    .solid-footer ol li a img.link-icon {
+    .solid-footer ul li a .link-icon,
+    .solid-footer ol li a img.link-icon,
+    .solid-footer ol li a .link-icon {
       margin-right: .5em; }
+footer.solid-footer img.link-icon, footer.solid-footer .link-icon,
+.solid-footer img.link-icon,
+.solid-footer .link-icon {
+  margin-right: .5em; }
