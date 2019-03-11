@@ -4,7 +4,7 @@
 
 <h4>Footer - Default</h4>
 
-<footer role="footer" class="solid-footer footer">
+<footer class="solid-footer footer">
 	<section class="solid-footer__content">
 		<div class="solid-footer__content--copyright">
 			<ul>
