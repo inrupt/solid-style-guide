@@ -56,6 +56,10 @@
 }
 
 select {
+		appearance: none;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    -ms-appearance: none;
 		border: 1px solid $tertiary-color-1;
 		background: none;
 		font-size: .8em;
@@ -95,16 +99,15 @@ input, select, textarea {
 		transition: all 0.25s ease-in-out;
 }
 
-input:read-only {
+/*input:read-only {
     border: none;
     &:focus {
       outline: none;
     }
-  }
+  } */
 
 
   input,
-  select,
   textarea {
     appearance: none;
     -webkit-appearance: none;
@@ -115,23 +118,22 @@ input:read-only {
     outline: none;
     transition: all 0.25s ease-in-out;
 
-    &:read-only,
-    &[read-only], 
+  
     &.read-only {
-      border: none !important;
+      border: none;
       pointer-events: none;
 
       &:focus, :active {
-        outline: none !important;
-        border: none !important;
+        outline: none;
+        border: none;
         pointer-events: none;
       }
     }
 
-    &:disabled, 
+   &:disabled, 
     &[disabled] {
     	pointer-events: none;
-    }
+    } 
 
     &[type="text"] {
       border: 1px solid $tertiary-color-1;

@@ -1157,6 +1157,10 @@ button {
         border-color: #D0021B; }
 
 select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
   border: 1px solid #DAE0E6;
   background: none;
   font-size: .8em;
@@ -1199,13 +1203,13 @@ input, select, textarea {
   outline: none;
   transition: all 0.25s ease-in-out; }
 
-input:read-only {
-  border: none; }
-  input:read-only:focus {
-    outline: none; }
-
+/*input:read-only {
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  } */
 input,
-select,
 textarea {
   appearance: none;
   -webkit-appearance: none;
@@ -1215,39 +1219,21 @@ textarea {
   font-family: "Raleway", "Roboto", sans-serif;
   outline: none;
   transition: all 0.25s ease-in-out; }
-  input:read-only, input[read-only], input.read-only,
-  select:read-only,
-  select[read-only],
-  select.read-only,
-  textarea:read-only,
-  textarea[read-only],
+  input.read-only,
   textarea.read-only {
-    border: none !important;
+    border: none;
     pointer-events: none; }
-    input:read-only:focus, input:read-only :active, input[read-only]:focus, input[read-only] :active, input.read-only:focus, input.read-only :active,
-    select:read-only:focus,
-    select:read-only :active,
-    select[read-only]:focus,
-    select[read-only] :active,
-    select.read-only:focus,
-    select.read-only :active,
-    textarea:read-only:focus,
-    textarea:read-only :active,
-    textarea[read-only]:focus,
-    textarea[read-only] :active,
+    input.read-only:focus, input.read-only :active,
     textarea.read-only:focus,
     textarea.read-only :active {
-      outline: none !important;
-      border: none !important;
+      outline: none;
+      border: none;
       pointer-events: none; }
   input:disabled, input[disabled],
-  select:disabled,
-  select[disabled],
   textarea:disabled,
   textarea[disabled] {
     pointer-events: none; }
   input[type="text"],
-  select[type="text"],
   textarea[type="text"] {
     border: 1px solid #DAE0E6;
     font-size: 0.8em;
@@ -1255,21 +1241,15 @@ textarea {
     text-indent: 0.75em;
     border-radius: 4px; }
     input[type="text"]:active, input[type="text"][active], input[type="text"]:focus,
-    select[type="text"]:active,
-    select[type="text"][active],
-    select[type="text"]:focus,
     textarea[type="text"]:active,
     textarea[type="text"][active],
     textarea[type="text"]:focus {
       border-color: #449DF5; }
     input[type="text"]:invalid, input[type="text"][invalid],
-    select[type="text"]:invalid,
-    select[type="text"][invalid],
     textarea[type="text"]:invalid,
     textarea[type="text"][invalid] {
       border-color: #D0021B; }
     input[type="text"]::placeholder,
-    select[type="text"]::placeholder,
     textarea[type="text"]::placeholder {
       color: rgba(0, 0, 0, 0.3); }
 
