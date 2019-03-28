@@ -94,7 +94,7 @@ input, select, textarea {
 
 
 
- .read-only {
+ .read-only, [readonly] {
       border: none;
       pointer-events: none;
 
@@ -141,7 +141,7 @@ input, select, textarea {
 		transition: all 0.25s ease-in-out;
 	
 
-		&[type="text"],  {
+		&[type="text"]  {
 			border: 1px solid $tertiary-color-1;
 			font-size: .8em;
 			padding: .5em 0;
@@ -170,7 +170,7 @@ input[type="text"],
 input[type="email"],
 input[type="number"] {
 
- &.read-only {
+ &.read-only, &[readonly] {
       border: none ;
       pointer-events: none;
       background: none;
@@ -197,7 +197,7 @@ input[type="number"] {
 	input[type="number"] {
 
 
-	 &.read-only {
+	 &.read-only, &[readonly] {
 	      border: none;
 	      pointer-events: none;
 
@@ -211,8 +211,8 @@ input[type="number"] {
 
 
 
-		&.read-only {
-			&::after {
+		&.read-only, &[readonly] {
+		 &::after {
 				content: "";
 				display: none;
 			}
