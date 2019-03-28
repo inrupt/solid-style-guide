@@ -10,6 +10,20 @@ footer.solid-footer,
 	align-items: center;
 	width: 100%;	
 
+	&.fixed, &[fixed] {
+		position: fixed;
+		bottom: 0;
+		z-index: 999999; /* update to meet your z-index needs */
+	    position: fixed;
+	    bottom: 0;
+	    width: 100%;
+	    left: 0;
+	    right: 0;
+	    top: auto;
+	    @include box-shadow($x-axis: 0, $y-axis: -2px, $blur: 2px, $color: $default);
+	}
+
+
 		&__content {
 			display: flex;
 			justify-content: space-between;
