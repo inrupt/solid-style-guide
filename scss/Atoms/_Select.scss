@@ -1,6 +1,6 @@
 /* scss/Atoms/_Select.scss */
 
-.select-wrap {  
+.select-wrap {
 	width: 100%;
 	display: flex;
 	align-content: center;
@@ -9,13 +9,13 @@
    	 &::after  {
 		color: $tertiary-color-1;
 		content: "\f107";
-		font-family: "FontAwesome";
+		font-family: "FontAwesome"; //TODO: Replace with SVG icons instead, https://css-tricks.com/icon-fonts-vs-svg/
 		align-self: center;
 		position: relative;
 		font-size: 2em;
-		top: 0em;
+		top: 0;
 		left: -1em;
-	} 
+	}
 		select {
 		   @include appearance(none);
 		   background: #fff;
@@ -29,7 +29,7 @@
 		option {
 		 @include appearance(menulist);
 		 color: #fff;
-		 background: blue;	
+		 background: blue;
 		}
 	}
 }
