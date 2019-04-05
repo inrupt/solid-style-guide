@@ -10,21 +10,21 @@ table {
 
 	thead {
 		background: #fff;
-		
+
 		tr {
 			text-align: left;
 			color: $secondary-text-color;
 			padding: 0 1em;
-			
+
 			th {
-				padding: 1em;		
+				padding: 1em;
 				border-top: 1px solid rgba($tertiary-color-1, 0.8);
 				border-bottom: 1px solid rgba($tertiary-color-1, 0.8);
 				white-space: nowrap;
 				width: 1%;
-				
 
-				
+
+
 				&.sortable {
 					cursor: pointer;
 				}
@@ -38,7 +38,7 @@ table {
 
 	tbody {
 		padding: 0 1em;
-		
+
 		tr {
 			color: $secondary-text-color;
 			cursor: pointer;
@@ -58,8 +58,8 @@ table {
 
 
 				span {
-					&.file-preview {				
-						text-align: center;						
+					&.file-preview {
+						text-align: center;
 
 						img {
 							display: block;
@@ -75,14 +75,14 @@ table {
 
 
 				&.menu-additional {
-					text-align: center;	
+					text-align: center;
 					margin: 0 auto;
 					min-width: 1em;
 
 					i {
-						text-align: center;	
+						text-align: center;
 						margin: 0 auto;
-						display: block;						
+						display: block;
 					}
 				}
 
@@ -92,7 +92,7 @@ table {
 					white-space: nowrap;
 					display: block;
 					padding: 1em 0;
-					
+
 
 					span {
 						&.type-icon {
@@ -127,13 +127,13 @@ table {
 
 
 
- table.fixed-col__table {	
+ table.fixed-col__table {
 
  	thead {
-		
+
 		tr {
-			
-			th {		
+
+			th {
 
 				&.preview {
 			    	width: 55px;
@@ -141,7 +141,7 @@ table {
 			    	height: 45px;
 
 			    	span {
-						
+
 						&.type-icon {
 							position: relative;
 						    margin-bottom: 0;
@@ -160,37 +160,37 @@ table {
 						}
 					}
 
-					&.fixed-col__item {		
+					&.fixed-col__item {
 						position: absolute;
-						top: auto;		   
+						top: auto;
 					    background: #fff;
-					    z-index: 100;				    
-					   				 		
-					 }
-				}	
+					    z-index: 100;
 
-				
+					 }
+				}
+
+
 
 			     &.name {
-			    	border-right: 1px solid rgba($tertiary-color-1, 0.8);				    	
-			    	border-bottom: 1px solid rgba($tertiary-color-1, 0.8);			    	
+			    	border-right: 1px solid rgba($tertiary-color-1, 0.8);
+			    	border-bottom: 1px solid rgba($tertiary-color-1, 0.8);
 			    	top: auto;
 			    	width: 200px;
 			    	left: 55px;
 			    	padding: 1em 0;
 
-			    	&.fixed-col__item {		
+			    	&.fixed-col__item {
 						position: absolute;
-						top: auto;		   
+						top: auto;
 					    background: #fff;
-					    z-index: 100;				    
-					   				 		
+					    z-index: 100;
+
 					 }
 			    }
-			
-			} 
 
-				
+			}
+
+
 		}
 	}
 
@@ -198,17 +198,17 @@ table {
 		tr {
 			td.fixed-col__item {
 		    	position: absolute;
-				top: auto;		   
+				top: auto;
 			    background: #fff;
-			    z-index: 100;			
+			    z-index: 100;
 
-		    	&.preview { 
+		    	&.preview {
 			    	width: 55px;
 			    	border-bottom: 1px solid rgba($tertiary-color-1, 0.8);
 			    	height: 50px;
 
 			    	span {
-						
+
 						&.type-icon {
 							position: relative;
 						    margin-bottom: 0;
@@ -225,33 +225,33 @@ table {
 
 						    }
 						}
-					}			
+					}
 				}
 
 				&.name-value {
 					width: 200px;
-					padding-left: 1em; 
+					padding-left: 1em;
 					left: 55px;
 					border-right: 1px solid rgba($tertiary-color-1, 0.8);
 					border-right: 1px solid rgba($tertiary-color-1, 0.8);
 				}
 			}
-		}				
+		}
 	}
-	
+
 }
 
 .fixed-col {
 	position: absolute;
-	top: auto;		   
+	top: auto;
 	background: #fff;
 	z-index: 100;
 
 	&__item {
 		position: absolute;
-		top: auto;		   
+		top: auto;
 	    background: #fff;
-	    z-index: 100;			
+	    z-index: 100;
 
 	}
 
@@ -266,11 +266,9 @@ table {
 
 	.fixed-table-scroller {
 		left: 350px;
-    overflow: scroll;
-    /* overflow-y: visible; */
-    padding-bottom: 5px;
-    width: 500px;
-    /* position: relative; */
+    	overflow: scroll;
+    	padding-bottom: 5px;
+    	width: 500px;
 	}
 }
 
