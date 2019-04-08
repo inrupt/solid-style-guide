@@ -146,7 +146,7 @@ slideLeft
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;		
 
-	visibility: visible !important;	
+	visibility: visible;	
 }
 
 @keyframes slideLeft {
@@ -166,6 +166,47 @@ slideLeft
 	
 	100% {
 		-webkit-transform: translateX(0%);
+	}
+}
+
+
+/*
+==============================================
+exitLeft
+==============================================
+*/
+
+
+.exitLeft{
+	animation-name: exitLeft;
+	-webkit-animation-name: exitLeft;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible;
+}
+
+@keyframes exitLeft {
+	0% {
+		transform: translateX(0%);
+	}
+		
+	100% {
+		transform: translateX(150%);
+	}
+}
+
+@-webkit-keyframes exitLeft {
+	0% {
+		-webkit-transform: translateX(0%);
+	}
+	
+	100% {
+		-webkit-transform: translateX(150%);
 	}
 }
 

@@ -146,7 +146,7 @@ header.header {
 
 		.header-wrap {
 
-			/* @include tablet {
+			 @include tablet {
 				nav.nav__primary,
 				nav.nav__toolbar {
 					display: none;
@@ -155,10 +155,10 @@ header.header {
 				.mobile-navigation__toggle {
 					display: flex;
 				}
-			}  tablet media query */
+			} /* tablet media query */
 
 
-			/* @include mobile {
+			 @include mobile {
 				nav.nav__primary,
 				nav.nav__toolbar {
 					display: none;
@@ -167,10 +167,10 @@ header.header {
 				.mobile-navigation__toggle {
 					display: flex;
 				}
-			} Mobile media query */
+			} /* Mobile media query */
 
 			/* Desktop Media Query for Navigation Bar */
-			/* @include desktop {
+			 @include desktop {
 
 				nav.nav__primary,
 				nav.nav__toolbar {
@@ -182,12 +182,7 @@ header.header {
 				}
 
 
-			}	 Desktop Media Query */
-
-
-				.mobile-navigation__toggle {
-					display: none;
-				}
+			}	/* Desktop Media Query */
 
 
 		}
@@ -464,10 +459,18 @@ span.badge {
 	transition: all .5s ease-in-out;
 	min-width: 300px;
 
-	&.hidden {
+	&.hidden, &[hidden] {
 		display: none;
 		visibility: hidden;
 		transform: translateX(150%);
+		transition: 0.75s ease-in-out;
+	}
+
+	&.active, &[active] {
+		display: grid;
+		visibility: visible;
+		transform: translateX(0%);
+		animation: .75s ease-in-out slideLeft;
 	}
 
 	&__wrap {
@@ -591,6 +594,14 @@ span.badge {
 	}
 
 }
+
+
+header.header__desktop .header-wrap .active nav.nav__primary,
+header.header__desktop .header-wrap .active nav.nav__toolbar{
+  display: block;
+}
+
+
 
 
 /* Dropdown-Styles */
