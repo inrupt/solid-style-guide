@@ -63,7 +63,7 @@ ul {
  margin: 0;
  list-style: none;
 }
- 
+
 ul li {
  padding: 0;
  margin: 0;
@@ -155,7 +155,6 @@ $prefixes: -webkit-, -moz-, -o-, "";
   box-shadow: $x-axis $y-axis $blur $color;
   -webkit-box-shadow: $x-axis $y-axis $blur $color;
   -moz-box-shadow: $x-axis $y-axis $blur $color;
-  -ms-box-shadow: $x-axis $y-axis $blur $color;
   -o-box-shadow: $x-axis $y-axis $blur $color;
 }
 
@@ -166,8 +165,6 @@ $prefixes: -webkit-, -moz-, -o-, "";
   appearance: $value;
   -webkit-appearance: $value;
   -moz-appearance: $value;
-  -ms-appearance: $value;
-  -o-appearance: $value;
 }
 
 

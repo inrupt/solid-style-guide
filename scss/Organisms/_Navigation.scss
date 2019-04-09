@@ -13,9 +13,8 @@ header.header, footer.footer, header.header__desktop {
 		justify-content: flex-start;
 		align-items: center;
 		flex-direction: row;
-		padding: 0rem;
+		padding: 0;
 		transition: all ease-in-out .5s;
-		padding-right: 0;
 		height: 100%;
 
 
@@ -26,7 +25,7 @@ header.header, footer.footer, header.header__desktop {
 
 			&__item {
 				padding: 0 !important;
-				margin: 0;				
+				margin: 0;
 			}
 		}
 
@@ -52,7 +51,7 @@ header.header, footer.footer, header.header__desktop {
 				padding: 0;
 
 				> nav.nav {
-					
+
 					&__primary {
 						margin-left: 0;
 
@@ -65,7 +64,7 @@ header.header, footer.footer, header.header__desktop {
 									padding: 0;
 
 									> a, > button {
-										cursor: pointer; 
+										cursor: pointer;
 
 										> span.icon {
 											 img {
@@ -83,10 +82,10 @@ header.header, footer.footer, header.header__desktop {
 										> span {
 											color: $icon-color;
 											font-size: 1.1rem;
-											
+
 											&.label {
 												font-size: 1.2rem;
-												margin-right: .5em;											
+												margin-right: .5em;
 											}
 										}
 									}
@@ -99,7 +98,7 @@ header.header, footer.footer, header.header__desktop {
 					&__toolbar {
 						> ul {
 							height: 60px;
-							
+
 							> li {
 								border: none;
 								padding: 0;
@@ -107,26 +106,26 @@ header.header, footer.footer, header.header__desktop {
 								> a, > button {
 									padding-left: 0.75em;
 									padding-right: 0.75em;
-									cursor: pointer; 
+									cursor: pointer;
 								}
 
 								&.has-children, .sub-nav-dropdown {
 									.sub-nav-dropdown, > .sub-nav-dropdown, > ul {
 										> span {
 											&.label {
-												font-size: 1.3rem;										
+												font-size: 1.3rem;
 											}
 										}
 									}
 								}
-								
+
 							}
 						}
 					} /* End mobile toolbar menu */
 				}
 			}
 		}
-	
+
 
 }
 
@@ -140,11 +139,12 @@ header.header {
 		left: 0;
 		width: 100vw;
 	}
-	
+
 
 	&__desktop {
 
 		.header-wrap {
+
 
 			 @include tablet {
 				nav.nav__primary,
@@ -200,7 +200,7 @@ header.header {
 .mobile-navigation__toggle {
 	margin-left: auto;
 	height: 100%;
-		
+
 		> button, > a {
 			appearance: none;
 			-webkit-appearance: none;
@@ -208,20 +208,19 @@ header.header {
 			padding: 0 2rem;
 			background: rgba(255,255,255,1);
 			border-radius: 0;
-			cursor: pointer; 
+			cursor: pointer;
 
 			&:hover, &:active {
-			    @include linear-gradient(to right, rgba($primary-color, 0) 0%, rgba($tertiary-color, 0) 50%, rgba($secondary-color, 0) 100%);	
+			    @include linear-gradient(to right, rgba($primary-color, 0) 0%, rgba($tertiary-color, 0) 50%, rgba($secondary-color, 0) 100%);
 			}
 		}
-}	
+}
 
 
 
 nav.nav {
 	> ul {
 		list-style: none;
-		list-style-type: none;
 		padding: 0;
 		margin: 0;
 		display: flex;
@@ -234,7 +233,7 @@ nav.nav {
 			display: flex;
 			align-items: center;
 			flex-direction: row;
-			flex-wrap: no-wrap;
+			flex-wrap: nowrap;
 			cursor: pointer;
 			line-height: 1;
 			transition: all 0.5s ease-in-out;
@@ -250,13 +249,13 @@ nav.nav {
 				border: none;
 				background: none;
 				padding: 0;
-				cursor: pointer; 
-			
+				cursor: pointer;
+
 
 				> span.icon {
 					margin: 0 auto;
 					text-align: center;
-					
+
 					> img {
 						max-height: 20px;
 						width: 100%;
@@ -281,15 +280,15 @@ nav.nav {
 
 		&__primary {
 			margin-left: 1em;
-			
+
 			> ul {
 				height: 60px;
 
-				> li {					
+				> li {
 					cursor: pointer;
-					transition: all 0.5s ease-in-out;			       
+					transition: all 0.5s ease-in-out;
 			        height: 100%;
-			       
+
 
 					> a, > button {
 						display: flex;
@@ -299,14 +298,14 @@ nav.nav {
     					justify-content: center;
 						padding-left: 2em;
 					    padding-right: 2em;
-					    transition: all 0.5s ease-in-out;			       
+					    transition: all 0.5s ease-in-out;
 					    @include borderRadius(0px);
 					    @include linear-gradient(to right, rgba($primary-color, 0.0) 0%, rgba($tertiary-color, 0.0) 50%, rgba($secondary-color, 0.0) 100%);
-					    cursor: pointer; 
+					    cursor: pointer;
 
 
 					    &:hover, &.active {
-							@include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%); 
+							@include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%);
 							transition: all 0.5s ease-in-out;
 						}
 					}
@@ -322,12 +321,12 @@ nav.nav {
 		        display: flex;
 
 				> li {
-					height: 100%;					
+					height: 100%;
 					cursor: pointer;
 					transition: all 0.5s ease-in-out;
 			        border-left: 1px solid rgba($tertiary-color-2, 0.1);
 
-			        
+
 
 					> a, > button {
 						appearance: none;
@@ -340,9 +339,9 @@ nav.nav {
 					    width: 100%;
 					    height: 100%;
 					    @include borderRadius(0px);
-					    cursor: pointer; 
+					    cursor: pointer;
 
-					
+
 						> span {
 							 > img {
 								min-height: 25px;
@@ -358,10 +357,9 @@ nav.nav {
 
 
 					&.has-children, .sub-nav-dropdown {
-						
+
 						> ul, > .sub-nav-dropdown, .sub-nav-dropdown {
 							display: none;
-							position: relative;
 							top: 60px;
 							min-width: 200px;
     						flex-direction: column;
@@ -369,17 +367,16 @@ nav.nav {
 							height: auto;
 							background: #fff;
 							@include borderRadius (0px 0px 4px 4px);
-							@include box-shadow();	
+							@include box-shadow();
 							position: fixed;
 							list-style: none;
-							list-style-type: none;
     						padding: 0;
-							transition: all 0.25s ease-in-out;						
+							transition: all 0.25s ease-in-out;
 
 							> li {
 								border-left: none;
 								border-top: 1px solid rgba($tertiary-color-2, 0.1);
-								width: 100%;	
+								width: 100%;
 								background: #fff;
 								padding: 0;
 								text-align: left;
@@ -388,11 +385,11 @@ nav.nav {
 									line-height: 2;
 									padding: 1rem;
 									text-align: left;
-									cursor: pointer; 
+									cursor: pointer;
 									width: 100%;
     								border: none;
     								@include borderRadius(0px);
-									
+
 									&:hover {
     								    @include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%);
 										transition: all 0.5s ease-in-out;
@@ -408,13 +405,13 @@ nav.nav {
 
 
 								> li {
-								 
+
 								 	&:hover {
 								 		@include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%);
 								 	}
 
 								}
-								
+
 							}
 						}
 
@@ -501,7 +498,7 @@ span.badge {
 		nav.nav {
 			&__primary {
 				margin-left: 0;
-				height: auto;		
+				height: auto;
 			}
 
 			> ul {
@@ -509,27 +506,27 @@ span.badge {
 					flex-direction: column;
 					width: 100%;
 					height: auto;
-					 
+
 					 > li {
 					 	width: 100%;
 
 						> a, > button {
-							width: 100%;							
+							width: 100%;
 							flex-direction: row;
 							justify-content: flex-start;
 							padding: 1em;
 							padding-left: 1.5em;
     						align-items: center;
-    						cursor: pointer; 
+    						cursor: pointer;
 
 							> span {
 								text-align: left;
 								margin: 0;
 
-								&.icon {	
+								&.icon {
 								text-align: center;
 								max-width: 20px;
-								height: auto;								
+								height: auto;
 								}
 
 								&.label {
@@ -543,7 +540,7 @@ span.badge {
 
 			&__toolbar {
 				margin-left: 0;
-				height: auto;	
+				height: auto;
 				margin-top: auto;
 				bottom: 0;
 				position: relative;
@@ -554,28 +551,28 @@ span.badge {
 					width: 100%;
 					height: auto;
 
-					 
+
 					> li {
 					 	width: 100%;
 
 						> a, > button {
 							display: flex;
-							width: 100%;							
+							width: 100%;
 							flex-direction: row;
 							justify-content: flex-start;
 							padding: 1em;
 							padding-left: 1.5em;
     						align-items: center;
-    						cursor: pointer; 
+    						cursor: pointer;
 
 							> span {
 								text-align: left;
 								margin: 0;
 
-								&.icon {	
+								&.icon {
 									text-align: center;
 									max-width: 20px;
-									height: auto;								
+									height: auto;
 								}
 
 								&.label {
@@ -587,7 +584,7 @@ span.badge {
 						}
 
 					 }
-				}	
+				}
 			}
 
 		}
@@ -608,7 +605,6 @@ header.header__desktop .header-wrap .active nav.nav__toolbar{
 
  .sub-nav-dropdown {
 	display: flex;
-	position: relative;
 	top: 60px;
 	min-width: 200px;
 	flex-direction: column;
@@ -616,17 +612,16 @@ header.header__desktop .header-wrap .active nav.nav__toolbar{
 	height: auto;
 	background: #fff;
 	@include borderRadius (0px 0px 4px 4px);
-	@include box-shadow();	
+	@include box-shadow();
 	position: fixed;
 	list-style: none;
-	list-style-type: none;
 	padding: 0;
-	transition: all 0.25s ease-in-out;						
+	transition: all 0.25s ease-in-out;
 
 	> li, > .sub-nav-dropdown__item {
 		border-left: none;
 		border-top: 1px solid rgba($tertiary-color-2, 0.1);
-		width: 100%;	
+		width: 100%;
 		background: #fff;
 		padding: 0;
 		text-align: left;
@@ -635,11 +630,11 @@ header.header__desktop .header-wrap .active nav.nav__toolbar{
 			line-height: 2;
 			padding: 1rem;
 			text-align: left;
-			cursor: pointer; 
+			cursor: pointer;
 			width: 100%;
 			border: none;
 			@include borderRadius(0px);
-			
+
 			&:hover {
 			    @include linear-gradient(to right, rgba($primary-color, 0.2) 0%, rgba($tertiary-color, 0.2) 50%, rgba($secondary-color, 0.2) 100%);
 				transition: all 0.5s ease-in-out;
@@ -649,7 +644,7 @@ header.header__desktop .header-wrap .active nav.nav__toolbar{
 	}
 }
 
-			
+
 
 
 
@@ -664,14 +659,14 @@ footer.footer {
 		padding-left: 0;
 		height: 100%;
 
-		> nav.nav__primary {					
+		> nav.nav__primary {
 			margin-left: 0;
 			width: 100%;
 
 			> ul {
 				width: 100%;
 				> li {
-					width: 100%;				  				  
+					width: 100%;
 				    align-items: center;
 				    justify-content: space-evenly;
 

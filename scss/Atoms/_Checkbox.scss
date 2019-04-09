@@ -12,7 +12,7 @@ label.checkbox {
 		margin-right: 1em;
 		cursor: pointer;
 		@include borderRadius(1px);
-		
+
 		&:hover {
 			border-color: $link-active-color;
 		}
@@ -25,7 +25,7 @@ label.checkbox {
 			&::before  {
 				color: $link-active-color;
 				content: "\f00c";
-				font-family: "FontAwesome";
+				font-family: "FontAwesome"; //TODO: Replace with SVG icons instead, https://css-tricks.com/icon-fonts-vs-svg/
 				align-self: center;
 				position: relative;
 				font-size: 1.5em;
@@ -42,7 +42,7 @@ label.checkbox {
 			&::before  {
 				color: $link-active-color;
 				content: "\f068";
-				font-family: "FontAwesome";
+				font-family: "FontAwesome"; //TODO: Replace with SVG icons instead, https://css-tricks.com/icon-fonts-vs-svg/
 				align-self: center;
 				position: relative;
 				font-size: 1.5em;
