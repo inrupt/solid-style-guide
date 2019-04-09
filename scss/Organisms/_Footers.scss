@@ -2,20 +2,18 @@
 
 
 
-footer.solid-footer, 
+footer.solid-footer,
 .solid-footer {
 	height: auto;
 	min-height: 60px;
 	display: flex;
 	align-items: center;
-	width: 100%;	
+	width: 100%;
 
 	&.fixed, &[fixed] {
 		position: fixed;
 		bottom: 0;
 		z-index: 999999; /* update to meet your z-index needs */
-	    position: fixed;
-	    bottom: 0;
 	    width: 100%;
 	    left: 0;
 	    right: 0;
@@ -28,7 +26,7 @@ footer.solid-footer,
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			height: 100%;	
+			height: 100%;
 			width: 100%;
 
 
@@ -47,14 +45,13 @@ footer.solid-footer,
 						display: flex;
 						justify-content: center;
 						padding: 0.5rem 0;
-					}					
-			}	
+					}
+			}
 
 		}
 
 
 	ul, ol {
-		list-style-type: none;
 		list-style: none;
 		padding-left: 0;
 		display: flex;

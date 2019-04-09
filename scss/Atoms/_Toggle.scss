@@ -8,7 +8,7 @@ label.switch {
   height: 15px;
   margin: 1em;
 
-	 input[type="checkbox" i], input[type="checkbox"] { 
+	 input[type="checkbox" i], input[type="checkbox"] {
 	  @include appearance(none);
 	  opacity: 0;
 	  width: 0;
@@ -32,9 +32,9 @@ label.switch {
 	  content: "";
 	  height: 1.5em;
 	  width: 1.5em;
-	  left: 0px;
+	  left: 0;
 	  bottom: -.3em;
-	  box-shadow: 0px 0px 1px 1px  rgba(0,0,0,0.1);
+	  box-shadow: 0 0 1px 1px  rgba(0,0,0,0.1);
 	  background-color: #fff;
 	  -webkit-transition: .4s;
 	  transition: .4s;
@@ -45,7 +45,7 @@ label.switch {
 	}
 
 	input[type="checkbox"]:focus + .slider {
-	
+
 	}
 
 	input[type="checkbox"]:checked + .slider:before {
@@ -56,11 +56,11 @@ label.switch {
 
 	/* Rounded sliders */
 	.slider.round {
-	  @include borderRadius(34px);	  
+	  @include borderRadius(34px);
 	}
 
 	.slider.round:before {
-	  @include borderRadius(34px);	  
+	  @include borderRadius(34px);
 	}
 }
 

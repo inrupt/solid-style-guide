@@ -7,14 +7,14 @@ input[type="range"] {
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
 
-	&::-webkit-slider-thumb, &::-moz-slider-thumb, &::-ms-slider-thumb {
+	&::-webkit-slider-thumb {
         @include appearance(none);
 		background-color: #fff;
 		height: 20px;
 		width: 20px;
 		border-radius: 50em;
-		box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
-	}	
+		box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+	}
 }
 
 $track-w: 100%;
@@ -30,7 +30,7 @@ $fill-c: blue;
     background: $track-c;
     @include borderRadius(1em);
     outline: none;
-    
+
     @if $fill == 1 {
         .js & {
             background: transparent;
@@ -73,7 +73,7 @@ $fill-c: blue;
     &, &::-webkit-slider-thumb {
         @include appearance(none);
     }
-    
+
     --range: calc(var(--max) - var(--min));
     --ratio: calc((var(--val) - var(--min))/var(--range));
     --sx: calc(.5*#{$thumb-d} + var(--ratio)*(100% - #{$thumb-d}));
@@ -82,16 +82,16 @@ $fill-c: blue;
     width: $track-w; height: $thumb-d;
     background: transparent;
     font: 1em/1 arial, sans-serif;
-    
+
     &::-webkit-slider-runnable-track {
         @include track(1)
     }
     &::-moz-range-track { @include track }
     &::-ms-track { @include track }
-    
+
     &::-moz-range-progress { @include fill }
     &::-ms-fill-lower { @include fill }
-    
+
     &::-webkit-slider-thumb {
         margin-top: .5*($track-h - $thumb-d);
         @include thumb
@@ -101,6 +101,6 @@ $fill-c: blue;
         margin-top: 0;
         @include thumb
     }
-    
+
     &::-ms-tooltip { display: none }
 }

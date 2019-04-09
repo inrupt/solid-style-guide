@@ -15,47 +15,47 @@
 
 		&--primary {
 			background-color: $primary-color;
-			color: #fff;	
-		}
-
-
-		&--secondary {
-			background-color: $secondary-color;	
 			color: #fff;
 		}
 
 
-	
+		&--secondary {
+			background-color: $secondary-color;
+			color: #fff;
+		}
+
+
+
 		&--tertiary {
 			background-color: $tertiary-color;
-			color: #fff;	
+			color: #fff;
 
 		}
 
 		&--tertiary-1 {
-			background-color: $tertiary-color-1;	
+			background-color: $tertiary-color-1;
 
 		}
 
 		&--tertiary-2{
-			background-color: $tertiary-color-2;	
+			background-color: $tertiary-color-2;
 
 		}
 
 		&--tertiary-3 {
-			background-color: $tertiary-color-3;	
+			background-color: $tertiary-color-3;
 
 		}
 
 		&--error {
-			background-color: $error-color;	
-			color: #fff;	
+			background-color: $error-color;
+			color: #fff;
 
 		}
 
 		&--warning {
 			background-color: $warning-color;
-			color: #fff;	
+			color: #fff;
 
 		}
 
@@ -65,8 +65,8 @@
 			@include linear-gradient(to right, $primary-color 0%, $tertiary-color 50%, $secondary-color 100%);
 
 		}
-	
-} 
+
+}
 
 
 .banner, .banner-wrap {
@@ -116,32 +116,32 @@
 
 			&:hover {
 				background-color: rgba($primary-color, 1);
-				transition: all 0.25s ease-in-out;				
+				transition: all 0.25s ease-in-out;
 			}
 		}
 
 
 		&--secondary {
 			background-color:rgba($secondary-color, .9);
-			color: #fff;		
+			color: #fff;
 			transition: all 0.25s ease-in-out;
 
 			&:hover {
 				background-color: rgba($secondary-color, 1);
-				transition: all 0.25s ease-in-out;				
+				transition: all 0.25s ease-in-out;
 			}
 		}
 
 
-	
+
 		&--tertiary {
 			background-color: rgba($tertiary-color, .9);
-			color: #fff;	
+			color: #fff;
 			transition: all 0.25s ease-in-out;
 
 			&:hover {
 				background-color: rgba($tertiary-color, 1);
-				transition: all 0.25s ease-in-out;				
+				transition: all 0.25s ease-in-out;
 			}
 		}
 
@@ -152,7 +152,7 @@
 
 			&:hover {
 				background-color: rgba($tertiary-color-1, 1);
-				transition: all 0.25s ease-in-out;				
+				transition: all 0.25s ease-in-out;
 			}
 		}
 
@@ -162,7 +162,7 @@
 
 			&:hover {
 				background-color: rgba($tertiary-color-2, 1);
-				transition: all 0.25s ease-in-out;				
+				transition: all 0.25s ease-in-out;
 			}
 
 		}
@@ -173,7 +173,7 @@
 
 			&:hover {
 				background-color: rgba($tertiary-color-3, 1);
-				transition: all 0.25s ease-in-out;				
+				transition: all 0.25s ease-in-out;
 			}
 
 		}
@@ -181,11 +181,11 @@
 
 		&--error {
 			background-color: $error-color;
-			transition: all 0.25s ease-in-out;	
+			transition: all 0.25s ease-in-out;
 
 			&:hover {
 				background-color: rgba($error-color, 1);
-				transition: all 0.25s ease-in-out;				
+				transition: all 0.25s ease-in-out;
 			}
 
 		}
@@ -193,17 +193,17 @@
 
 		&--warning {
 			background-color: $warning-color;
-			transition: all 0.25s ease-in-out;	
+			transition: all 0.25s ease-in-out;
 
 			&:hover {
 				background-color: rgba($warning-color, 1);
-				transition: all 0.25s ease-in-out;				
+				transition: all 0.25s ease-in-out;
 			}
 
 		}
 
-		
-		
+
+
 }
 
 	.toaster-wrap {
@@ -233,9 +233,9 @@
 				}
 
 			}
-			
-		
-	} 
+
+
+	}
 
 
 
@@ -249,7 +249,7 @@
 			&:hover {
 				transition: all 0.25s ease-in-out;
 				opacity: 1;
-				
+
 			}
 		}
 
@@ -275,7 +275,7 @@ section.grid.grid__three-column.demo {
 		color: #fff;
 		z-index: 9999;
 		padding: 0;
-		box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+		box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);
 
 		> .banner-wrap__content {
 			display: flex;

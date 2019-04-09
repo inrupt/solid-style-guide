@@ -1,11 +1,11 @@
 /* scss/Atoms/_Buttons.scss */
 
 
-/* Default  button Styles */ 
+/* Default  button Styles */
 
 button,
-link, 
-.ids-button, 
+link,
+.ids-button,
 .ids-link {
 	@include appearance(none);
 	font-family: $primary-font-stack;
@@ -29,11 +29,11 @@ link,
 	&[disabled] {
 		opacity: 0.5;
 		cursor: initial;
-			
+
 			&:hover {
 				border-color: $tertiary-color-1;
 				transition: 0.25s all ease-in-out;
-				color: $primary-text-color;			
+				color: $primary-text-color;
 			}
 	}
 
@@ -47,9 +47,9 @@ link,
 
 }
 
-/* Filled button Styles */ 
+/* Filled button Styles */
 
-.ids-button-filled, 
+.ids-button-filled,
 .ids-link-filled {
 		  height: 40px;
 		  width: 100%;
@@ -57,10 +57,8 @@ link,
 		  color: #ffffff;
 		  text-transform: uppercase;
 		  font-size: 12px;
-		  font-weight: 500;
 		  letter-spacing: 1.07px;
 		  line-height: 17px;
-		  display: block;
 		  margin: 0 0 16px 0;
 		  display: flex;
 		  justify-content: center;
@@ -74,47 +72,47 @@ link,
 		  	background: $primary-color;
 
 		  		&:hover {
-					background: lighten($primary-color, 5%);		  			
+					background: lighten($primary-color, 5%);
 		  		}
-		  }  
+		  }
 
 			&--secondary {
-				background-color: $secondary-color;	
+				background-color: $secondary-color;
 
 				&:hover {
-					background: lighten($secondary-color, 5%);		  			
+					background: lighten($secondary-color, 5%);
 		  		}
 			}
 
 			&--tertiary {
-				background-color: $tertiary-color;	
+				background-color: $tertiary-color;
 
 				&:hover {
-					background: lighten($tertiary-color, 5%);		  			
+					background: lighten($tertiary-color, 5%);
 		  		}
 			}
 
 			&--tertiary-1 {
-				background-color: $tertiary-color-1;	
+				background-color: $tertiary-color-1;
 
 				&:hover {
-					background: lighten($tertiary-color-1, 5%);		  			
+					background: lighten($tertiary-color-1, 5%);
 		  		}
 			}
 
 			&--tertiary-2{
-				background-color: $tertiary-color-2;	
+				background-color: $tertiary-color-2;
 
 				&:hover {
-					background: lighten($tertiary-color-2, 5%);		  			
+					background: lighten($tertiary-color-2, 5%);
 		  		}
 			}
 
 			&--tertiary-3 {
-				background-color: $tertiary-color-3;	
+				background-color: $tertiary-color-3;
 
 				&:hover {
-					background: lighten($tertiary-color-3, 5%);		  			
+					background: lighten($tertiary-color-3, 5%);
 		  		}
 			}
 
@@ -131,23 +129,21 @@ link,
 	    cursor: pointer;
 	    transition: all 0.5s ease-in-out;
 	  }
-	
+
 }
 
 
 /* Outline/Stroke Button Styles  */
 
-.ids-button-stroke, 
+.ids-button-stroke,
 .ids-link-stroke {
 		  height: 40px;
 		  width: 100%;
 		  @include borderRadius(4px);
 		  text-transform: uppercase;
 		  font-size: 12px;
-		  font-weight: 500;
 		  letter-spacing: 1.07px;
 		  line-height: 16px;
-		  display: block;
 		  margin: 0 0 16px 0;
 		  display: flex;
 		  justify-content: center;
@@ -165,17 +161,17 @@ link,
 		  	border-color: $primary-color;
 
 		  		&:hover {
-					background: rgba($primary-color, 1);	
+					background: rgba($primary-color, 1);
 					color: #fff;
 		  		}
-		  }  
+		  }
 
 			&--secondary {
 				color: $secondary-color;
 			  	border-color: $secondary-color;
 
 		  		&:hover {
-					background: rgba($secondary-color, 1);	
+					background: rgba($secondary-color, 1);
 					color: #fff;
 		  		}
 			}
@@ -185,32 +181,32 @@ link,
 			  	border-color: $tertiary-color;
 
 		  		&:hover {
-					background: rgba($tertiary-color, 1);	
+					background: rgba($tertiary-color, 1);
 					color: #fff;
 		  		}
 			}
 
 			&--tertiary-1 {
-				background-color: $tertiary-color-1;	
+				background-color: $tertiary-color-1;
 
 				&:hover {
-					background: lighten($tertiary-color-1, 5%);		  			
+					background: lighten($tertiary-color-1, 5%);
 		  		}
 			}
 
 			&--tertiary-2{
-				background-color: $tertiary-color-2;	
+				background-color: $tertiary-color-2;
 
 				&:hover {
-					background: lighten($tertiary-color-2, 5%);		  			
+					background: lighten($tertiary-color-2, 5%);
 		  		}
 			}
 
 			&--tertiary-3 {
-				background-color: $tertiary-color-3;	
+				background-color: $tertiary-color-3;
 
 				&:hover {
-					background: lighten($tertiary-color-3, 5%);		  			
+					background: lighten($tertiary-color-3, 5%);
 		  		}
 			}
 
