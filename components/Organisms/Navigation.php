@@ -2,10 +2,7 @@
 
 
 
-<!-- Fixed Header Navigation -->
-
-<!-- Remove this comment to use this fixed header 
-
+<!-- Fixed responsive Header Navigation -->
 
 <header role="header" class="header fixed header__desktop">
 		<section class="header-wrap">
@@ -40,7 +37,7 @@
 
 	<div class="header-spacer"></div>
 
-/ End of Fixed Header Bar Example - Remove This comment to use.  / -->
+<!-- /Fixed responsive Header Navigation -->
 
 
 <div class="row-wrap">
@@ -143,13 +140,10 @@
 
 <script type="text/javascript">
 $('.mobile-navigation__toggle').click(function() {
-		$('.mobile-navigation-panel').removeClass('hidden').addClass('slideLeft');
+		$('.mobile-navigation-panel').removeClass('hidden').addClass('active');
 	});
 
 $('.close-panel__toggle').click(function() {
-		$('.mobile-navigation-panel').addClass('hidden');		
-		setTimeout(function() {
-			$('.mobile-navigation-panel').removeClass('slideLeft');
-		},1500);
+		$('.mobile-navigation-panel').removeClass('active').addClass('hidden');		
 });
 </script>
