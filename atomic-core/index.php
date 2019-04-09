@@ -94,7 +94,7 @@ $settings = $settings->select(array());
         <div class="atoms-overflow">
 
             <div class="logo">
-                <img src="../atomic-core/img/inrupt.svg">
+                <a href="/"><img src="../atomic-core/img/inrupt.svg"></a>
             </div>
 
             <div class="atoms-side_hide">
@@ -483,7 +483,7 @@ $settings = $settings->select(array());
 
 <section class="banner-wrap--footer banner">
     <div class="banner-wrap__content">
-    <a href="https://github.com/Inrupt-inc/solid-style-guide" target="_blank"><i class="icon fa fa-github"></i> View on Github</a></div>
+    <a href="https://github.com/inrupt/solid-style-guide" target="_blank"><i class="icon fa fa-github"></i> View on Github</a></div>
 </section>
 
 
