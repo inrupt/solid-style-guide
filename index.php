@@ -143,7 +143,7 @@
 
   <section class="card">
     
-        <div class="hero-wrap"><h2 class="bold">Solid Style Guide <br/><span class="sub-title">by inrupt</span></h2> </div>
+        <div class="hero-wrap"><h2 class="bold">Solid Style Guide by inrupt</h2> </div>
 
         <div class="divider"></div>
 
