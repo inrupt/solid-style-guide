@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
-    
+    <base href="../">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>inrupt Atomic Design System</title>
+    <link rel="icon" type="image/png" href="../atomic-core/img/favicon.png" />
+    
+    <title>Solid Style Guide - by inrupt</title>
 
     <?php include("atomic-head.php"); ?>
 
@@ -65,6 +78,12 @@
             margin-bottom: 0;
         }
 
+        span.sub-title {
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1;
+        }
+
 
         .bold {
             font-weight: bolder;
@@ -124,7 +143,7 @@
 
   <section class="card">
     
-        <div class="hero-wrap"><h2 class="bold">inrupt Style Guide</h2> </div>
+        <div class="hero-wrap"><h2 class="bold">Solid Style Guide <br/><span class="sub-title">by inrupt</span></h2> </div>
 
         <div class="divider"></div>
 
