@@ -16,7 +16,7 @@
 
     <link rel="icon" type="image/png" href="../atomic-core/img/favicon.png" />
     
-    <title>Solid Style Guide - by inrupt</title>
+    <title>Solid Style Guide by inrupt</title>
 
     <?php include("atomic-head.php"); ?>
 
