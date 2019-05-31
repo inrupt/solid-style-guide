@@ -23,7 +23,7 @@ There are two main ways to install the design system output (which can be replic
 
 #### Post-install
 After installation, the design system can be added to your root component:  
-`import @inrupt/solid-style-guide`
+`import '@inrupt/solid-style-guide'`
 
 ## To customize your own version
 
