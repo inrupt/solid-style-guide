@@ -66,6 +66,8 @@ $settings = $settings->select(array());
                         <li>
                             <a class="name"
                                href="atomic-core/?cat=<?php echo $category['category'] ?>#<?php echo $component['component'] ?>"><?php echo $component['component'] ?></a>
+
+                               
                         </li>
 
 

@@ -18,6 +18,12 @@
 
 					<nav role="nav" class="nav nav__toolbar">
 					    <ul>
+					    	<li class="has-children language-selector"><button><span class="icon"><img src="/atomic-core/img/flags/4x3/us.svg" /></span></button>
+								<ul class="sub-nav-dropdown language-selector">
+					        		<li><button class="language-selector__item"><span class="icon flag"><img src="/atomic-core/img/flags/4x3/us.svg" /></span> English</button></li>
+					        		<li><button class="language-selector__item"><span class="icon flag"><img src="/atomic-core/img/flags/4x3/es.svg" /></span> Spanish</button></li>
+					        	</ul>
+					        </li>
 					        <li><button><span class="icon"><img src="/atomic-core/img/icon/gear.svg" /></span></button></li>
 					        <li><button ><span class="icon notification"><img src="/atomic-core/img/icon/notification.svg" /><span class="badge">3</span></span></button></li>
 					        <li class="has-children"><button><span class="icon"><img src="/atomic-core/img/icon/user.svg" /></span></button>
