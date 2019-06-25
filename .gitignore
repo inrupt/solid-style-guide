@@ -5,5 +5,5 @@ styles/.sass-cache/*
 css/main.css.map
 *.map
 .idea/
-atomic-core/img/flags
-atomic-core/img/flags*
+.DS_Store
+*.DS_Store
