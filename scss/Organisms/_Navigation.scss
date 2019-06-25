@@ -60,6 +60,7 @@ header.header, footer.footer, header.header__desktop {
 								line-height: 1;
 								padding: 0;
 
+
 								&.user-avatar {
 									padding: 0;
 
@@ -77,6 +78,8 @@ header.header, footer.footer, header.header__desktop {
 								&.has-children {
 									padding-left: 0.75em;
 									padding-right: 0.75em;
+
+									
 
 									> .sub-nav-dropdown, .sub-nav-dropdown, > ul {
 										> span {
@@ -326,6 +329,12 @@ nav.nav {
 					transition: all 0.5s ease-in-out;
 			        border-left: 1px solid rgba($tertiary-color-2, 0.1);
 
+						&.has-children{
+							&.language-selector {
+								width: 70px;
+							}
+						}
+
 
 
 					> a, > button {
@@ -397,6 +406,26 @@ nav.nav {
 									}
 								}
 							}
+
+							nav.nav__toolbar {
+								 > ul.language-selector {
+								 	right: 4rem;
+									
+									li {
+										  > a, button, .language-selector__item {
+										 	display: flex;
+										 	justify-content: space-around;
+
+										 	> span.icon, span.flag {
+										 		width: 30px !important;
+										 		margin-right: 20px;
+										 	}
+										 }
+									}
+								}
+
+							}
+
 						}
 
 						&:hover {
@@ -668,8 +697,21 @@ header.header__desktop .header-wrap .active nav.nav__toolbar{
 	}
 }
 
+/*language-selector*/
 
+ul.language-selector {
+	margin-right: 12.5rem;
+}
 
+ button.language-selector__item {
+ 	display: flex;
+ 	justify-content: flex-start;
+
+ 	> span.icon, span.flag {
+ 		width: 30px !important;
+ 		margin-right: 1rem;
+ 	}
+ }
 
 
 
@@ -707,3 +749,5 @@ footer.footer {
 		}
 	}
 }
+
+
