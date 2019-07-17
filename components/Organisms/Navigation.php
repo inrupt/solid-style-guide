@@ -12,7 +12,8 @@
 					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/things.svg" /></span><span class="label">Things</span></a></li>
 					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/files.svg" /></span><span class="label">Files</span></a></li>
 					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/people.svg" /></span><span class="label">People</span></a></li>
-					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/apps.svg" /></span><span class="label">Apps</span></a></li>
+					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/apps.svg" /></span><span class="label">Apps</span></a></li>					     
+					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/tic-tac-toe-2.svg" style="max-width: 20px;" /></span><span class="label">Tic Tac Toe</span></a></li>
 					    </ul>
 					</nav>
 
@@ -57,7 +58,8 @@
 					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/things.svg" /></span><span class="label">Things</span></a></li>
 					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/files.svg" /></span><span class="label">Files</span></a></li>
 					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/people.svg" /></span><span class="label">People</span></a></li>
-					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/apps.svg" /></span><span class="label">Apps</span></a></li>
+					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/apps.svg" /></span><span class="label">Apps</span></a></li>					       
+					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/tic-tac-toe-2.svg" style="max-width: 20px;"/></span><span class="label">Tic Tac Toe</span></a></li>
 					    </ul>
 					</nav>
 
@@ -88,6 +90,7 @@
 					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/files.svg" /></span><span class="label">Files</span></a></li>
 					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/people.svg" /></span><span class="label">People</span></a></li>
 					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/apps.svg" /></span><span class="label">Apps</span></a></li>
+					        <li><a href="#"><span class="icon"><img src="/atomic-core/img/icon/tic-tac-toe-2.svg" style="max-width: 20px;"/></span><span class="label">Tic Tac Toe</span></a></li>	
 					    </ul>
 					</nav>
 
