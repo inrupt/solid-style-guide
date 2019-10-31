@@ -216,7 +216,7 @@ $settings = $settings->select(array());
                 <?php } ?>
 
                 <?php if (empty($cat)) { ?>
-                    <h1 id="modules" class="atomic-h1">Sorry, no results found for "<?php echo htmlspecialchars($_GET['search']; ?>
+                    <h1 id="modules" class="atomic-h1">Sorry, no results found for "<?php echo htmlspecialchars($_GET['search']); ?>
                         ".</h1>
                 <?php } ?>
 
