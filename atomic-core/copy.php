@@ -84,7 +84,7 @@ foreach ($cat_data as $cat_value) {
         </li>
 
 
-    <?php } ?>
+    <?php }) ?>
 
 
 
