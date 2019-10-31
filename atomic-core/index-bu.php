@@ -121,7 +121,7 @@ $settings = $settings->select(array());
 
 
                         <?php if (isset($_GET['cat'])) { ?>
-                            <li class="aa_dir <?php if ($category['category'] == $_GET['cat']) { ?>active<?php } ?>" data-navitem="<?php echo $category['category'] ?>">
+                            <li class="aa_dir <?php if ($category['category'] == htmlspecialchars($_GET['cat'])) { ?>active<?php } ?>" data-navitem="<?php echo $category['category'] ?>">
                         <?php } else { ?>
                             <li class="aa_dir" data-navitem="<?php echo $category['category'] ?>">
                         <?php } ?>
@@ -194,29 +194,29 @@ $settings = $settings->select(array());
 
 
             <?php if (!empty($_GET['cat'])) { ?>
-                <h1 id="modules" class="atomic-h1"><?php echo $_GET['cat']; ?> <a
+                <h1 id="modules" class="atomic-h1"><?php echo htmlspecialchars($_GET['cat']); ?> <a
                         class="fa fa fa-pencil-square-o js_cat-edit aa_js-actionOpen aa_actionBtn"
                         href="atomic-core/temp-forms/temp-edit-category-form.php"
-                        data-cat="<?php echo $_GET['cat']; ?>">
+                        data-cat="<?php echo htmlspecialchars($_GET['cat']); ?>">
                     </a>
                 </h1>
             <?php } ?>
 
             <?php if (!empty($_GET['search'])) { ?>
                 <?php
-                $cat = $components->get("category", "component", $_GET['search']);
+                $cat = $components->get("category", "component", htmlspecialchars($_GET['search']));
                 ?>
 
 
                 <?php if (!empty($cat)) { ?>
                     <h1 id="modules" class="atomic-h1">The <a
-                            href="atomic-core/?cat=<?php echo $cat ?>#<?php echo $_GET['search']; ?>"> <?php echo $_GET['search']; ?></a>
+                            href="atomic-core/?cat=<?php echo $cat ?>#<?php echo htmlspecialchars($_GET['search']); ?>"> <?php echo htmlspecialchars($_GET['search']); ?></a>
                         component was found in the
                         <a href="atomic-core/?cat=<?php echo $cat ?>"><?php echo $cat ?></a> category.</h1>
                 <?php } ?>
 
                 <?php if (empty($cat)) { ?>
-                    <h1 id="modules" class="atomic-h1">Sorry, no results found for "<?php echo $_GET['search']; ?>
+                    <h1 id="modules" class="atomic-h1">Sorry, no results found for "<?php echo htmlspecialchars($_GET['search']; ?>
                         ".</h1>
                 <?php } ?>
 
@@ -228,7 +228,7 @@ $settings = $settings->select(array());
 
 
             if (!empty($_GET['cat'])) {
-                $cat = $_GET['cat'];
+                $cat = htmlspecialchars($_GET['cat']);
                 global $cat;
                 $compSelect = array_filter($compSelect, function ($v) {
                     global $cat;
@@ -237,10 +237,10 @@ $settings = $settings->select(array());
             }
 
             if (!empty($_GET['search'])) {
-                $search = $_GET['search'];
+                $search = htmlspecialchars($_GET['search']);
                 global $search;
 
-                $cat = $components->get("category", "component", $_GET['search']);
+                $cat = $components->get("category", "component", $search);
                 global $cat;
 
                 $compSelect = array_filter($compSelect, function ($v) {
