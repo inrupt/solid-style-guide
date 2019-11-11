@@ -84,7 +84,7 @@ foreach ($cat_data as $cat_value) {
         </li>
 
 
-    <?php } ?>
+    <?php }) ?>
 
 
 
@@ -105,14 +105,14 @@ foreach ($cat_data as $cat_value) {
 
 
     <div class="atoms-main">
-    <h1 id="modules" class="atomic-h1"><?php echo $_GET['cat']; ?> <a class="fa fa fa-pencil-square-o js_add-edit-component aa_js-actionOpen aa_actionBtn" href="atomic-core/temp-forms/temp-category-form.php">
+    <h1 id="modules" class="atomic-h1"><?php echo htmlspecialchars($_GET['cat']); ?> <a class="fa fa fa-pencil-square-o js_add-edit-component aa_js-actionOpen aa_actionBtn" href="atomic-core/temp-forms/temp-category-form.php">
 
         </a></h1>
 
 
 
     <?php
-    $cat = $_GET['cat'];
+    $cat = htmlspecialchars($_GET['cat']);
     global $cat;
     $comp_data = array_filter($comp_data, function($v) {
         global $cat;

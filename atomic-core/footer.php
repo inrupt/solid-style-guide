@@ -45,7 +45,7 @@
 
 
     if (!empty($_GET['cat'])) {
-        $cat = $_GET['cat'];
+        $cat = htmlspecialchars($_GET['cat']);
         global $cat;
         $i = 0;
         $compSelect = array_filter($compSelect, function ($v) {
@@ -56,10 +56,10 @@
 
 
     if (!empty($_GET['search'])) {
-        $search = $_GET['search'];
+        $search = htmlspecialchars($_GET['search']);
         global $search;
 
-        $cat = $components -> get("category", "component", $_GET['search']);
+        $cat = $components -> get("category", "component", $search);
         global $cat;
 
         $i = 0;
