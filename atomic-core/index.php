@@ -485,7 +485,7 @@ $settings = $settings->select(array());
 
 <section class="banner-wrap--footer banner">
     <div class="banner-wrap__content">
-    <a href="https://github.com/inrupt/solid-style-guide" target="_blank"><i class="icon fa fa-github"></i> View on Github</a></div>
+    <a href="https://github.com/inrupt/solid-style-guide" rel="noopener noreferrer" target="_blank"><i class="icon fa fa-github"></i> View on Github</a></div>
 </section>
 
 
