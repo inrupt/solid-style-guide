@@ -1182,6 +1182,14 @@ input, select, textarea {
       outline: none;
     }
   } */
+textarea {
+  height: 100px;
+  border-radius: 4px;
+  border: 1px solid #DAE0E6;
+  font-size: .8em;
+  padding: .5em 0;
+  text-indent: 0.75em;
+}
 input,
 textarea {
   appearance: none;

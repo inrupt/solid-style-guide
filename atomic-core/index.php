@@ -1,4 +1,6 @@
-<?php
+<?php session_start();
+
+include 'csrf.php';
 
 include("head.php");
 
@@ -405,6 +407,11 @@ $settings = $settings->select(array());
                             </form>
                         </div>
 
+                        <?php
+                        $csrf = new csrf();
+                        $token_id = $csrf->get_token_id();
+                        $token_value = $csrf->get_token();
+                        ?>
 
                         <div role="tabpanel" class="tab-pane" id="<?php echo $component['component'] ?>-styles-tab">
                             <form class="atomic-editorWrap" data-editorFormComp="<?php echo $component['component'] ?>"
@@ -422,6 +429,7 @@ $settings = $settings->select(array());
 
                                     <input id="<?php echo $component['component'] ?>-style-val" class="new-val-input" type="hidden"
                                            name="new-styles-val-<?php echo $component['component'] ?>" value=""/>
+                                    <input type="hidden" name="<?= $token_id; ?>" value="<?= $token_value; ?>" />
                                 </div>
                                 <div class="atomic-editor-footer">
                                     <button type="submit" class="atomic-btns atomic-btn1"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
