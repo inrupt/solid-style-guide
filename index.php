@@ -175,7 +175,7 @@
 
 <section class="banner-wrap--footer banner ">
     <div class="banner-wrap__content">
-    <a href="../atomic-core/?cat=Core" target="_blank"><i class="icon fa fa-github"></i>Continue to the Live Style Guide</a></div>
+    <a href="../atomic-core/?cat=Core"><i class="icon fa fa-github"></i>Continue to the Live Style Guide</a></div>
 </section>
 
 </body>

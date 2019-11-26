@@ -56,13 +56,13 @@
         "has_js": "false"
     },
     {
-            "component": "Textarea",
-            "category": "Atoms",
-            "description": "",
-            "backgroundColor": "",
-            "order": -5,
-            "has_js": "false"
-        },
+        "component": "Textarea",
+        "category": "Atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -5,
+        "has_js": "false"
+    },
     {
         "component": "Typography",
         "category": "Core",

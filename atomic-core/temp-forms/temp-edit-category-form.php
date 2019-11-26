@@ -1,3 +1,9 @@
+<?php session_start();
+include '../csrf.php';
+$csrf = new csrf();
+$token_id = $csrf->get_token_id();
+$token_value = $csrf->get_token();
+?>
 <form id="form-edit-category" class="aa_fileForm" method="post">
     <div class="formInputGroup">
         <label class="aa_label">Edit Name</label>
@@ -12,6 +18,7 @@
 <form id="form-delete-category" class="aa_fileForm" method="post">
     <div class="formInputGroup">
         <div class="inputBtnGroup">
+            <input type="hidden" name="<?= $token_id; ?>" value="<?= $token_value; ?>" />
             <label class="aa_label">Delete Category</label>
             <button class="aa_btn aa_btn-neg" type="submit">Delete</button>
             <div class="inputBtnGroup__inputWrap"><input type="text" class="formInput" name="catName" placeholder="Must type category name"></div>

@@ -1,3 +1,10 @@
+<?php session_start();
+include '../csrf.php';
+$csrf = new csrf();
+$token_id = $csrf->get_token_id();
+$token_value = $csrf->get_token();
+
+?>
 <div class="aa_fileFormGroup">
     <form id="form-create-file" class="aa_fileForm"  method="post">
         <div class="inputGroup">
@@ -12,6 +19,7 @@
         <div class="inputGroup">
             <input class="bgColor" type="text" name="bgColor" value=""/>
         </div>
+        <input type="hidden" name="<?= $token_id; ?>" value="<?= $token_value; ?>" />
 
 
         <!--<div class="formGroup-check">
