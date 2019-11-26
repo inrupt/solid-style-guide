@@ -50,8 +50,16 @@ input, select, textarea {
   } */
 
 
-  input,
-  textarea {
+textarea {
+	height: 100px;
+	border-radius: 4px;
+	border: 1px solid $tertiary-color-1;
+	font-size: .8em;
+	padding: .5em 0;
+	text-indent: 0.75em;
+}
+
+input, textarea {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
