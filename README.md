@@ -1,4 +1,8 @@
 
+# DEPRECATED
+
+Repository support is limited to critical bug fixes and security issues only until 01-Jul-2021, when it will reach its end of life and will be officially archived.
+
 # Atomic Design System for Solid Applications
 
 Inspired by Brad Frost's Atomic design principles, we use Nick Berens' Atomic Docs framework as a base style guide / design system generation tool for Solid applications. This is a live repository of UI styles and UX patterns utilized in our Software Development Kits for Solid. The design system will continue to evolve as we commit and release new patterns and features.
