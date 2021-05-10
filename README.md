@@ -1,7 +1,7 @@
 
 # DEPRECATED
 
-Repository support is limited to critical bug fixes and security issues only until 01-Jul-2021, when it will reach its end of life and will be officially archived.
+This repo is no longer supported. Use at your own risk.
 
 # Atomic Design System for Solid Applications
 
